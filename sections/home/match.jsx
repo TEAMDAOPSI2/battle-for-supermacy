@@ -1,3 +1,5 @@
+import MatchSlider from '@/sections/home/match-slider';
+
 const BoxTeam = (props) => {
   const { teamName, teamLogo } = props;
   return (
@@ -31,6 +33,7 @@ const Match = () => {
            <p className='text-xl font-bold font-inter'>19:00 PM</p>
          </div>
        </div>
+        <MatchSlider />
       </div>
     </section>
   );

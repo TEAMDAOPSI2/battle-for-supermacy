@@ -116,3 +116,23 @@ body {
     }
   }
 }
+
+.match-slider {
+  .match {
+    border-left: 1px solid #9C9C93;
+  }
+
+  .match:last-child {
+    border-right: 1px solid #9C9C93;
+  }
+
+  .next, .prev {
+    @apply flex items-center justify-center text-secondary transition-all duration-300 ease-in-out;
+    cursor: pointer;
+    width: 20px;
+
+    &:hover {
+      background-color: #9C9C93;
+    }
+  }
+}
