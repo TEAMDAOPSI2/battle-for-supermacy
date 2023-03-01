@@ -4,7 +4,9 @@ import Headline from '@/sections/home/headline';
 import Match from '@/sections/home/match';
 import Teams from '@/sections/home/teams';
 import Format from '@/sections/home/format';
-
+import Slot from '@/sections/home/slots';
+import History from '@/sections/home/history';
+import Faq from '@/sections/home/faq';
 
 const Home = () => {
   return (
@@ -16,7 +18,10 @@ const Home = () => {
       <Headline />
       <Match />
       <Teams />
-      <Format/>
+      <Format />
+      <Slot />
+      <History />
+      <Faq />
     </>
   );
 };

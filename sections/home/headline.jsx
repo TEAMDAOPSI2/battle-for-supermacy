@@ -6,8 +6,8 @@ const BoxHeadline = (props) => {
   const { title, value } = props;
   return (
     <div className='flex flex-col items-center font-inter py-4 gap-3 bg-soft-black my-3'>
-      <span className='text-white text-lg uppercase text-xl'>{title}</span>
-      <h3 className='text-[2.5rem] font-bold text-secondary'>{value}</h3>
+      <span className='text-white sm:text-lg text-base uppercase text-xl'>{title}</span>
+      <h3 className='sm:text-[2.5rem] text-xl font-bold text-secondary'>{value}</h3>
     </div>
   );
 };
@@ -37,7 +37,7 @@ const Headline = () => {
             <BoxHeadline title='Total Prize Pool' value='$850,000' />
             <BoxHeadline title='Teams' value='44' />
           </div>
-          <div className='box-second-wrapper grid grid-cols-3'>
+          <div className='box-second-wrapper grid sm:grid-cols-3 grid-cols-1'>
             <BoxSecondHeadline title='Conference stage' value='JAN 16-20' />
             <BoxSecondHeadline title='Group Stage' value='JAN 21-24' />
             <BoxSecondHeadline title='Playoffs Stage' value='JAN 21-24' />

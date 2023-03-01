@@ -1,12 +1,12 @@
 import { Tab } from '@headlessui/react';
-import { Fragment } from 'react';
 import ConferencePanel from '@/sections/home/conference-panel';
 import GroupstagePanel from '@/sections/home/groupstage-panel';
+import TabTitle from '@/components/tab-title';
 
 const TabElement = () => {
   return (
     <Tab.Group defaultIndex={1}>
-      <Tab.List className='flex justify-around m-auto w-[550px] py-8'>
+      <Tab.List className='flex justify-around  flex-wrap sm:flex-nowrap gap-2  m-auto w-full sm:w-[550px] py-8'>
         <TabTitle>Conference Stage</TabTitle>
         <TabTitle>Group Stage</TabTitle>
         <TabTitle>Playoffs</TabTitle>
@@ -23,18 +23,7 @@ const TabElement = () => {
   );
 };
 
-const TabTitle = ({ children }) => {
-  return (
-    <Tab as={Fragment}>
-      {({ selected }) => (
-                <h3
-          className={`uppercase text-xl text-secondary font-bold font-inter cursor-pointer hover:text-white hover:border-b-2 hover:border-b-white outline-0 ${selected ? 'text-white border-b-2 border-b-white' : ''}`}>
-          {children}
-        </h3>
-      )}
-    </Tab>
-  );
-};
+
 
 const Teams = () => {
   return (

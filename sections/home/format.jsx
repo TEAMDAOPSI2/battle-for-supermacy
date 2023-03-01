@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExplosion } from '@fortawesome/free-solid-svg-icons';
+import { Tab } from '@headlessui/react';
+import TabTitle from '@/components/tab-title';
 
 const FormatBoxTop = ({ title, list }) => {
   return (
@@ -27,7 +29,7 @@ const Format = () => {
         </div>
 
         <div className='card bg-soft-black p-5'>
-          <div className='grid grid-cols-3 gap-10'>
+          <div className='grid sm:grid-cols-3 grid-cols-1 gap-10'>
             <FormatBoxTop title='Conference Stage (Season 17)'
                           list={['16 teams', 'Double Elimination', 'Best of 3', 'Top 8 advance to Group Stage']} />
             <FormatBoxTop title='Group Stage'
@@ -39,6 +41,22 @@ const Format = () => {
           <div className='separator py-10'>
             <div>FORMAT DETAILS</div>
           </div>
+
+          {/*  tab panels */}
+          <Tab.Group>
+            <Tab.List className='flex justify-center gap-5 py-6'>
+              <TabTitle>Group Stage</TabTitle>
+              <TabTitle>Playoffs</TabTitle>
+            </Tab.List>
+            <Tab.Panels>
+              <Tab.Panel>
+                <img src="https://eslpro.imgix.net/csgo/proleague/wp-content/uploads/2023/02/epl-17-bracket-pls-work-scaled.jpg?w=1710" alt="" loading='lazy' />
+              </Tab.Panel>
+              <Tab.Panel>
+                <img src="https://eslpro.imgix.net/csgo/proleague/wp-content/uploads/2022/12/EPL-17-Playoff-Bracket-2.jpg?w=1920" alt="" loading='lazy' /> 
+              </Tab.Panel>
+            </Tab.Panels>
+          </Tab.Group>
 
         </div>
 

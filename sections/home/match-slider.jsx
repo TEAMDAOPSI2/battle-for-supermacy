@@ -7,7 +7,7 @@ const MatchBox = ({ time, teams, scores }) => {
   teams.team1 = teams?.team1?.length > 10 ? teams?.team1?.slice(0, 6) + '...' : teams?.team1;
   teams.team2 = teams?.team2?.length > 10 ? teams?.team2?.slice(0, 6) + '...' : teams?.team2;
   return (
-    <div className='match w-1/6 p-2 text-gray-300 font-plus-jakarta-sans'>
+    <div className='match p-2 text-gray-300 font-plus-jakarta-sans'>
       <div className='date mb-2 font-semibold text-sm'>
         {new Date(time).toLocaleDateString('en-ID', {
           weekday: 'long',
@@ -71,8 +71,7 @@ const MatchSlider = () => {
       <div className='prev'>
         <FontAwesomeIcon icon={faChevronLeft} />
       </div>
-      <div className='matches flex flex-1 bg-soft-black'>
-        {/* foreach multiple 10 times */}
+      <div className='matches grid  grid-cols-3 sm:grid-cols-6 bg-soft-black'>
         {
           [...Array(6)].map((_, i) => {
             return (

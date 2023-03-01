@@ -9,7 +9,7 @@ const GroupRegion = ({ region, teams }) => {
       <div className='separator'>
         <div>{region}</div>
       </div>
-      <div className='grid grid-cols-8'>
+      <div className='grid sm:grid-cols-8 grid-cols-3'>
         {
           [x, x, x, x, x, x, x, x, x, x, x].map((team, index) => {
             return (
