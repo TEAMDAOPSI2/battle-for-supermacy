@@ -76,7 +76,7 @@ const MatchSlider = () => {
         {
           [...Array(6)].map((_, i) => {
             return (
-              <MatchBox time={data[0].time} teams={data[0].teams} scores={data[0].scores} />
+              <MatchBox key={i} time={data[0].time} teams={data[0].teams} scores={data[0].scores} />
             );
           })
         }

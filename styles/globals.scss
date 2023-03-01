@@ -2,8 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #1e1e1e;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
 }
 
 //Main Header styling
@@ -40,7 +50,7 @@ body {
 
 // Container
 .page-container {
-  max-width: 940px;
+  max-width: 1024px;
   margin: 0 auto;
   @media screen and (max-width: 1200px) {
     padding: 0 20px;
@@ -74,16 +84,17 @@ body {
   @apply py-[40px];
 }
 
+.page-section-title h2 {
+  line-height: 1em;
+  background-image: url(https://eslpro.imgix.net/csgo/proleague/wp-content/uploads/2020/01/camo-headline-bg.jpg?auto=format%2Ccompress);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
 .home--headline {
-  h2 {
-    line-height: 1em;
-    background-image: url(https://eslpro.imgix.net/csgo/proleague/wp-content/uploads/2020/01/camo-headline-bg.jpg?auto=format%2Ccompress);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: transparent;
-    -webkit-background-clip: text;
-  }
 
   .card {
     border-radius: 10px;
@@ -120,6 +131,15 @@ body {
 .match-slider {
   .match {
     border-left: 1px solid #9C9C93;
+
+    .team {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .team-name {
+      font-size: 16px;
+    }
   }
 
   .match:last-child {
@@ -135,4 +155,45 @@ body {
       background-color: #9C9C93;
     }
   }
+}
+
+.separator {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  div {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0 10px;
+    @apply text-secondary uppercase text-lg;
+  }
+}
+
+.separator:before {
+  display: block;
+  content: "";
+  border-bottom: 0;
+  flex-grow: 1;
+  @apply border-t border-secondary;
+}
+
+.separator:after {
+  display: block;
+  content: "";
+  border-bottom: 0;
+  flex-grow: 1;
+  @apply border-t border-secondary;
+}
+
+.home--format{
+  .format-list-wrapper{
+    @apply px-5;
+  }
+  .format-list-wrapper:nth-child(even) {
+    @apply border-x border-secondary;
+  }
+
 }
