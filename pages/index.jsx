@@ -7,6 +7,7 @@ import Format from '@/sections/home/format';
 import Slot from '@/sections/home/slots';
 import History from '@/sections/home/history';
 import Faq from '@/sections/home/faq';
+import More from '@/sections/home/more';
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <Slot />
       <History />
       <Faq />
+      <More />
     </>
   );
 };

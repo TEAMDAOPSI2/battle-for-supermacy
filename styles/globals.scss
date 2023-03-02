@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-color: #1e1e1e;
+  background-color: #111;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
@@ -45,10 +45,12 @@ img {
       @apply flex flex-row items-center justify-between px-3;
       .img-logo {
         width: 50%;
+
         img {
           width: unset;
         }
       }
+
       .burger {
         font-size: 27px;
         @apply flex text-secondary;
@@ -93,6 +95,7 @@ img {
 #main-page {
   width: calc(100% - 250px);
   margin-left: 250px;
+  position: relative;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -121,6 +124,7 @@ img {
   img {
     height: 70px;
   }
+
   .burger {
     font-size: 27px;
     @apply text-secondary;
@@ -144,7 +148,6 @@ img {
 
 .page-section-title {
   h2 {
-    line-height: 1em;
     background-image: url(https://eslpro.imgix.net/csgo/proleague/wp-content/uploads/2020/01/camo-headline-bg.jpg?auto=format%2Ccompress);
     background-position: center center;
     background-repeat: no-repeat;
@@ -152,9 +155,11 @@ img {
     color: transparent;
     -webkit-background-clip: text;
     @apply sm:text-[3.3rem] text-3xl mb-3;
+    line-height: unset;
   }
-  p{
-    @apply sm:text-[1.8rem] text-xl;
+
+  p {
+    @apply sm:text-[1.8rem] text-xl font-medium;
   }
 }
 
@@ -256,7 +261,25 @@ img {
   .format-list-wrapper {
     @apply px-5;
   }
+
   .format-list-wrapper:nth-child(even) {
     @apply sm:border-x border-x-0 border-y sm:border-y-0 py-3 sm:py-0 border-secondary;
+  }
+}
+
+
+// Footer
+footer {
+  position: relative;
+}
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  left: 250px;
+  width: calc(100% - 250px);
+  @media (max-width: 768px) {
+    left: 0;
+    width: 100%;
   }
 }

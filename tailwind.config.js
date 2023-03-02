@@ -16,7 +16,7 @@ module.exports = {
                 'secondary-dark': '#ff6600',
                 'tertiary-dark': '#ff6600',
                 'dark-gray': '#9C9C93',
-                'soft-black': '#282823',
+                'soft-black': '#1e1e1e',
             },
             fontFamily: {
                 'plus-jakarta-sans': ['Plus Jakarta Sans', 'sans-serif'],
