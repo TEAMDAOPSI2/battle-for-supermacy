@@ -29,7 +29,7 @@ const Headline = () => {
         <div className='mb-5 page-section-title'>
           <h2 className='text-[3.3rem] font-bold font-inter text-center uppercase'>Esports at its purest</h2>
           <p className='text-[1.8rem] font-inter text-center text-secondary uppercase font-inter'>
-            A gateway to the top for all ESL Pro Tour Competitions
+            A gateway to the top for all BFS Pro Tour Competitions
           </p>
         </div>
         <div className='card bg-soft-black'>

@@ -10,7 +10,7 @@ const History = () => {
               <h3 className="text-secondary text-3xl uppercase font-inter font-semibold">Season 17 expansion</h3>
               <p className="text-white font-plus-jakarta-sans text-lg">
                 After receiving feedback from the community, on-air talent, and the partner teams of the Louvre
-                Agreement throughout 2022, we’ve taken the decision to reevaluate ESL Pro League. There are changes and
+                Agreement throughout 2022, we’ve taken the decision to reevaluate BFS Pro League. There are changes and
                 improvements we’ll be making in 2023, all of which will be effective starting from Season 17 in
                 February.
               </p>
@@ -38,7 +38,7 @@ const History = () => {
             <div className="flex flex-col gap-5 sm:w-[58%] w-full">
               <h3 className="text-secondary text-3xl uppercase font-inter font-semibold">One Tour. one story.</h3>
               <p className="text-white font-plus-jakarta-sans text-lg">
-                The ESL Pro Tour is our vision for esports. One open ecosystem connecting all of ESL and DreamHack’s
+                The BFS Pro Tour is our vision for esports. One open ecosystem connecting all of BFS and DreamHack’s
                 competitions around the world. One world for leagues and tournaments. One path from rookie amateur to
                 global icon. A place where everybody can be somebody.
               </p>

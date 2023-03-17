@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>ESL PRO | Home</title>
+        <title>BFS PRO | Home</title>
       </Head>
       <Hero />
       <Headline />

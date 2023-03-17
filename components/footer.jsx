@@ -78,19 +78,19 @@ const Footer = () => {
         <div className='page-container sm:w-[800px] m-auto w-full'>
           <div className='grid sm:grid-cols-3 gap-4'>
             <div className='flex flex-col'>
-              <h3 className='text-white text-xl font-bold font-inter mb-3 uppercase'>ESL Gaming</h3>
+              <h3 className='text-white text-xl font-bold font-inter mb-3 uppercase'>BFS Gaming</h3>
               <ul className='flex flex-col gap-3'>
-                <AnchorText href='#' title='ESL Pro' />
-                <AnchorText href='#' title='ESL Pro Tour' />
-                <AnchorText href='#' title='ESL Shop' />
+                <AnchorText href='#' title='BFS Pro' />
+                <AnchorText href='#' title='BFS Pro Tour' />
+                <AnchorText href='#' title='BFS Shop' />
               </ul>
             </div>
 
             <div className='flex flex-col'>
               <h3 className='text-white text-xl font-bold font-inter mb-3 uppercase'>Contact & press</h3>
               <ul className='flex flex-col gap-3'>
-                <AnchorText href='#' title='csgo@eslgaming.com' />
-                <AnchorText href='#' title='Press@eslgaming.com' />
+                <AnchorText href='#' title='codm@battleforsupremacy.tv' />
+                <AnchorText href='#' title='Press@battleforsupremacy.tv' />
               </ul>
             </div>
 
