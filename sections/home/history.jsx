@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Logo from '@/public/images/logo.png';
 
 const History = () => {
   return (
@@ -30,7 +31,7 @@ const History = () => {
             <div className="flex grow justify-end items-center">
               <img
                 className="h-[230px] m-auto"
-                src="https://pro.eslgaming.com/csgo/proleague/wp-content/uploads/2021/01/ESL-Pro-Tour-csgo-clean.svg?w=768"
+                src={Logo.src}
                 alt=""
               />
             </div>
