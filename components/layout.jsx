@@ -2,6 +2,7 @@ import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import Logo from '@/public/images/logo.png';
 import { useEffect, useState } from 'react';
 
 const Layout = ({ children }) => {
@@ -19,8 +20,9 @@ const Layout = ({ children }) => {
           <div className="sec-nav">
             <div className="image">
               <img
-                src="https://pro.eslgaming.com/csgo/proleague/wp-content/uploads/2021/09/logo-max-esl-pro-league.svg?w=1024&h=1024"
+                src={Logo.src}
                 alt=""
+                className="w-[50px] object-contain"
               />
             </div>
             <div className="burger">
