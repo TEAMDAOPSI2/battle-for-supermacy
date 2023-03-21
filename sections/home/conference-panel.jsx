@@ -1,9 +1,7 @@
+import { useContext } from 'react';
+import articleCtx from '@/context/article-ctx';
+
 const GroupRegion = ({ region, teams }) => {
-  const x = {
-    name: 'Team Falcons',
-    logo: 'https://eslpro.imgix.net/csgo/proleague/wp-content/uploads/2022/06/Falcons-Esports.png?auto=format%2Ccompress&w=150&h=150',
-    detail: 'ecl 142',
-  };
   return (
     <div>
       <div className='separator'>
@@ -11,7 +9,7 @@ const GroupRegion = ({ region, teams }) => {
       </div>
       <div className='grid sm:grid-cols-8 grid-cols-3'>
         {
-          [x, x, x, x, x, x, x, x, x, x, x].map((team, index) => {
+          teams.map((team, index) => {
             return (
               <div key={index} className='col-span-1'>
                 <BoxTeam team={team} />
@@ -25,10 +23,13 @@ const GroupRegion = ({ region, teams }) => {
 };
 
 const BoxTeam = ({ team }) => {
-  const { name, logo, detail } = team;
+  const { name, country, detail } = team;
   return (
     <div className='flex flex-col items-center font-inter my-2'>
-      <img src={logo} alt={name} className='w-[120px] mb-1' />
+      {/*<img src={logo} alt={name} className='w-[120px] mb-1' />*/}
+      <div className='flag w-[120px] text-3xl mb-1 font-flag text-center'>
+        {country  }
+      </div>
       <div className='text-white text-center'>
         <h3 className='font-inter font-bold uppercase text-sm'>{name}</h3>
         <span className='text-dark-gray uppercase text-sm'>{detail}</span>
@@ -38,9 +39,11 @@ const BoxTeam = ({ team }) => {
 };
 
 const ConferencePanel = () => {
+  const article = useContext(articleCtx);
+  const { teams } = article;
   return (
     <div>
-      <GroupRegion region='Europe' teams={[]} />
+      <GroupRegion region='All' teams={teams} />
     </div>
   );
 };

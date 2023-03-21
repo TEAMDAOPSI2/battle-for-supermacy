@@ -1,0 +1,366 @@
+{
+  "series": [
+    {
+      "season": 6,
+      "tagline": "BFS 6",
+      "total_teams": "38",
+      "total_prize_pool": "TBD",
+      "stages": [
+        {
+          "name": "Group Stage",
+          "teams": "38"
+        },
+        {
+          "name": "Finals",
+          "teams": "24"
+        }
+      ],
+      "final_stage": [
+        {
+          "name": "TBD"
+        },
+        {
+          "name": "TBD"
+        },
+        {
+          "name": "TBD"
+        },
+        {
+          "name": "TBD"
+        },
+        {
+          "name": "TBD"
+        },
+        {
+          "name": "TBD"
+        },
+        {
+          "name": "TBD"
+        },
+        {
+          "name": "TBD"
+        }
+      ],
+      "teams": [
+        {
+          "country": "🇮🇹",
+          "name": "CHARLIE21 - REDMOON",
+          "group": "A"
+        },
+        {
+          "country": "🇯🇵",
+          "name": "CHARLIE27 - TSG NEXUS",
+          "group": "A"
+        },
+        {
+          "country": "🇺🇸",
+          "name": "CHARLIE4 - ESCALADE ESPORTS",
+          "group": "A"
+        },
+        {
+          "country": "🇿🇲",
+          "name": "DELTA27 - KILL SQUAD",
+          "group": "A"
+        },
+        {
+          "country": "🇸🇬",
+          "name": "ECHO4 - VAGABONDS ESPORTS",
+          "group": "A"
+        },
+        {
+          "country": "🇮🇷",
+          "name": "FOXTROT25 - UNION丨4Ƙ",
+          "group": "A"
+        },
+        {
+          "country": "🇻🇪",
+          "name": "GOLF24 - TEAM VENEZUELA",
+          "group": "A"
+        },
+        {
+          "country": "🇦🇪",
+          "name": "GOLF29 - TEAMRUSH 3:16",
+          "group": "A"
+        },
+        {
+          "country": "🇺🇸",
+          "name": "JULIET26 - THE ANSEL",
+          "group": "A"
+        },
+        {
+          "country": "🇨🇦",
+          "name": "LIMA27 - MANDORUGAS- DEALS V2",
+          "group": "A"
+        },
+        {
+          "country": "🇳🇬",
+          "name": "MIKE26",
+          "group": "A"
+        },
+        {
+          "country": "🇦🇪",
+          "name": "NOVEMBER29 - ALLSTAR GAMING",
+          "group": "A"
+        },
+        {
+          "country": "🇵🇭",
+          "name": "OSCAR4- T.E.A.M $ALGO",
+          "group": "A"
+        },
+        {
+          "country": "🇪🇬",
+          "name": "ROMEO27 - SAVAGE AMK",
+          "group": "A"
+        },
+        {
+          "country": "🇵🇭",
+          "name": "SIERRA6 - T.E.A.M $KLAY",
+          "group": "A"
+        },
+        {
+          "country": "🇮🇷",
+          "name": "VICTOR26 - VK ESPORTS",
+          "group": "A"
+        },
+        {
+          "country": "🇲🇹",
+          "name": "VICTOR6 - EURO ESPORTS RAIJIN",
+          "group": "A"
+        },
+        {
+          "country": "🇮🇹",
+          "name": "WHISKEY26 - ExT BiANCO",
+          "group": "A"
+        },
+        {
+          "country": "🇸🇪",
+          "name": "YANKEE24 - TRASHTALKER",
+          "group": "A"
+        },
+        {
+          "country": "🇮🇳",
+          "name": "INDIA29 - RNT",
+          "group": "B"
+        },
+        {
+          "country": "🇳🇬",
+          "name": "HOTEL29",
+          "group": "B"
+        },
+        {
+          "country": "🇵🇪",
+          "name": "UNICORN27 - X TEAM",
+          "group": "B"
+        },
+        {
+          "country": "🇵🇭",
+          "name": "ROMEO4 - T.E.A.M $SAND",
+          "group": "B"
+        },
+        {
+          "country": "🇯🇵",
+          "name": "YANKEE6 - SG PHANTOM",
+          "group": "B"
+        },
+        {
+          "country": "🇸🇦",
+          "name": "YANKEE26 - ASG x VVV TEAM",
+          "group": "B"
+        },
+        {
+          "country": "🇲🇦",
+          "name": "DELTA29 - THE GHOST",
+          "group": "B"
+        },
+        {
+          "country": "🇺🇸",
+          "name": "GOLF27 - EPS 4:32 T2",
+          "group": "B"
+        },
+        {
+          "country": "🇮🇳",
+          "name": "ROMEO24 - HL INDIA",
+          "group": "B"
+        },
+        {
+          "country": "🇸🇦",
+          "name": "SIERRA24- OBSERVANT FORCE",
+          "group": "B"
+        },
+        {
+          "country": "🇮🇹",
+          "name": "LIMA24 - EURO ESPORTS OSIRIS",
+          "group": "B"
+        },
+        {
+          "country": "🇯🇲",
+          "name": "OSCAR26- YAADIE GANGSTAS",
+          "group": "B"
+        },
+        {
+          "country": "\uD83C\uDDE8\uD83C\uDDE6",
+          "name": "MIKE27 - MANDORUGAS- DEALS",
+          "group": "B"
+        },
+        {
+          "country": "🇮🇳",
+          "name": "ECHO15 - TEAM CALIX",
+          "group": "B"
+        },
+        {
+          "country": "🇮🇳",
+          "name": "JULIET26 - KAALA TIKKA",
+          "group": "B"
+        },
+        {
+          "country": "🇧🇷",
+          "name": "PAPA26 - FIERCE",
+          "group": "B"
+        },
+        {
+          "country": "🇷🇺",
+          "name": "ECHO27 - CARTEL- BEGGARS",
+          "group": "B"
+        },
+        {
+          "country": "🇵🇰",
+          "name": "LIMA29",
+          "group": "B"
+        },
+        {
+          "country": "🇸🇦",
+          "name": "INDIA27 - VEX MAIN TEAM",
+          "group": "B"
+        }
+      ],
+      "main_banner": {
+        "title": "PUBG MOBILE CLUB OPEN 2020",
+        "subtitle": "SEASON ZERO",
+        "description": "The PUBG MOBILE Club Open 2020 is a global tournament for PUBG MOBILE esports teams. The tournament will feature 16 teams from each region, with the top 8 teams from each region advancing to the PMCO 2020 Finals. The PMCO 2020 Finals will be held in Berlin, Germany, with a prize pool of $2,000,000 USD.",
+        "image": "https://cdn.pubg.com/wp-content/uploads/2020/03/PMCO-2020-Season-0-Header-Image.jpg"
+      },
+      "tournament_schedule": [
+        {
+          "title": "Group A",
+          "date": "March 25, 2023"
+        },
+        {
+          "title": "Group B",
+          "date": "March 27, 2023"
+        },
+        {
+          "title": "Finals",
+          "date": "April 01, 2023"
+        }
+      ],
+      "global_time": [
+        {
+          "country": "Jamaica",
+          "code": "🇯🇲",
+          "time": "(11AM/11:00)"
+        },
+        {
+          "country": "Peru",
+          "code": "🇵🇪",
+          "time": "(11AM/11:00)"
+        },
+        {
+          "country": "USA",
+          "code": "🇺🇸(11AM/",
+          "time": "11:00)"
+        },
+        {
+          "country": "United Kingdom",
+          "code": "🇬🇧",
+          "time": "(4PM/16:00)"
+        },
+        {
+          "country": "Italy",
+          "code": "🇮🇹",
+          "time": "(5PM/17:00)"
+        },
+        {
+          "country": "Malta",
+          "code": "🇲🇹",
+          "time": "(5PM/17:00)"
+        },
+        {
+          "country": "Nigeria",
+          "code": "🇳🇬",
+          "time": "(5PM/ 17:00)"
+        },
+        {
+          "country": "Egypt",
+          "code": "🇪🇬",
+          "time": "(6PM/18:00)"
+        },
+        {
+          "country": "Zambia",
+          "code": "🇿🇲",
+          "time": "(6PM/18:00)"
+        },
+        {
+          "country": "Saudi Arabia",
+          "code": "🇸🇦",
+          "time": "(7PM/ 19:00)"
+        },
+        {
+          "country": "Russia",
+          "code": "🇷🇺",
+          "time": "(7PM/19:00)"
+        },
+        {
+          "country": "Iran",
+          "code": "🇮🇷",
+          "time": "(7:30 PM/ 19:30)"
+        },
+        {
+          "country": "UAE",
+          "code": "🇦🇪",
+          "time": "(8PM/ 20:00)"
+        },
+        {
+          "country": "India",
+          "code": "🇮🇳",
+          "time": "(9PM/21:00 )"
+        },
+        {
+          "country": "Philippines",
+          "code": "🇵🇭",
+          "time": "(12AM/24:00)"
+        }
+      ],
+      "rules": {
+        "all": [
+          {
+            "title": "General Rules",
+            "list": [
+              "➡️ Elimination : 3 Rounds - TPP (Isolated and Blackout)",
+              "➡️ Finals: 4 Rounds (Isolated and Blackout)"
+            ]
+          },
+          {
+            "title": "game mechanics",
+            "list": [
+              "➡️Top 12 teams per group will proceed to FINALS",
+              "➡️Player will receive additional reward for killing MOST WANTED PLAYER"
+            ]
+          },
+          {
+            "title": "Match Rules",
+            "list": [
+              "\uD83D\uDEAB No Cheating or Hacking",
+              "\uD83D\uDEAB No Test Deposit, No Play",
+              "✅ All weapons, skins, class and vehicles are allowed",
+              "✅ Trash talk is allowed"
+            ]
+          }
+        ],
+        "note": [
+          "➡️Failure to follow the rules will be automatically disqualified",
+          "➡️If there's any problem during the event, TEAMDAO CODM Department will have the right to decide"
+        ]
+      }
+    }
+  ]
+}

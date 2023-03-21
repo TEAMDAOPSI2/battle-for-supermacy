@@ -2,6 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExplosion } from '@fortawesome/free-solid-svg-icons';
 import { Tab } from '@headlessui/react';
 import TabTitle from '@/components/tab-title';
+import { useContext } from 'react';
+import articleCtx from '@/context/article-ctx';
 
 const FormatBoxTop = ({ title, list }) => {
   return (
@@ -11,7 +13,7 @@ const FormatBoxTop = ({ title, list }) => {
         {
           list.map((item, index) => (
             <li key={index} className='font-inter text-white list-none'>
-              <FontAwesomeIcon icon={faExplosion} /> {item}
+              {item}
             </li>
           ))
         }
@@ -21,6 +23,8 @@ const FormatBoxTop = ({ title, list }) => {
 };
 
 const Format = () => {
+  const article = useContext(articleCtx)
+  const { rules } = article
   return (
     <section className='default-section home--format'>
       <div className='page-container'>
@@ -30,12 +34,24 @@ const Format = () => {
 
         <div className='card bg-soft-black p-5'>
           <div className='grid sm:grid-cols-3 grid-cols-1 gap-10'>
-            <FormatBoxTop title='Conference Stage (Season 17)'
-                          list={['16 teams', 'Double Elimination', 'Best of 3', 'Top 8 advance to Group Stage']} />
-            <FormatBoxTop title='Group Stage'
-                          list={['16 teams', 'Double Elimination', 'Best of 3', 'Top 8 advance to Playoffs']} />
-            <FormatBoxTop title='Playoffs'
-                          list={['8 teams', 'Double Elimination', 'Best of 3', 'Single Elimination bracket']} />
+            {
+              rules?.all.map((rule, index) => {
+                return (
+                  <FormatBoxTop key={index} title={rule?.title} list={rule?.list} />
+                );
+              })
+            }
+          </div>
+          <div className="text-sm italic underline decoration-accent py-3">
+            {
+              rules?.note.map((note, index) => {
+                return (
+                  <p key={index} className='text-white'>
+                    {note}
+                  </p>
+                );
+              })
+            }
           </div>
 
           <div className='separator py-10'>

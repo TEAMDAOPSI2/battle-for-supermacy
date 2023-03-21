@@ -1,0 +1,17 @@
+{
+  "teams": [
+    {
+      "id": 1,
+      "name": "CHARLIE21 - REDMOON",
+      "country": "🇮🇹",
+      "group": "A"
+    },
+    {
+      "name": "CHARLIE27 - TSG NEXUS",
+      "country": "🇯🇵",
+      "group": "A",
+      "id": 2
+    }
+  ]
+}
+
