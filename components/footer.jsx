@@ -35,44 +35,44 @@ const AnchorIcon = ({ href, icon }) => {
 };
 
 const Footer = () => {
-  const [fixed, setFixed] = useState(true);
-
-  const handleScroll = () => {
-    const pageHeight = document.body.scrollHeight;
-    const scrollHeight = window.scrollY;
-    const windowHeight = window.innerHeight;
-
-
-
-    if ((pageHeight - (scrollHeight + windowHeight)) < 300) {
-      setFixed(false);
-    } else {
-      setFixed(true);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      handleScroll();
-    });
-
-  }, []);
+  // const [fixed, setFixed] = useState(true);
+  //
+  // const handleScroll = () => {
+  //   const pageHeight = document.body.scrollHeight;
+  //   const scrollHeight = window.scrollY;
+  //   const windowHeight = window.innerHeight;
+  //
+  //
+  //
+  //   if ((pageHeight - (scrollHeight + windowHeight)) < 300) {
+  //     setFixed(false);
+  //   } else {
+  //     setFixed(true);
+  //   }
+  // };
+  //
+  // useEffect(() => {
+  //   window.addEventListener('scroll', () => {
+  //     handleScroll();
+  //   });
+  //
+  // }, []);
 
   return (
-    <footer className='footer bg-soft-black '>
-      <div className={`top bg-soft-black border-y border-gray-700 ${fixed ? 'fixed-footer' : ''}`}>
-        <div className='page-container'>
-          <div className='grid sm:grid-cols-7 grid-cols-2'>
-            <BoxPartner image={''} url={'https://www.intel.com/content/www/us/en/homepage.html'} />
-            <BoxPartner image={''} url={'https://www.intel.com/content/www/us/en/homepage.html'} />
-            <BoxPartner image={''} url={'https://www.intel.com/content/www/us/en/homepage.html'} />
-            <BoxPartner image={''} url={'https://www.intel.com/content/www/us/en/homepage.html'} />
-            <BoxPartner image={''} url={'https://www.intel.com/content/www/us/en/homepage.html'} />
-            <BoxPartner image={''} url={'https://www.intel.com/content/www/us/en/homepage.html'} />
-            <BoxPartner image={''} url={'https://www.intel.com/content/www/us/en/homepage.html'} />
-          </div>
-        </div>
-      </div>
+    <footer className='footer bg-soft-black mb-[55px]'>
+      {/*<div className={`top bg-soft-black border-y border-gray-700 ${fixed ? 'fixed-footer' : ''}`}>*/}
+      {/*  <div className='page-container'>*/}
+      {/*    <div className='grid sm:grid-cols-7 grid-cols-2'>*/}
+      {/*      <BoxPartner image={''} url={'https://www.intel.com/content/www/us/en/homepage.html'} />*/}
+      {/*      <BoxPartner image={''} url={'https://www.intel.com/content/www/us/en/homepage.html'} />*/}
+      {/*      <BoxPartner image={''} url={'https://www.intel.com/content/www/us/en/homepage.html'} />*/}
+      {/*      <BoxPartner image={''} url={'https://www.intel.com/content/www/us/en/homepage.html'} />*/}
+      {/*      <BoxPartner image={''} url={'https://www.intel.com/content/www/us/en/homepage.html'} />*/}
+      {/*      <BoxPartner image={''} url={'https://www.intel.com/content/www/us/en/homepage.html'} />*/}
+      {/*      <BoxPartner image={''} url={'https://www.intel.com/content/www/us/en/homepage.html'} />*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
 
       <div className='information py-6'>
         <div className='page-container sm:w-[800px] m-auto w-full'>

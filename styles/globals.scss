@@ -123,7 +123,7 @@ img {
   padding: 10px 20px;
   @apply bg-soft-black;
   margin-top: -60px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  //box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   display: none;
   z-index: 299;
 
@@ -300,6 +300,19 @@ footer {
   }
 }
 
-.hexagon {
+.match-nav{
+  background: linear-gradient(270deg,#0070f3,#db2b42,#0070f3,#db2b42) 0 100% #101010 no-repeat;
+  background-size: 100% 2px;
 
+  @media (max-width: 768px) {
+    margin-top: 25px;
+  }
+}
+
+.footer-sponsor{
+  height: 55px;
+  position: fixed;
+  bottom: 0;
+  background: linear-gradient(270deg,#0070f3,#db2b42,#0070f3,#db2b42) 0 0 #101010 no-repeat;
+  background-size: 100% 2px;
 }

@@ -47,7 +47,7 @@ const Home = () => {
             <>
               <Hero />
               <Headline />
-              <Match />
+              {/*<Match />*/}
               <Teams />
               <Format />
               <Slot />
