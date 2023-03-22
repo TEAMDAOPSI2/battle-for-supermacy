@@ -4,7 +4,7 @@ const NavbarMatch = () => {
   return (
     <div className='match-nav bg-soft-black flex items-center h-[55px] fixed z-[1] w-full'>
       <div className='px-6 flex flex-row text-white gap-2'>
-        <p className='w-1/12'>Match Update :</p>
+        <p className='w-1/12 sm:flex hidden'>Match Update :</p>
         <Marquee
           loop={0}
           gradient={false}>

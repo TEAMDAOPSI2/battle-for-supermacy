@@ -3,7 +3,7 @@ import articleCtx from '@/context/article-ctx';
 
 const GroupTeam = ({ title, teams }) => {
   return (
-    <div className='flex flex-col mb-6 border border-dotted border-white px-6 py-3'>
+    <div className='flex flex-col mb-6 border border-dotted border-white sm:px-6 px-1 py-3'>
       <h3 className='text-2xl font-bold text-white mb-6'>{title}</h3>
       <div className='grid sm:grid-cols-3 gap-2 grid-cols-1'>
         {
@@ -45,7 +45,7 @@ const Team = ({ team }) => {
         </div>
 
         <div className='text'>
-          <p className='text-white text-center uppercase font-medium font-inter'>{team?.name}</p>
+          <p className='text-white text-center uppercase font-medium font-inter sm:text-base text-sm'>{team?.name}</p>
         </div>
       </div>
     </div>

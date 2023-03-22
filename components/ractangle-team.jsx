@@ -10,7 +10,7 @@ const RactangleTeam = ({ name, image = '', className = '' }) => {
           height="80px"
           points='50 1 95 25 95 75 50 99 5 75 5 25' />
       </svg>
-      <div className='absolute flex flex-col items-center top-4'>
+      <div className='absolute flex flex-col items-center sm:top-4 top-3'>
         <div className='w-full h-full '>
           <img src={image} alt={name} loading="lazy" className='w-full h-full object-contain inset-0' />
         </div>
