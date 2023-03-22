@@ -24,7 +24,7 @@ const FormatBoxTop = ({ title, list }) => {
 
 const Format = () => {
   const article = useContext(articleCtx)
-  const { rules } = article
+  const { rules, stages } = article
   return (
     <section className='default-section home--format'>
       <div className='page-container'>
@@ -61,16 +61,30 @@ const Format = () => {
           {/*  tab panels */}
           <Tab.Group>
             <Tab.List className='flex justify-center gap-5 py-6'>
-              <TabTitle>Group Stage</TabTitle>
-              <TabTitle>Playoffs</TabTitle>
+              {
+                stages?.map((stage, index) => {
+                  return (
+                    <TabTitle key={index}>{stage?.name}</TabTitle>
+                  );
+                })
+              }
             </Tab.List>
             <Tab.Panels>
-              <Tab.Panel>
-                <img src="https://eslpro.imgix.net/csgo/proleague/wp-content/uploads/2023/02/epl-17-bracket-pls-work-scaled.jpg?w=1710" alt="" loading='lazy' />
-              </Tab.Panel>
-              <Tab.Panel>
-                <img src="https://eslpro.imgix.net/csgo/proleague/wp-content/uploads/2022/12/EPL-17-Playoff-Bracket-2.jpg?w=1920" alt="" loading='lazy' /> 
-              </Tab.Panel>
+              {
+                stages?.map((stage, index) => {
+                  const { name, format } = stage
+
+                  return(
+                    <Tab.Panel key={index}>
+                      {
+                        format?.map((item, index) => (
+                          <p className="text-white py-3">{item}</p>
+                        ))
+                      }
+                    </Tab.Panel>
+                  )
+                })
+              }
             </Tab.Panels>
           </Tab.Group>
 

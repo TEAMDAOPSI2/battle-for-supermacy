@@ -38,14 +38,14 @@ const TabElement = ({ stages }) => {
 
 const Teams = () => {
   const article = useContext(articleCtx);
-  const { teams, stages } = article;
+  const { teams, stages, stages_count } = article;
   return (
     <section className='default-section' id='teams'>
       <div className='page-container'>
         <div className='page-section-title'>
           <h2 className='text-[3.3rem] font-bold font-inter text-center uppercase'>The biggest CODM League</h2>
           <p className='text-[1.8rem] font-inter text-center text-secondary uppercase font-inter'>{teams?.length} teams
-            | {`${stages.length} Stage`} |
+            | {`${stages_count}`} |
             Global Competition
           </p>
         </div>

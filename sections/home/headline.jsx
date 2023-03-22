@@ -26,13 +26,13 @@ const BoxSecondHeadline = (props) => {
 
 const Headline = () => {
   const article = useContext(articleCtx)
-  const{ total_prize_pool, teams, tournament_schedule} = article
+  const{ total_prize_pool, teams,league, tournament_schedule} = article
 
   return (
     <section className='home--headline default-section'>
       <div className='page-container'>
         <div className='mb-5 page-section-title'>
-          <h2 className='text-[3.3rem] font-bold font-inter text-center uppercase'>Esports at its purest</h2>
+          <h2 className='text-[3.3rem] font-bold font-inter text-center uppercase'>{league}</h2>
           <p className='text-[1.8rem] font-inter text-center text-secondary uppercase font-inter'>
             A gateway to the top for all BFS Pro Tour Competitions
           </p>

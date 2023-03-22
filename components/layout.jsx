@@ -3,7 +3,7 @@ import Footer from '@/components/footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Logo from '@/public/images/logo.png';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const Layout = ({ children }) => {
   const [navbar, setNavbar] = useState(false);

@@ -2,17 +2,26 @@
   "series": [
     {
       "season": 6,
+      "league": "BFS CODM Super League",
       "tagline": "BFS 6",
       "total_teams": "38",
-      "total_prize_pool": "TBD",
+      "total_prize_pool": "$1,888",
+      "stages_count": " 2 BRACKETS / 2 GROUPS",
       "stages": [
         {
-          "name": "Group Stage",
-          "teams": "38"
+          "name": "Elimination",
+          "teams": "38",
+          "format": [
+            "Group A = 19 TEAMS (Top 12 will proceed to finals)",
+            "Group B = 19 TEAMS (Top 12 will proceed to finals)"
+          ]
         },
         {
           "name": "Finals",
-          "teams": "24"
+          "teams": "24",
+          "format": [
+            "Finals = 24 TEAMS"
+          ]
         }
       ],
       "final_stage": [
@@ -63,7 +72,7 @@
           "group": "A"
         },
         {
-          "country": "🇸🇬",
+          "country": "\uD83C\uDDF5\uD83C\uDDED",
           "name": "ECHO4 - VAGABONDS ESPORTS",
           "group": "A"
         },
@@ -358,7 +367,7 @@
         ],
         "note": [
           "➡️Failure to follow the rules will be automatically disqualified",
-          "➡️If there's any problem during the event, TEAMDAO CODM Department will have the right to decide"
+          "➡️If there's any problem during the event, BFS CODM Department will have the right to decide"
         ]
       }
     }

@@ -89,8 +89,8 @@ const Footer = () => {
             <div className='flex flex-col'>
               <h3 className='text-white text-xl font-bold font-inter mb-3 uppercase'>Contact & press</h3>
               <ul className='flex flex-col gap-3'>
-                <AnchorText href='#' title='codm@battleforsupremacy.tv' />
-                <AnchorText href='#' title='Press@battleforsupremacy.tv' />
+                <AnchorText href='mailto:email@battleforsupremacy.tv' title='email@battleforsupremacy.tv' />
+                <AnchorText href='mailto:Press@battleforsupremacy.tv' title='Press@battleforsupremacy.tv' />
               </ul>
             </div>
 

@@ -50,7 +50,7 @@ const Home = () => {
               <Match />
               <Teams />
               <Format />
-              <Slot />
+              {/*<Slot />*/}
               <History />
               <Faq />
               <More />
