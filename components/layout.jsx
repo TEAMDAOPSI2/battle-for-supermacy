@@ -20,12 +20,13 @@ const Layout = ({ children }) => {
         <Navbar isActive={navbar} action={setNavbar} />
         <main id='main-page'>
           <div className='sec-nav'>
-            <div className='image'>
+            <div className='image flex flex-row items-center gap-1'>
               <img
                 src={Logo.src}
                 alt=''
                 className='w-[50px] object-contain'
               />
+              <h3 className="text-white font-inter text-2xl">Battle For Supremacy</h3>
             </div>
             <div className='burger'>
               <button onClick={handleNavbar}>
