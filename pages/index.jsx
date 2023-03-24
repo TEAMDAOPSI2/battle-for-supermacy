@@ -51,7 +51,7 @@ const Home = () => {
               <Teams />
               <Format />
               <Slot />
-              <History />
+              {/*<History />*/}
               <Faq />
               <More />
             </>
