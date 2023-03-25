@@ -34,8 +34,7 @@ const Layout = ({ children }) => {
               </button>
             </div>
           </div>
-          <NavbarMatch />
-          <div className='mt-[55px]' />
+
           {children}
           <Footer />
           <FooterSponsor />

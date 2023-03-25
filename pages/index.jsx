@@ -8,6 +8,7 @@ import Slot from '@/sections/home/slots';
 import History from '@/sections/home/history';
 import Faq from '@/sections/home/faq';
 import More from '@/sections/home/more';
+import NavbarMatch from '@/components/navbar-match';
 import db from '@/db.json';
 import articleCtx from '@/context/article-ctx';
 import { useEffect, useState } from 'react';
@@ -19,45 +20,46 @@ const Home = () => {
     return db.series.find((series) => {
       return series?.season === id;
     });
-  }
+  };
 
   useEffect(() => {
-    const article = findArticle(6)
+    const article = findArticle(6);
     console.log(article);
     setArticle(article);
   }, []);
 
-
   const Loader = () => {
     return (
-      <div className='flex justify-center items-center h-screen'>
-        <div className='loader'/>
+      <div className="flex justify-center items-center h-screen">
+        <div className="loader" />
       </div>
     );
-  }
+  };
 
   return (
     <>
-     <articleCtx.Provider value={article}>
-       <Head>
-         <title>BFS PRO | Home</title>
-       </Head>
-       {
-          article ? (
-            <>
-              <Hero />
-              <Headline />
-              {/*<Match />*/}
-              <Teams />
-              <Format />
-              <Slot />
-              {/*<History />*/}
-              <Faq />
-              <More />
-            </>
-          ) : <Loader />
-       }
-     </articleCtx.Provider>
+      <articleCtx.Provider value={article}>
+        <Head>
+          <title>BFS PRO | Home</title>
+        </Head>
+        {article ? (
+          <>
+            <NavbarMatch />
+            <div className="mt-[55px]" />
+            <Hero />
+            <Headline />
+            {/*<Match />*/}
+            <Teams />
+            <Format />
+            <Slot />
+            {/*<History />*/}
+            <Faq />
+            <More />
+          </>
+        ) : (
+          <Loader />
+        )}
+      </articleCtx.Provider>
     </>
   );
 };

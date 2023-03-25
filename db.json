@@ -242,6 +242,126 @@
           "group": "B"
         }
       ],
+      "games": {
+        "group_stage": {
+          "round_one_group_a": [
+            {
+              "country": "🇮🇹",
+              "name": "CHARLIE21 - REDMOON",
+              "group": "A",
+              "score": "08"
+            },
+            {
+              "country": "🇯🇵",
+              "name": "CHARLIE27 - TSG NEXUS",
+              "group": "A",
+              "score": "03"
+            },
+            {
+              "country": "🇺🇸",
+              "name": "CHARLIE4 - ESCALADE ESPORTS",
+              "group": "A",
+              "score": "07"
+            },
+            {
+              "country": "🇿🇲",
+              "name": "DELTA27 - KILL SQUAD",
+              "group": "A",
+              "score": "00"
+            },
+            {
+              "country": "\uD83C\uDDF5\uD83C\uDDED",
+              "name": "ECHO4 - VAGABONDS ESPORTS",
+              "group": "A",
+              "score": "03"
+            },
+            {
+              "country": "🇮🇷",
+              "name": "FOXTROT25 - UNION丨4Ƙ",
+              "group": "A",
+              "score": "03"
+            },
+            {
+              "country": "🇻🇪",
+              "name": "GOLF24 - TEAM VENEZUELA",
+              "group": "A",
+              "score": "00"
+            },
+            {
+              "country": "🇦🇪",
+              "name": "GOLF29 - TEAMRUSH 3:16",
+              "group": "A",
+              "score": "04"
+            },
+            {
+              "country": "🇺🇸",
+              "name": "JULIET26 - THE ANSEL",
+              "group": "A",
+              "score": "00"
+            },
+            {
+              "country": "🇨🇦",
+              "name": "LIMA27 - MANDORUGAS- DEALS V2",
+              "group": "A",
+              "score": "01"
+            },
+            {
+              "country": "🇳🇬",
+              "name": "MIKE26",
+              "group": "A",
+              "score": "00"
+            },
+            {
+              "country": "🇦🇪",
+              "name": "NOVEMBER29 - ALLSTAR GAMING",
+              "group": "A",
+              "score": "06"
+            },
+            {
+              "country": "🇵🇭",
+              "name": "OSCAR4- T.E.A.M $ALGO",
+              "group": "A",
+              "score": "00"
+            },
+            {
+              "country": "🇪🇬",
+              "name": "ROMEO27 - SAVAGE AMK",
+              "group": "A",
+              "score": "26"
+            },
+            {
+              "country": "🇵🇭",
+              "name": "SIERRA6 - T.E.A.M $KLAY",
+              "group": "A",
+              "score": "03"
+            },
+            {
+              "country": "🇮🇷",
+              "name": "VICTOR26 - VK ESPORTS",
+              "group": "A",
+              "score": "00"
+            },
+            {
+              "country": "🇲🇹",
+              "name": "VICTOR6 - EURO ESPORTS RAIJIN",
+              "group": "A",
+              "score": "11"
+            },
+            {
+              "country": "🇮🇹",
+              "name": "WHISKEY26 - ExT BiANCO",
+              "group": "A",
+              "score": "05"
+            },
+            {
+              "country": "🇸🇪",
+              "name": "YANKEE24 - TRASHTALKER",
+              "group": "A",
+              "score": "0"
+            }
+          ]
+        }
+      },
       "main_banner": {
         "title": "PUBG MOBILE CLUB OPEN 2020",
         "subtitle": "SEASON ZERO",
