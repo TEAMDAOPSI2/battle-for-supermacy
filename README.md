@@ -36,3 +36,216 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+TOP 1: ROMEO27 (SAVAGE AMK)🇮🇶
+TOP 2: CHARLIE21 (REDMOON)🇮🇹
+TOP 3: YANKEE24 (TRASHTALKER)🇦🇽
+TOP 4: WHISKEY26 (TEAM BIANCO)🇮🇹
+TOP 5: CHARLIE4 ( ESCALADE ESPORTS)🇺🇲
+TOP 6: VICTOR6 (EURO ESPORTS RAIJIN)🇲🇹
+TOP 7: SIERRA6 ( T.E.A.M $KLAY)🇵🇭
+TOP 8: NOVEMBER29 (ALLSTAR GAMING)🇦🇪
+TOP 9: OSCAR4 (T.E.A.M $ALGO)🇵🇭
+TOP 10: LIMA27 (MANDORUGAS DEALS V2) 🇨🇦
+TOP 11: FOXTROT25 (UNION 4K)🇮🇷
+TOP 12: CHARLIE27 (TSG NEXUS)
+TOP 13: GOLF29 (TEAMRUSH 3:16)🇦🇪
+
+```json
+{
+  "teams": [
+    {
+      "country": "🇮🇹",
+      "name": "CHARLIE21 - REDMOON",
+      "group": "A"
+    },
+    {
+      "country": "🇯🇵",
+      "name": "CHARLIE27 - TSG NEXUS",
+      "group": "A"
+    },
+    {
+      "country": "🇺🇸",
+      "name": "CHARLIE4 - ESCALADE ESPORTS",
+      "group": "A"
+    },
+    {
+      "country": "🇿🇲",
+      "name": "DELTA27 - KILL SQUAD",
+      "group": "A"
+    },
+    {
+      "country": "\uD83C\uDDF5\uD83C\uDDED",
+      "name": "ECHO4 - VAGABONDS ESPORTS",
+      "group": "A"
+    },
+    {
+      "country": "🇮🇷",
+      "name": "FOXTROT25 - UNION丨4Ƙ",
+      "group": "A"
+    },
+    {
+      "country": "🇻🇪",
+      "name": "GOLF24 - TEAM VENEZUELA",
+      "group": "A"
+    },
+    {
+      "country": "🇦🇪",
+      "name": "GOLF29 - TEAMRUSH 3:16",
+      "group": "A"
+    },
+    {
+      "country": "🇺🇸",
+      "name": "JULIET26 - THE ANSEL",
+      "group": "A"
+    },
+    {
+      "country": "🇨🇦",
+      "name": "LIMA27 - MANDORUGAS- DEALS V2",
+      "group": "A"
+    },
+    {
+      "country": "🇳🇬",
+      "name": "MIKE26",
+      "group": "A"
+    },
+    {
+      "country": "🇦🇪",
+      "name": "NOVEMBER29 - ALLSTAR GAMING",
+      "group": "A"
+    },
+    {
+      "country": "🇵🇭",
+      "name": "OSCAR4- T.E.A.M $ALGO",
+      "group": "A"
+    },
+    {
+      "country": "🇪🇬",
+      "name": "ROMEO27 - SAVAGE AMK",
+      "group": "A"
+    },
+    {
+      "country": "🇵🇭",
+      "name": "SIERRA6 - T.E.A.M $KLAY",
+      "group": "A"
+    },
+    {
+      "country": "🇮🇷",
+      "name": "VICTOR26 - VK ESPORTS",
+      "group": "A"
+    },
+    {
+      "country": "🇲🇹",
+      "name": "VICTOR6 - EURO ESPORTS RAIJIN",
+      "group": "A"
+    },
+    {
+      "country": "🇮🇹",
+      "name": "WHISKEY26 - ExT BiANCO",
+      "group": "A"
+    },
+    {
+      "country": "🇸🇪",
+      "name": "YANKEE24 - TRASHTALKER",
+      "group": "A"
+    },
+    {
+      "country": "🇮🇳",
+      "name": "INDIA29 - RNT",
+      "group": "B"
+    },
+    {
+      "country": "🇳🇬",
+      "name": "HOTEL29",
+      "group": "B"
+    },
+    {
+      "country": "🇵🇪",
+      "name": "UNICORN27 - X TEAM",
+      "group": "B"
+    },
+    {
+      "country": "🇵🇭",
+      "name": "ROMEO4 - T.E.A.M $SAND",
+      "group": "B"
+    },
+    {
+      "country": "🇯🇵",
+      "name": "YANKEE6 - SG PHANTOM",
+      "group": "B"
+    },
+    {
+      "country": "🇸🇦",
+      "name": "YANKEE26 - ASG x VVV TEAM",
+      "group": "B"
+    },
+    {
+      "country": "🇲🇦",
+      "name": "DELTA29 - THE GHOST",
+      "group": "B"
+    },
+    {
+      "country": "🇺🇸",
+      "name": "GOLF27 - EPS 4:32 T2",
+      "group": "B"
+    },
+    {
+      "country": "🇮🇳",
+      "name": "ROMEO24 - HL INDIA",
+      "group": "B"
+    },
+    {
+      "country": "🇸🇦",
+      "name": "SIERRA24- OBSERVANT FORCE",
+      "group": "B"
+    },
+    {
+      "country": "🇮🇹",
+      "name": "LIMA24 - EURO ESPORTS OSIRIS",
+      "group": "B"
+    },
+    {
+      "country": "🇯🇲",
+      "name": "OSCAR26- YAADIE GANGSTAS",
+      "group": "B"
+    },
+    {
+      "country": "\uD83C\uDDE8\uD83C\uDDE6",
+      "name": "MIKE27 - MANDORUGAS- DEALS",
+      "group": "B"
+    },
+    {
+      "country": "🇮🇳",
+      "name": "ECHO15 - TEAM CALIX",
+      "group": "B"
+    },
+    {
+      "country": "🇮🇳",
+      "name": "JULIET26 - KAALA TIKKA",
+      "group": "B"
+    },
+    {
+      "country": "🇧🇷",
+      "name": "PAPA26 - FIERCE",
+      "group": "B"
+    },
+    {
+      "country": "🇷🇺",
+      "name": "ECHO27 - CARTEL- BEGGARS",
+      "group": "B"
+    },
+    {
+      "country": "🇵🇰",
+      "name": "LIMA29",
+      "group": "B"
+    },
+    {
+      "country": "🇸🇦",
+      "name": "INDIA27 - VEX MAIN TEAM",
+      "group": "B"
+    }
+  ]
+}
+
+```
