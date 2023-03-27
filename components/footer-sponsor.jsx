@@ -1,6 +1,5 @@
 import Marquee from 'react-fast-marquee';
 const BoxPartner = ({ image, url }) => {
-  console.log(image);
   return (
     <div className='p-3'>
       {/*<Link href={url} className='flex justify-center'>*/}
