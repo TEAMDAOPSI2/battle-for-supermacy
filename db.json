@@ -26,81 +26,125 @@
       ],
       "final_stage": [
         {
-          "country": "🇪🇬",
-          "name": "ROMEO27 - SAVAGE AMK"
-        },
-        {
-          "country": "🇮🇹",
-          "name": "CHARLIE21 - REDMOON"
-        },
-        {
-          "country": "🇸🇪",
-          "name": "YANKEE24 - TRASHTALKER"
-        },
-        {
-          "country": "🇮🇹",
-          "name": "WHISKEY26 - ExT BiANCO"
-        },
-        {
-          "country": "🇺🇸",
-          "name": "CHARLIE4 - ESCALADE ESPORTS"
-        },
-        {
-          "country": "🇲🇹",
-          "name": "VICTOR6 - EURO ESPORTS RAIJIN"
-        },
-        {
-          "country": "🇵🇭",
-          "name": "SIERRA6 - T.E.A.M $KLAY"
-        },
-        {
-          "country": "🇦🇪",
-          "name": "NOVEMBER29 - ALLSTAR GAMING"
-        },
-        {
-          "country": "🇵🇭",
-          "name": "OSCAR4- T.E.A.M $ALGO"
-        },
-        {
-          "country": "🇨🇦",
-          "name": "LIMA27 - MANDORUGAS- DEALS V2"
-        },
-        {
-          "country": "🇮🇷",
-          "name": "FOXTROT25 - UNION丨4Ƙ"
-        },
-        {
-          "country": "🇯🇵",
-          "name": "CHARLIE27 - TSG NEXUS"
-        },
-        {
-          "country": "🇦🇪",
-          "name": "GOLF29 - TEAMRUSH 3:16"
-        },
-        {
-          "name": "TBD"
-        },
-        {
-          "name": "TBD"
-        },
-        {
-          "name": "TBD"
-        },
-        {
-          "name": "TBD"
-        },
-        {
-          "name": "TBD"
-        },
-        {
-          "name": "TBD"
-        },
-        {
-          "name": "TBD"
-        },
-        {
-          "name": "TBD"
-        }
+          "name" : "ROMEO27 - SAVAGE AMK",
+          "country" : "🇮🇶",
+          "detail" : "1"
+       },
+       {
+          "name" : "ECHO27 - CARTEL BEGGARS",
+          "country" : "🇷🇺",
+          "detail" : "2"
+       },
+       {
+          "name" : "CHARLIE21 - REDMOON",
+          "country" : "🇮🇹",
+          "detail" : "3"
+       },
+       {
+          "name" : "LIMA24 - EURO ESPORTS OSIRIS",
+          "country" : "🇮🇹",
+          "detail" : "4"
+       },
+       {
+          "name" : "YANKEE6 - SG PHANTOM",
+          "country" : "🇯🇵",
+          "detail" : "5"
+       },
+       {
+          "name" : "ECHO15 - TEAM CALIX",
+          "country" : "🇮🇳",
+          "detail" : "6"
+       },
+       {
+          "name" : "UNICORN27 -  X TEAM",
+          "country" : "🇵🇪",
+          "detail" : "7"
+       },
+       {
+          "name" : "YANKEE24 - TRASHTALKER",
+          "country" : "🇦🇽",
+          "detail" : "8"
+       },
+       {
+          "name" : "WHISKEY26 - TEAM BIANCO",
+          "country" : "🇮🇹",
+          "detail" : "9"
+       },
+       {
+          "name" : "CHARLIE4 - ESCALADE ESPORTS",
+          "country" : "🇺🇸",
+          "detail" : "10"
+       },
+       {
+          "name" : "VICTOR6 - EURO ESPORTS RAIJIN",
+          "country" : "🇲🇹",
+          "detail" : "11"
+       },
+       {
+          "name" : "SIERRA6 - T.E.A.M $KLAY",
+          "country" : "🇵🇭",
+          "detail" : "12"
+       },
+       {
+          "name" : "ROMEO4 - (T.E.A.M SAND",
+          "country" : "🇵🇭",
+          "detail" : " 13"
+       },
+       {
+          "name" : "ROMEO24 - HL INDIA",
+          "country" : "🇮🇳",
+          "detail" : "14"
+       },
+       {
+          "name" : "NOVEMBER29 - ALLSTAR GAMING",
+          "country" : "🇦🇪",
+          "detail" : "15"
+       },
+       {
+          "name" : "OSCAR4 - T.E.A.M $ALGO",
+          "country" : "🇵🇭",
+          "detail" : "16"
+       },
+       {
+          "name" : "JULIET26 - KAALA TIKKA",
+          "country" : "🇮🇳",
+          "detail" : "17"
+       },
+       {
+          "name" : "DELTA29 - THE GHOST",
+          "country" : "🇲🇦",
+          "detail" : "18"
+       },
+       {
+          "name" : "LIMA27 - MANDORUGAS DEALS V2",
+          "country" : "🇨🇦",
+          "detail" : "19"
+       },
+       {
+          "name" : "CHARLIE27 - TSG NEXUS",
+          "country" : "🇯🇵",
+          "detail" : "20"
+       },
+       {
+          "name" : "INDIA29 - RNT",
+          "country" : "🇮🇳",
+          "detail" : "21"
+       },
+       {
+          "name" : "MIKE27 - MANDORUGAS- DEALS",
+          "country" : "🇨🇦",
+          "detail" : "22"
+       },
+       {
+          "name" : "SIERRA24 - OBSERVANT FORCE",
+          "country" : "🇸🇦",
+          "detail" : "23"
+       },
+       {
+          "name" : "FOXTROT25 - UNION 4K",
+          "country" : "🇮🇷",
+          "detail" : "24"
+       }
       ],
       "teams": [
         {
