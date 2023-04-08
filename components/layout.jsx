@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
                 alt=''
                 className='w-[50px] object-contain'
               />
-              <h3 className="text-white font-inter text-2xl">Battle For Supremacy</h3>
+              <h3 className="text-white font-inter text-2xl">BattleForSupremacy.TV</h3>
             </div>
             <div className='burger'>
               <button onClick={handleNavbar}>

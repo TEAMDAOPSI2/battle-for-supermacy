@@ -2,8 +2,8 @@
   "series": [
     {
       "season": 6,
-      "league": "BFS CODM Super League",
-      "tagline": "BFS 6",
+      "league": "BattleForSupremacy CODM Super League",
+      "tagline": "BattleForSupremacy 6",
       "total_teams": "38",
       "total_prize_pool": "$1,888",
       "stages_count": " 2 BRACKETS / 2 GROUPS",
@@ -583,7 +583,7 @@
         ],
         "note": [
           "➡️Failure to follow the rules will be automatically disqualified",
-          "➡️If there's any problem during the event, BFS CODM Department will have the right to decide"
+          "➡️If there's any problem during the event, BattleForSupremacy CODM Department will have the right to decide"
         ]
       }
     }
