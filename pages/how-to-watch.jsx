@@ -8,7 +8,7 @@ const HowToWatch = () => {
   return (
     <>
       <Head>
-        <title>How to watch | BFS Pro League</title>
+        <title>How to watch | BattleForSupremacy Pro League</title>
       </Head>
       <section className='default-section'>
         <div className='page-container'>

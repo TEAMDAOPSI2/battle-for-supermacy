@@ -40,7 +40,7 @@ const Home = () => {
     <>
       <articleCtx.Provider value={article}>
         <Head>
-          <title>BattleForSupremacy.tv | Home</title>
+          <title>BattleForSupremacy.TV</title>
         </Head>
         {article ? (
           <>

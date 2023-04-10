@@ -1,6 +1,14 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitch, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import {
+  faDiscord,
+  faFacebook,
+  faKickstarter,
+  faTiktok,
+  faTwitch,
+  faTwitter,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
 import { useEffect, useState } from 'react';
 
 const BoxPartner = ({ image, url }) => {
@@ -78,29 +86,28 @@ const Footer = () => {
         <div className='page-container sm:w-[800px] m-auto w-full'>
           <div className='grid sm:grid-cols-3 gap-4'>
             <div className='flex flex-col'>
-              <h3 className='text-white text-xl font-bold font-inter mb-3 uppercase'>BFS Gaming</h3>
+              <h3 className='text-white text-xl font-bold font-inter mb-3 uppercase'>BattleForSupremacy Gaming</h3>
               <ul className='flex flex-col gap-3'>
-                <AnchorText href='#' title='BFS Pro' />
-                <AnchorText href='#' title='BFS Pro Tour' />
-                <AnchorText href='#' title='BFS Shop' />
+                <AnchorText href='#' title='Supreme League' />
+                <AnchorText href='#' title='Super League' />
               </ul>
             </div>
 
             <div className='flex flex-col'>
-              <h3 className='text-white text-xl font-bold font-inter mb-3 uppercase'>Contact & press</h3>
+              <h3 className='text-white text-xl font-bold font-inter mb-3 uppercase'>Contact</h3>
               <ul className='flex flex-col gap-3'>
-                <AnchorText href='mailto:email@battleforsupremacy.tv' title='email@battleforsupremacy.tv' />
-                <AnchorText href='mailto:Press@battleforsupremacy.tv' title='Press@battleforsupremacy.tv' />
+                <AnchorText href='mailto:GM@BattleForSupremacy.TV' title='GM@BattleForSupremacy.TV' />
               </ul>
             </div>
 
             <div className='flex flex-col'>
               <h3 className='text-white text-xl font-bold font-inter mb-3 uppercase'>Follow us</h3>
               <ul className='flex flex-row gap-3'>
-                <AnchorIcon href='#' icon={<FontAwesomeIcon icon={faFacebook} />} />
-                <AnchorIcon href='#' icon={<FontAwesomeIcon icon={faTwitter} />} />
-                <AnchorIcon href='#' icon={<FontAwesomeIcon icon={faYoutube} />} />
-                <AnchorIcon href='#' icon={<FontAwesomeIcon icon={faTwitch} />} />
+                <AnchorIcon href='https://www.youtube.com/@BattleForSupremacyTV' icon={<FontAwesomeIcon icon={faYoutube} />} />
+                <AnchorIcon href='https://www.twitch.tv/battleforsupremacytv' icon={<FontAwesomeIcon icon={faTwitch} />} />
+                <AnchorIcon href='https://discord.gg/KmmkAMAK' icon={<FontAwesomeIcon icon={faDiscord} />} />
+                <AnchorIcon href='https://www.tiktok.com/@battleforsupremacy.tv' icon={<FontAwesomeIcon icon={faTiktok} />} />
+                <AnchorIcon href='https://kick.com/battleforsupremacytv' icon={<FontAwesomeIcon icon={faKickstarter} />} />
               </ul>
             </div>
 

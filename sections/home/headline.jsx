@@ -32,9 +32,9 @@ const Headline = () => {
     <section className='home--headline default-section'>
       <div className='page-container'>
         <div className='mb-5 page-section-title'>
-          <h2 className='text-[3.3rem] font-bold font-inter text-center uppercase'>{league}</h2>
+          <h2 className='text-[3.3rem] font-bold font-inter text-center'>{league}</h2>
           <p className='text-[1.8rem] font-inter text-center text-secondary uppercase font-inter'>
-            A gateway to the top for all BFS Pro Tour Competitions
+            A gateway to the top for all BattleForSupremacy Pro Tour Competitions
           </p>
         </div>
         <div className='card bg-soft-black'>
