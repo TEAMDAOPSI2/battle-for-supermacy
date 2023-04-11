@@ -19,9 +19,9 @@ const FooterSponsor = () => {
     return r.keys().map(r);
   };
 
-  const images = importAll(require.context('public/partners', false, /\.(png|jpe?g|svg)$/));
+  const images = importAll(require.context('public/images/sponsors', false, /\.(png|jpe?g|svg)$/));
   return (
-    <div className='footer-sponsor match-nav bg-soft-black flex items-center h-[55px] fixed z-[1] w-full flex'>
+    <div className='footer-sponsor match-nav bg-black flex items-center h-[55px] fixed z-[1] w-full flex'>
      <Marquee
      gradient={false}
      >

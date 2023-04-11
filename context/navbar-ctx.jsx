@@ -2,7 +2,7 @@ import { createContext } from 'react';
 
 // create context
 const navbarCtx = createContext({
-  navbar: false,
+  hide: {},
   setNavbar: () => {},
 });
 

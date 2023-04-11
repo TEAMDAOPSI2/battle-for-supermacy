@@ -4,11 +4,11 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
-const HowToWatch = () => {
+const LiveTv = () => {
   return (
     <>
       <Head>
-        <title>How to watch | BattleForSupremacy Pro League</title>
+        <title>🔴LIVE TV | BattleForSupremacy Pro League</title>
       </Head>
       <section className='default-section'>
         <div className='page-container'>
@@ -42,4 +42,4 @@ const HowToWatch = () => {
   );
 };
 
-export default HowToWatch;
+export default LiveTv;
