@@ -24,6 +24,7 @@ const FooterSponsor = () => {
     <div className='footer-sponsor match-nav bg-black flex items-center h-[55px] fixed z-[1] w-full flex'>
      <Marquee
      gradient={false}
+     direction={'right'}
      >
        {
          images.map((image, index) => (
