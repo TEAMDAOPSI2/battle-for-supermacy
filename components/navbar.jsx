@@ -91,7 +91,7 @@ const Navbar = ({ isActive, action }) => {
           <AnchorMain href='live-tv' text='🔴 LIVE TV' svg={<FontAwesomeIcon icon={faTv} />} />
           <AnchorDropdown props={seasons} />
           <AnchorMain href='/' text='LEAGUES' svg={<FontAwesomeIcon icon={faEquals} />} />
-          <AnchorMain href='/' text='RANKINGS' svg={<FontAwesomeIcon icon={faRankingStar} />} />
+          <AnchorMain href='rankings' text='RANKINGS' svg={<FontAwesomeIcon icon={faRankingStar} />} />
           <AnchorMain href='/' text='PRIZES' svg={<FontAwesomeIcon icon={faCoins} />} />
           <AnchorMain href='/' text='SPONSORSHIPS' svg={<FontAwesomeIcon icon={faUserTie} />} />
           <AnchorMain href='/' text='GAMEMASTERS' svg={<FontAwesomeIcon icon={faUserGear} />} />

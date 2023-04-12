@@ -585,6 +585,202 @@
           "➡️Failure to follow the rules will be automatically disqualified",
           "➡️If there's any problem during the event, BattleForSupremacy CODM Department will have the right to decide"
         ]
+      },
+      "ranks": {
+        "global_ranks":[
+          {
+            "country": "🇮🇹",
+            "name": "LIMA24 - EURO ESPORTS OSIRIS",
+            "rank": "1"
+          },
+          {
+            "country": "🇵🇭",
+            "name": "ROMEO4 - T.E.A.M SAND",
+            "rank": "2"
+          },
+          {
+            "country": "🇵🇭",
+            "name": "SIERRA6 - T.E.A.M KLAY",
+            "rank": "2"
+          },
+          {
+            "country": "🇵🇭",
+            "name": "ECHO4 - VAGABONDS ESPORTS",
+            "rank": "4"
+          },
+          {
+            "country": "🇵🇪",
+            "name": "UNICORN27 - X TEAM",
+            "rank": "5"
+          },
+          {
+            "country": "🇮🇶",
+            "name": "ROMEO27 - SAVAGE AMK",
+            "rank": "6"
+          },
+          {
+            "country": "🇮🇳",
+            "name": "ECHO15 - TEAM CALIX",
+            "rank": "7"
+          },
+          {
+            "country": "🇵🇭",
+            "name": "YANKEE6 - SG PHANTOM",
+            "rank": "7"
+          },
+          {
+            "country": "🇵🇭",
+            "name": "CHARLIE4 - ESCALADE ESPORTS",
+            "rank": "9"
+          },
+          {
+            "country": "🇵🇭",
+            "name": "VICTOR6 - TSG NEXUS",
+            "rank": "10"
+          },
+          {
+            "country": "🇮🇳",
+            "name": "INDIA29 - RNT",
+            "rank": "11"
+          },
+          {
+            "country": "🇮🇳",
+            "name": "TANGO24 - TEAM Z",
+            "rank": "11"
+          }
+        ],
+        "global_assassin": [
+          {
+            "country": "🇮🇹",
+            "name": "EURO DIAN",
+            "rank": "1"
+          },
+          {
+            "country": "🇫🇷",
+            "name": "7734 - SlayeRYT.ämk",
+            "rank": "2"
+          },
+          {
+            "country": "🇵🇭",
+            "name": "2718 - Blue | VB",
+            "rank": "3"
+          },
+          {
+            "country": "🇵🇭",
+            "name": "4981 - EURO JEALOUS",
+            "rank": "4"
+          },
+          {
+            "country": "🇵🇭",
+            "name": "3099 - KLAY ASSASSIN",
+            "rank": "5"
+          },
+          {
+            "country": "🇵🇭",
+            "name": "4076 - SG۞Seya",
+            "rank": "6"
+          },
+          {
+            "country": "🇵🇭",
+            "name": "6695 - SG۞SLASH",
+            "rank": "7"
+          },
+          {
+            "country": "🇪🇬",
+            "name": "7641 - Ali.amk",
+            "rank": "8"
+          },
+          {
+            "country": "🇮🇱",
+            "name": "7639 - SorenaYT.amk",
+            "rank": "9"
+          },
+          {
+            "country": "🇵🇭",
+            "name": "2851 - SAND SÈCRÉ",
+            "rank": "10"
+          },
+          {
+            "country": "🇵🇭",
+            "name": "2848 - SAND Đrei",
+            "rank": "11"
+          },
+          {
+            "country": "🇵🇭",
+            "name": "2768 - EURO kalboo",
+            "rank": "12"
+          },
+          {
+            "country": "🇧🇴",
+            "name": "8010 - SenorJ.amk",
+            "rank": "13"
+          },
+          {
+            "country": "🇵🇭",
+            "name": "4857 - KLAY ALBS",
+            "rank": "13"
+          },
+          {
+            "country": "🇮🇳",
+            "name": "7654 - CalixHacks??",
+            "rank": "15"
+          },
+          {
+            "country": "🇵🇭",
+            "name": "4853 - EPS | MAWIE",
+            "rank": "16"
+          },
+          {
+            "country": "🇵🇭",
+            "name": "2831 - SG۞Remy",
+            "rank": "16"
+          },
+          {
+            "country": "🇵🇪",
+            "name": "6794 - X KoostPeek",
+            "rank": "18"
+          },
+          {
+            "country": "🇸🇪",
+            "name": "6719 - TT • Dakss",
+            "rank": "18"
+          },
+          {
+            "country": "\uD83C\uDDEE\uD83C\uDDF9",
+            "name": "6554 - 月actua",
+            "rank": "20"
+          },
+          {
+            "country": "\uD83C\uDDEE\uD83C\uDDF3",
+            "name": "7656 - Calix1NSANITY",
+            "rank": "20"
+          },
+          {
+            "country": "\uD83C\uDDF7\uD83C\uDDFA",
+            "name": "7343 - Load1ng?",
+            "rank": "20"
+          },
+          {
+            "country": "\uD83C\uDDFA\uD83C\uDDF8",
+            "name": "7454- X FA",
+            "rank": "20"
+          },
+          {
+            "country": "\uD83C\uDDF5\uD83C\uDDEA",
+            "name": "6635 - X | Pxnchitowo",
+            "rank": "24"
+          },
+          {
+            "country": "\uD83C\uDDF5\uD83C\uDDEA",
+            "name": "2769 - Watss l VB",
+            "rank": "24"
+          },
+          {
+            "country": "\uD83C\uDDF5\uD83C\uDDEA",
+            "name": "2887 - SAND KURUMA",
+            "rank": "24"
+          }
+        ]
       }
     }
   ]

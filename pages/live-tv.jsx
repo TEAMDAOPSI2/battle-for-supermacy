@@ -11,20 +11,16 @@ const LiveTv = () => {
         <title>🔴LIVE TV | BattleForSupremacy Pro League</title>
       </Head>
       <section className='default-section'>
-        <div className='page-container'>
-          <div className='page-section-title'>
-            <h2 className='text-[3.3rem] font-bold font-inter text-center uppercase'>How to watch</h2>
-            <p className='text-[1.2rem] font-inter text-center text-accent uppercase'>Choose your preferred platform</p>
-          </div>
-          <div className='py-6'>
+        <div className='px-2'>
+          <div className=''>
             <div className='flex flex-col items-center justify-center min-h-[400px]'>
               <TwitchEmbed
-                channel='teamdaoTV'
-                id='teamdaoTV'
+                channel='battleforsupremacytv'
+                id='battleforsupremacytv'
                 theme='dark'
                 muted
                 width='100%'
-                height='400px'
+                height='600px'
                 />
             </div>
             <div className="py-6">

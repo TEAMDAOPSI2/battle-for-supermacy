@@ -1,4 +1,8 @@
+import { useEffect, useState } from 'react';
+import db from '@/db.json';
+import articleCtx from '@/context/article-ctx';
 import Head from 'next/head';
+import NavbarMatch from '@/components/navbar-match';
 import Hero from '@/sections/home/hero';
 import Headline from '@/sections/home/headline';
 import Teams from '@/sections/home/teams';
@@ -6,12 +10,10 @@ import Format from '@/sections/home/format';
 import Slot from '@/sections/home/slots';
 import Faq from '@/sections/home/faq';
 import More from '@/sections/home/more';
-import NavbarMatch from '@/components/navbar-match';
-import db from '@/db.json';
-import articleCtx from '@/context/article-ctx';
-import { useEffect, useState } from 'react';
+import Standing from '@/sections/ranking/standing';
+import StandingSolo from '@/sections/ranking/standing-solo';
 
-const Home = () => {
+const Rankings = () => {
   const [article, setArticle] = useState(null);
 
   const findArticle = (id) => {
@@ -44,22 +46,15 @@ const Home = () => {
           <>
             <NavbarMatch />
             <div className="mt-[55px]" />
-            <Hero />
-            <Headline />
-            {/*<Match />*/}
-            <Teams />
-            <Format />
-            <Slot />
-            {/*<History />*/}
-            <Faq />
-            <More />
+            <Standing />
+            <StandingSolo />
           </>
         ) : (
           <Loader />
         )}
       </articleCtx.Provider>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Rankings
