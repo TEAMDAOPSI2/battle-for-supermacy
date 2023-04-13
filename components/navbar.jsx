@@ -17,6 +17,7 @@ import AnchorDropdown from '@/components/navbar/anchor-dropdown';
 import { useContext, useState } from 'react';
 import navbarCtx from '@/context/navbar-ctx';
 import { Transition } from '@headlessui/react';
+import Link from 'next/link';
 
 const Navbar = ({ isActive, action }) => {
   const handleNavbar = () => {
@@ -35,27 +36,27 @@ const Navbar = ({ isActive, action }) => {
       {
         name: 'Season 5',
         sort: 'S 5',
-        href: 'season-5',
+        href: 'season/5',
       },
       {
         name: 'Season 4',
         sort: 'S 4',
-        href: 'season-4',
+        href: 'season/4',
       },
       {
         name: 'Season 3',
         sort: 'S 3',
-        href: 'season-3',
+        href: 'season/3',
       },
       {
         name: 'Season 2',
         sort: 'S 2',
-        href: 'season-2',
+        href: 'season/2',
       },
       {
         name: 'Season 1',
         sort: 'S 1',
-        href: 'season-1',
+        href: 'season/1',
       },
     ],
   };
@@ -76,10 +77,12 @@ const Navbar = ({ isActive, action }) => {
       <nav>
         <div className='top'>
           <div className={`${hide ? 'mb-4' : 'img-logo'}`}>
-            <img
-              src={Logo.src}
-              alt='BattleForSupremacy Logo'
-            />
+           <Link href={'/'}>
+             <img
+               src={Logo.src}
+               alt='BattleForSupremacy Logo'
+             />
+            </Link>
           </div>
           <div className='burger'>
             <button onClick={handleNavbar}>

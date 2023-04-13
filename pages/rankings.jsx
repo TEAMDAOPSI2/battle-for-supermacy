@@ -3,13 +3,6 @@ import db from '@/db.json';
 import articleCtx from '@/context/article-ctx';
 import Head from 'next/head';
 import NavbarMatch from '@/components/navbar-match';
-import Hero from '@/sections/home/hero';
-import Headline from '@/sections/home/headline';
-import Teams from '@/sections/home/teams';
-import Format from '@/sections/home/format';
-import Slot from '@/sections/home/slots';
-import Faq from '@/sections/home/faq';
-import More from '@/sections/home/more';
 import Standing from '@/sections/ranking/standing';
 import StandingSolo from '@/sections/ranking/standing-solo';
 

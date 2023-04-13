@@ -5,7 +5,7 @@ const GroupTeam = ({ title, teams }) => {
   return (
     <div className='flex flex-col mb-6 border border-dotted border-white sm:px-6 px-1 py-3'>
       <h3 className='text-2xl font-bold text-white mb-6'>{title}</h3>
-      <div className='grid sm:grid-cols-3 gap-2 grid-cols-1'>
+      <div className={`grid ${title ? 'sm:grid-cols-3 grid-cols-1' : 'sm:grid-cols-6 grid-cols-3'} gap-2`}>
         {
           teams.map((team, index) => {
             return (
@@ -61,24 +61,20 @@ const GroupstagePanel = () => {
 
   return (
     <div className='py-6'>
-      <div className='grid grid-cols-2 gap-2'>
+      <div className={`grid ${group.length > 1 ? 'grid-cols-2' : null} gap-2`}>
         {
           group.map((group, index) => {
             const teams = article?.teams?.filter((team) => team?.group === group);
+            let groupName = "Group "+group;
+            if(group === undefined){
+              groupName = null
+            }
             return (
-              <GroupTeam key={index} title={`Group ${group}`} teams={teams} />
+              <GroupTeam key={index} title={groupName} teams={teams} />
             );
           })
         }
       </div>
-      {/*<div className='watch-btn'>*/}
-      {/*  <Link href='/'*/}
-      {/*        className='flex bg-secondary sm:w-1/5 w-full py-3 rounded-md items-center m-auto hover:bg-emerald-50 transition-all duration-75 ease-in-out'>*/}
-      {/*    <span className='m-auto font-medium font-inter'>*/}
-      {/*      <FontAwesomeIcon icon={faFile} /> RULES OVERVIEW*/}
-      {/*    </span>*/}
-      {/*  </Link>*/}
-      {/*</div>*/}
     </div>
   );
 };

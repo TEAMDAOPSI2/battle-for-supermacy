@@ -21,6 +21,7 @@ body {
   font-family: 'Calps Sans', sans-serif;
 }
 
+
 img {
   max-width: 100%;
   height: auto;
@@ -300,12 +301,12 @@ footer {
   }
 }
 
-.match-nav{
-  background: linear-gradient(270deg,#0070f3,#db2b42,#0070f3,#db2b42) 0 100% #000 no-repeat;
+.match-nav {
+  background: linear-gradient(270deg, #0070f3, #db2b42, #0070f3, #db2b42) 0 100% #000 no-repeat;
   background-size: 100% 2px;
   background-color: #000000;
 
-  img{
+  img {
     height: 40px;
     width: 40px;
     object-fit: contain;
@@ -316,10 +317,23 @@ footer {
   }
 }
 
-.footer-sponsor{
+.footer-sponsor {
   height: 55px;
   position: fixed;
   bottom: 0;
-  background: linear-gradient(270deg,#0070f3,#db2b42,#0070f3,#db2b42) 0 0 #000 no-repeat;
+  background: linear-gradient(270deg, #0070f3, #db2b42, #0070f3, #db2b42) 0 0 #000 no-repeat;
   background-size: 100% 2px;
 }
+
+
+// custom cursor with image
+* {
+  cursor: url('../public/images/crosshair.png') 45 45, auto !important;
+}
+
+svg{
+  cursor: url('../public/images/crosshair.png') 45 45, auto !important;
+}
+
+
+

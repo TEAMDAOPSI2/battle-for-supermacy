@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Hero from '@/sections/home/hero';
+import Hero from '@/sections/seasons/hero';
 import Headline from '@/sections/home/headline';
 import Teams from '@/sections/home/teams';
 import Format from '@/sections/home/format';
@@ -10,22 +10,30 @@ import NavbarMatch from '@/components/navbar-match';
 import db from '@/db.json';
 import articleCtx from '@/context/article-ctx';
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
+import { useRouter } from 'next/router';
 
-const Home = () => {
-  const [article, setArticle] = useState(null);
 
-  const findArticle = (id) => {
-    return db.series.find((series) => {
-      return series?.season === id;
-    });
+// get url from router using getStaticProps
+export async function getServerSideProps({ params }) {
+  const article = db.series.find((series) => {
+    return series?.season === parseInt(params.id);
+  });
+
+  // 404 if no article found
+  if (!article) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: {
+      article,
+    },
   };
+}
 
-  useEffect(() => {
-    const article = findArticle(6);
-    console.log(article);
-    setArticle(article);
-  }, []);
+const Season = ({article}) => {
 
   const Loader = () => {
     return (
@@ -63,4 +71,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Season;
