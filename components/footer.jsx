@@ -86,7 +86,7 @@ const Footer = () => {
         <div className='page-container sm:w-[800px] m-auto w-full'>
           <div className='grid sm:grid-cols-3 gap-4'>
             <div className='flex flex-col'>
-              <h3 className='text-white text-xl font-bold font-inter mb-3 uppercase'>BattleForSupremacy Gaming</h3>
+              <h3 className='text-white text-xl font-bold font-inter mb-3 uppercase'>Professional Leagues</h3>
               <ul className='flex flex-col gap-3'>
                 <AnchorText href='#' title='Supreme League' />
                 <AnchorText href='#' title='Super League' />
