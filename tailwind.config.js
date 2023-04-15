@@ -20,7 +20,7 @@ module.exports = {
       },
       fontFamily: {
         'plus-jakarta-sans': ['Plus Jakarta Sans', 'sans-serif'],
-        'inter': ['Calps Sans', 'Inter', 'sans-serif'],
+        'inter': ['F1', 'Calps Sans', 'Inter', 'sans-serif'],
         'flag': ['Twemoji Country Flags', 'sans-serif'],
       },
     },

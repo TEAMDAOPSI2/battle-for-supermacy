@@ -14,16 +14,20 @@ const AnchorDropdown = ({ props }) => {
         <>
           <Menu.Button as='a'>
             <div
-              className='flex cursor-pointer justify-between text-dark-gray px-2 text-2xl uppercase font-inter font-semibold py-3 border-b border-gray-700 hover:bg-gray-700 hover:text-white transition-all ease-in-out'>
+              className='flex cursor-pointer justify-between text-dark-gray px-2 text-xl uppercase font-inter py-3 border-b border-gray-700 hover:bg-gray-700 hover:text-white transition-all ease-in-out'>
               <span className="flex items-center justify-start">
-                {svg && <span className='text-primary text-base w-[30px]'>{svg}</span>}
+                {svg && <span className='text-primary text-lg w-[30px]'>{svg}</span>}
                 {hide === false && (<span className='ml-2 tracking-[-1px]'>{title}</span>)}
               </span>
               {
                 open ? (
-                  <FontAwesomeIcon icon={faCaretUp} className='ml-2' />
+                  <span className="text-xl">
+                    <FontAwesomeIcon icon={faCaretUp} className='ml-2' />
+                  </span>
                 ) : (
+                  <span className="text-xl">
                   <FontAwesomeIcon icon={faCaretDown} className='ml-2' />
+                  </span>
                 )
               }
 
@@ -35,7 +39,7 @@ const AnchorDropdown = ({ props }) => {
                 {({ active }) => (
                   <a
                     href={link.href}
-                    className={`text-xl uppercase font-inter font-semibold py-3 border-b border-gray-700 hover:bg-gray-700 hover:text-white transition-all ease-in-out
+                    className={`uppercase font-inter py-3 border-b border-gray-700 hover:bg-gray-700 hover:text-white transition-all ease-in-out
                   group flex items-center w-full px-2 py-2 ${link.href === '/' ? 'text-secondary' : 'text-dark-gray '}`}
                   >
                     {

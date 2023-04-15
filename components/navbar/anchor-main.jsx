@@ -10,7 +10,7 @@ const AnchorMain = (props) => {
   return (
     <Link href={href}>
       <div
-        className='flex items-center justify-start gap-1 text-dark-gray text-2xl uppercase font-inter font-semibold py-3 border-b border-gray-700 hover:bg-gray-700 hover:text-white transition-all ease-in-out'>
+        className='flex items-center justify-start gap-1 text-dark-gray text-lg uppercase font-inter  py-3 border-b border-gray-700 hover:bg-gray-700 hover:text-white transition-all ease-in-out'>
         {svg && <span className='text-primary pl-2 text-base w-[30px] '>{svg}</span>}
         <Transition
           show={!hide}

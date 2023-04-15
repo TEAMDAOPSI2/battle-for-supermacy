@@ -49,12 +49,12 @@ const NavbarMatch = () => {
 
   return (
     <div className="match-nav bg-black flex items-center h-[55px] fixed z-[1] w-full">
-      <div className="px-6 flex flex-row text-white gap-2">
+      <div className="px-6 flex flex-row text-white gap-2 text-sm">
         <div className="sm:flex hidden">Match Update:</div>
         <Marquee loop={0} speed={20} gradient={false} className="sm:w-11/12 w-10/12">
           {[0, 1].map((item, index) => (
             <div className="w-fit">
-              <div className="flex flex-row items-center" dangerouslySetInnerHTML={{ __html: scores[index] }} />
+              <div className="flex flex-row items-center text-sm" dangerouslySetInnerHTML={{ __html: scores[index] }} />
             </div>
           ))}
         </Marquee>

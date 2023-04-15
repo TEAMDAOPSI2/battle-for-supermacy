@@ -18,7 +18,7 @@ html {
 
 body {
   background-color: #111;
-  font-family: 'Calps Sans', sans-serif;
+  font-family:  'F1', 'Calps Sans', sans-serif;
 }
 
 
@@ -171,12 +171,12 @@ img {
     background-size: cover;
     color: transparent;
     -webkit-background-clip: text;
-    @apply sm:text-[3.3rem] text-3xl mb-3;
+    @apply sm:text-3xl text-xl mb-3;
     line-height: unset;
   }
 
   p {
-    @apply sm:text-[1.8rem] text-xl font-medium;
+    @apply sm:text-xl text-lg font-medium;
   }
 }
 

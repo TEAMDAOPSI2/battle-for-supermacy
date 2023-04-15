@@ -45,7 +45,7 @@ const Team = ({ team }) => {
         </div>
 
         <div className='text'>
-          <p className='text-white text-center uppercase font-medium font-inter sm:text-base text-sm'>{team?.name}</p>
+          <p className='text-white text-center uppercase font-medium font-inter text-sm'>{team?.name}</p>
         </div>
       </div>
     </div>

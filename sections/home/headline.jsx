@@ -8,8 +8,8 @@ const BoxHeadline = (props) => {
   const { title, value } = props;
   return (
     <div className='flex flex-col items-center font-inter py-4 gap-3 bg-soft-black my-3'>
-      <span className='text-white sm:text-lg text-base uppercase text-xl'>{title}</span>
-      <h3 className='sm:text-[2.5rem] text-xl font-bold text-secondary'>{value}</h3>
+      <span className='text-white text-base uppercase'>{title}</span>
+      <h3 className='sm:text-3xl text-xl font-bold text-secondary'>{value}</h3>
     </div>
   );
 };

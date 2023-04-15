@@ -430,3 +430,23 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'F1';
+    src: url('Formula1-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'F1';
+    src: url('Formula1-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'F1';
+    src: url('Formula1-Wide.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}

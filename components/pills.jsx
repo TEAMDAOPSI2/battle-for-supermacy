@@ -10,7 +10,7 @@ const Pills = (props) => {
         {({ open }) => (
           <>
             <Disclosure.Button className="flex items-center justify-between p-4 w-full text-left transition ease-in duration-75 ">
-              <h3 className="text-lg font-semibold">{title}</h3>
+              <h3 className="text-sm font-semibold">{title}</h3>
               <FontAwesomeIcon icon={open ? faMinus : faPlus} className="text-white w-4" />
             </Disclosure.Button>
             <Transition
