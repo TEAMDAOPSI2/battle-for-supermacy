@@ -15,8 +15,8 @@ const LiveTv = () => {
           <div className=''>
             <div className='flex flex-col items-center justify-center min-h-[400px]'>
               <TwitchEmbed
-                channel='battleforsupremacytv'
-                id='battleforsupremacytv'
+                channel='teamdaoTV'
+                id='teamdaoTV'
                 theme='dark'
                 muted
                 width='100%'
