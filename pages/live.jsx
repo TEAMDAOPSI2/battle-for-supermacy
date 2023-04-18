@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
-const LiveTv = () => {
+const Live = () => {
   return (
     <>
       <Head>
@@ -38,4 +38,4 @@ const LiveTv = () => {
   );
 };
 
-export default LiveTv;
+export default Live;

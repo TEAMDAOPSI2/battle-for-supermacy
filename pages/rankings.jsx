@@ -5,6 +5,8 @@ import Head from 'next/head';
 import NavbarMatch from '@/components/navbar-match';
 import Standing from '@/sections/ranking/standing';
 import StandingSolo from '@/sections/ranking/standing-solo';
+import useProgressiveImage from '@/hooks/useProgressiveImage';
+import starlink from '@/public/images/starlink_1.jpg';
 
 const Rankings = () => {
   const [article, setArticle] = useState(null);
@@ -29,6 +31,8 @@ const Rankings = () => {
     );
   };
 
+  const bgImage = useProgressiveImage(starlink.src, starlink.src);
+
   return (
     <>
       <articleCtx.Provider value={article}>
@@ -39,8 +43,10 @@ const Rankings = () => {
           <>
             <NavbarMatch />
             <div className="mt-[55px]" />
-            <Standing />
-            <StandingSolo />
+            <div className="card-standing" style={{backgroundImage: `url(${bgImage})`}}>
+              <Standing />
+              <StandingSolo />
+            </div>
           </>
         ) : (
           <Loader />

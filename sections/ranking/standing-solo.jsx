@@ -14,7 +14,7 @@ const StandingSolo = () => {
             Season 5 - Season 6
           </p>
         </div>
-        <div className='card bg-soft-black p-3'>
+        <div className='card  p-3'>
           <div className='grid grid-cols-2 sm:grid-cols-4 gap-3'>
             {
               global_assassin.map((rank, index) => {

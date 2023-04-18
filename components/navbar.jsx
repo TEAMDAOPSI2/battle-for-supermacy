@@ -91,7 +91,7 @@ const Navbar = ({ isActive, action }) => {
           </div>
         </div>
         <div className='wrap-main-list pt-3'>
-          <AnchorMain href='live-tv' text='🔴 LIVE TV' svg={<FontAwesomeIcon icon={faTv} />} />
+          <AnchorMain href='live' text='🔴 LIVE TV' svg={<FontAwesomeIcon icon={faTv} />} />
           <AnchorDropdown props={seasons} />
           <AnchorMain href='/' text='LEAGUES' svg={<FontAwesomeIcon icon={faEquals} />} />
           <AnchorMain href='rankings' text='RANKINGS' svg={<FontAwesomeIcon icon={faRankingStar} />} />
