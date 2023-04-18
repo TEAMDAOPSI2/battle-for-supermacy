@@ -43,7 +43,8 @@ const Rankings = () => {
           <>
             <NavbarMatch />
             <div className="mt-[55px]" />
-            <div className="card-standing" style={{backgroundImage: `url(${bgImage})`}}>
+            <div className="card-standing relative" style={{backgroundImage: `url(${bgImage})`}}>
+              <div className='filter absolute inset-0 bg-black/50 w-full h-full' />
               <Standing />
               <StandingSolo />
             </div>
