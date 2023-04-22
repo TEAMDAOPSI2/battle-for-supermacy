@@ -15,22 +15,22 @@ const Live = () => {
           <div className=''>
             <div className='flex flex-col items-center justify-center min-h-[400px]'>
               <TwitchEmbed
-                channel='teamdaoTV'
-                id='teamdaoTV'
+                channel='BattleForSupremacy_TV'
+                id='BattleForSupremacy_TV'
                 theme='dark'
                 muted
                 width='100%'
                 height='600px'
                 />
             </div>
-            <div className="py-6">
-              <p className='text-[1.2rem] font-inter text-left text-accent uppercase'>
-                Livestream: <br/>
-                <Link className="text-white hover:border-b" href={'https://www.facebook.com/TEAMDAOcom'} ><FontAwesomeIcon icon={faFacebook}/> Facebook T.E.A.M DAO</Link> <br/>
-                Replay: <br/>
-                <Link className="text-white hover:border-b" href={'https://www.youtube.com/@TEAMDAOlive'}><FontAwesomeIcon icon={faYoutube}/> Youtube T.E.A.M DAO</Link>
-              </p>
-            </div>
+            {/*<div className="py-6">*/}
+            {/*  <p className='text-[1.2rem] font-inter text-left text-accent uppercase'>*/}
+            {/*    Livestream: <br/>*/}
+            {/*    <Link className="text-white hover:border-b" href={'https://www.facebook.com/TEAMDAOcom'} ><FontAwesomeIcon icon={faFacebook}/> Facebook T.E.A.M DAO</Link> <br/>*/}
+            {/*    Replay: <br/>*/}
+            {/*    <Link className="text-white hover:border-b" href={'https://www.youtube.com/@TEAMDAOlive'}><FontAwesomeIcon icon={faYoutube}/> Youtube T.E.A.M DAO</Link>*/}
+            {/*  </p>*/}
+            {/*</div>*/}
           </div>
         </div>
       </section>
