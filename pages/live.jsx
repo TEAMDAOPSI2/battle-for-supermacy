@@ -13,14 +13,14 @@ const Live = () => {
       <section className='default-section'>
         <div className='px-2'>
           <div className=''>
-            <div className='flex flex-col items-center justify-center min-h-[400px]'>
+            <div className='flex flex-col items-center justify-center min-h-[500px]'>
               <TwitchEmbed
                 channel='BattleForSupremacy_TV'
                 id='BattleForSupremacy_TV'
                 theme='dark'
                 muted
                 width='100%'
-                height='600px'
+                height='700px'
                 />
             </div>
             {/*<div className="py-6">*/}
