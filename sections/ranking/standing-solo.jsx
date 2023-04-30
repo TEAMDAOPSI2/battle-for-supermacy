@@ -4,20 +4,20 @@ import { useContext } from 'react';
 
 const StandingSolo = () => {
   const { ranks } = useContext(articleCtx);
-  const { global_assassin } = ranks;
+  const { global_update } = ranks;
   return (
     <section className='default-section'>
       <div className='page-container'>
         <div className='page-section-title mb-5'>
           <h2 className='text-[3.3rem] font-bold font-inter text-center uppercase'>POWER RANKING: TOP 24 ASSASSINS </h2>
-          <p className='text-[1.8rem] font-inter text-center text-secondary uppercase font-inter'>
-            Season 5 - Season 6
+          <p className='text-[1.8rem] font-inter text-center text-secondary uppercase font-inter text-white'>
+            UPDATE OF APRIL 29,2023
           </p>
         </div>
         <div className='card  p-3'>
           <div className='grid grid-cols-2 sm:grid-cols-4 gap-3'>
             {
-              global_assassin.map((rank, index) => {
+              global_update.map((rank, index) => {
                 return (
                   <div className="flex flex-row items-center gap-1" key={index}>
                     <div className={`flex flex-col items-center font-inter gap-6 relative w-[60px]`}>
