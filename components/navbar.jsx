@@ -36,27 +36,27 @@ const Navbar = ({ isActive, action }) => {
       {
         name: 'Season 5',
         sort: 'S 5',
-        href: 'season/5',
+        href: '/season/5',
       },
       {
         name: 'Season 4',
         sort: 'S 4',
-        href: 'season/4',
+        href: '/season/4',
       },
       {
         name: 'Season 3',
         sort: 'S 3',
-        href: 'season/3',
+        href: '/season/3',
       },
       {
         name: 'Season 2',
         sort: 'S 2',
-        href: 'season/2',
+        href: '/season/2',
       },
       {
         name: 'Season 1',
         sort: 'S 1',
-        href: 'season/1',
+        href: '/season/1',
       },
     ],
   };
@@ -91,10 +91,10 @@ const Navbar = ({ isActive, action }) => {
           </div>
         </div>
         <div className='wrap-main-list pt-3'>
-          <AnchorMain href='live' text='🔴 LIVE TV' svg={<FontAwesomeIcon icon={faTv} />} />
+          <AnchorMain href='/live' text='🔴 LIVE TV' svg={<FontAwesomeIcon icon={faTv} />} />
           <AnchorDropdown props={seasons} />
           <AnchorMain href='/' text='LEAGUES' svg={<FontAwesomeIcon icon={faEquals} />} />
-          <AnchorMain href='rankings' text='RANKINGS' svg={<FontAwesomeIcon icon={faRankingStar} />} />
+          <AnchorMain href='/rankings' text='RANKINGS' svg={<FontAwesomeIcon icon={faRankingStar} />} />
           <AnchorMain href='/' text='PRIZES' svg={<FontAwesomeIcon icon={faCoins} />} />
           <AnchorMain href='/' text='SPONSORSHIPS' svg={<FontAwesomeIcon icon={faUserTie} />} />
           <AnchorMain href='/' text='GAMEMASTERS' svg={<FontAwesomeIcon icon={faUserGear} />} />

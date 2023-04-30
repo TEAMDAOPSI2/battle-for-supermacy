@@ -10,9 +10,9 @@ const RactangleTeamFlag = ({ name, flag = '',rank='', className = '' }) => {
     <div className="relative">
       <img className='sm:w-[190px] w-[60px] object-cover'
            src={`https://raw.githubusercontent.com/teamdao-psi3/esport-team/main/bfs-ranks-6/${name}.png`} alt='' />
-      <div className="absolute top-0 right-0 mr-10 mt-3 rounded-full bg-primary w-[30px] h-[30px] flex items-center justify-center">
-        {rank}
-      </div>
+      {/*<div className="absolute top-0 right-0 mr-10 mt-3 rounded-full bg-primary w-[30px] h-[30px] flex items-center justify-center">*/}
+      {/*  {rank}*/}
+      {/*</div>*/}
     </div>
   );
 };
@@ -100,18 +100,6 @@ const Standing = () => {
 
           <GenPyramid global_ranks={global_ranks} />
 
-        </div>
-        <div className='note text-white mt-6'>
-          <b>*Point System per Season: </b> <br />
-
-          CHAMPION: 8 Points <br />
-          TOP 2: 7 Points <br />
-          TOP 3: 6 Points <br />
-          TOP 4: 5 Points <br />
-          TOP 5: 4 Points <br />
-          TOP 6: 3 Points <br />
-          TOP 7: 2 Points <br />
-          TOP 8: 1 Point <br />
         </div>
       </div>
     </section>
