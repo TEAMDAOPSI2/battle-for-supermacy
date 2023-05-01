@@ -13,9 +13,9 @@ const Live = () => {
       <section className='default-section'>
         <div className='px-2'>
           <div className=''>
-            <div className='flex flex-col items-center justify-center h-[650px] py-4'>
+            <div className='flex flex-col items-center justify-center sm:h-[650px] h-fit py-4'>
             {/* video */}
-              <video className='w-full' autoPlay loop>
+              <video className='w-full sm:pt-[80px] pt-1' autoPlay loop>
                 <source src='/videos/mountain-dew.mp4' type='video/mp4' />
               </video>
 
