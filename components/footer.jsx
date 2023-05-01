@@ -92,6 +92,7 @@ const Footer = () => {
                 <AnchorText href='#' title='Super League' />
                 <AnchorText href='#' title='Crypto League' />
                 <AnchorText href='#' title='SoftDrink League' />
+                <AnchorText href='#' title='Chocolate League' />
                 <AnchorText href='#' title='Snacks League' />
                 <AnchorText href='#' title='Gadget League' />
                 <AnchorText href='#' title='PC League' />
