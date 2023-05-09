@@ -6,7 +6,7 @@ import {
   faClose,
   faCoins, faEquals,
   faRankingStar,
-  faS,
+  faS, faSpinner,
   faTv,
   faUserFriends,
   faUserGear,
@@ -100,6 +100,7 @@ const Navbar = ({ isActive, action }) => {
           <AnchorMain href='/' text='GAMEMASTERS' svg={<FontAwesomeIcon icon={faUserGear} />} />
           <AnchorMain href='/' text='SHOUTCASTERS' svg={<FontAwesomeIcon icon={faUserFriends} />} />
           <AnchorMain href='/' text='FAQ' svg={<FontAwesomeIcon icon={faBullhorn} />} />
+          <AnchorMain href='https://spin.battleforsupremacy.tv/' text='Spin' svg={<FontAwesomeIcon icon={faSpinner} />} />
         </div>
       </nav>
     </header>
