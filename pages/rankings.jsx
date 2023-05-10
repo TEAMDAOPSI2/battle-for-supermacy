@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import db from '@/db.json';
+import db from '@/db/db.json';
 import articleCtx from '@/context/article-ctx';
 import Head from 'next/head';
 import NavbarMatch from '@/components/navbar-match';

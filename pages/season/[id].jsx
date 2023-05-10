@@ -7,7 +7,7 @@ import Slot from '@/sections/home/slots';
 import Faq from '@/sections/home/faq';
 import More from '@/sections/home/more';
 import NavbarMatch from '@/components/navbar-match';
-import db from '@/db.json';
+import db from '@/db/db.json';
 import articleCtx from '@/context/article-ctx';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';

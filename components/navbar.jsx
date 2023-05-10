@@ -31,7 +31,7 @@ const Navbar = ({ isActive, action }) => {
       {
         name: 'Season 6',
         sort: 'S 6',
-        href: '/',
+        href: '/season/5',
       },
       {
         name: 'Season 5',

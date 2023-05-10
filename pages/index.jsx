@@ -1,16 +1,9 @@
 import Head from 'next/head';
-import Hero from '@/sections/home/hero';
-import Headline from '@/sections/home/headline';
-import Teams from '@/sections/home/teams';
-import Format from '@/sections/home/format';
-import Slot from '@/sections/home/slots';
-import Faq from '@/sections/home/faq';
-import More from '@/sections/home/more';
-import NavbarMatch from '@/components/navbar-match';
-import db from '@/db.json';
+import db from '@/db/db.json';
 import articleCtx from '@/context/article-ctx';
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
+import Solo from '@/components/layout/solo';
+import  Main  from '@/components/layout/main';
 
 const Home = () => {
   const [article, setArticle] = useState(null);
@@ -35,6 +28,17 @@ const Home = () => {
     );
   };
 
+  const ActPage = ({ page = 'solo' }) => {
+    switch (page) {
+      case 'main':
+        return <Main />;
+      case 'solo':
+        return <Solo />;
+      default:
+        return null; // or throw an error
+    }
+  };
+
   return (
     <>
       <articleCtx.Provider value={article}>
@@ -42,19 +46,7 @@ const Home = () => {
           <title>BattleForSupremacy.TV</title>
         </Head>
         {article ? (
-          <>
-            <NavbarMatch />
-            <div className="mt-[55px]" />
-            <Hero />
-            <Headline />
-            {/*<Match />*/}
-            <Teams />
-            <Format />
-            <Slot />
-            {/*<History />*/}
-            <Faq />
-            <More />
-          </>
+         <ActPage />
         ) : (
           <Loader />
         )}
