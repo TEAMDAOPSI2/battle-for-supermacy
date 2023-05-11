@@ -81,7 +81,7 @@ const Season3 = () => {
         'date': 'May 10, 2023 (12PM EST)"',
       },
     ],
-    participants: [],
+    teams: [],
     tagline: '',
     league: 'BattleForSupremacy.TV | 5v5 Multiplayer Season 3',
     totalParticipants: '100',
