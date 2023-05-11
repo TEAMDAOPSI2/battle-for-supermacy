@@ -26,42 +26,6 @@ const Navbar = ({ isActive, action }) => {
     action(!isActive);
   };
 
-  const seasons = {
-    title: 'Seasons',
-    svg: <FontAwesomeIcon icon={faS} />,
-    links: [
-      {
-        name: 'Season 6',
-        sort: 'S 6',
-        href: '/season/5',
-      },
-      {
-        name: 'Season 5',
-        sort: 'S 5',
-        href: '/season/5',
-      },
-      {
-        name: 'Season 4',
-        sort: 'S 4',
-        href: '/season/4',
-      },
-      {
-        name: 'Season 3',
-        sort: 'S 3',
-        href: '/season/3',
-      },
-      {
-        name: 'Season 2',
-        sort: 'S 2',
-        href: '/season/2',
-      },
-      {
-        name: 'Season 1',
-        sort: 'S 1',
-        href: '/season/1',
-      },
-    ],
-  };
 
   const history = {
     title: 'History',
@@ -72,30 +36,76 @@ const Navbar = ({ isActive, action }) => {
         sort: 'CODM',
         subLinks: [
           {
-            title: 'Solo Season 1',
-            link: 'codm/solo/1',
+            title: 'Solo BR Season 1',
+            link: '/codm/solo/season-1',
           },
           {
-            title: 'Solo Season 2',
-            link: 'codm/solo/2',
+            title: 'Solo BR Season 2',
+            link: '/codm/solo/season-1',
           },
           {
-            title: 'Duo Season 1',
-            link: 'codm/duo/1',
+            title: 'Duo BR Season 1',
+            link: '/codm/duo/1',
           },
           {
-            title: 'Duo Season 2',
-            link: 'codm/duo/2',
+            title: 'Duo BR Season 2',
+            link: '/codm/duo/2',
           },
           {
             title: 'TEAM BR Season 5',
-            link: 'codm/team-br/5',
+            link: '/codm/team/5',
           },
           {
             title: 'TEAM BR Season 6',
-            link: 'codm/team-br/6',
+            link: '/codm/team/6',
+          },
+          {
+            title: '5v5 Multiplayer Season 3',
+            link: '/codm/5v5/season-3',
           },
         ],
+      },
+    ],
+  };
+
+  const league = {
+    title: 'League',
+    svg: <FontAwesomeIcon icon={faEquals} />,
+    mains: [
+      {
+        title: 'Standard',
+        sort: 'ST',
+        subLinks: [
+          {
+            title: 'Call of Duty: Mobile',
+            link: '#',
+          },
+          {
+            title: '1v1 Multiplayer',
+            link: '#',
+          },
+          {
+            title: 'All Girls TEAM Battle Royale',
+          },
+        ],
+      },
+      {
+        title: 'Supreme',
+        sort: 'SU',
+        subLinks: [
+          {
+            title: 'Call of Duty: Mobile',
+            link: '#',
+          },
+          {
+            title: 'Duo Battle Royale',
+            link: '#',
+          },
+          {
+            title: 'TEAM Battle Royale Season 7',
+            link: '#',
+          }
+        ]
       },
     ],
   };
@@ -132,7 +142,7 @@ const Navbar = ({ isActive, action }) => {
         <div className='wrap-main-list pt-3'>
           <AnchorMain href='/live' text='🔴 LIVE TV' svg={<FontAwesomeIcon icon={faTv} />} />
           <AnchorMultiple props={history} />
-          <AnchorMain href='/' text='LEAGUES' svg={<FontAwesomeIcon icon={faEquals} />} />
+          <AnchorMultiple props={league} />
           <AnchorMain href='/rankings' text='RANKINGS' svg={<FontAwesomeIcon icon={faRankingStar} />} />
           <AnchorMain href='/' text='PRIZES' svg={<FontAwesomeIcon icon={faCoins} />} />
           <AnchorMain href='/sponsorship' text='SPONSORSHIPS' svg={<FontAwesomeIcon icon={faUserTie} />} />

@@ -3,16 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown, faCaretRight, faCaretUp } from '@fortawesome/free-solid-svg-icons';
 import { useContext, useState } from 'react';
 import navbarCtx from '@/context/navbar-ctx';
-import { isMobile } from 'react-device-detect';
 
 const anchorMultiple = ({ props }) => {
   const { title, mains, svg } = props;
   const ctx = useContext(navbarCtx);
   const { hide } = ctx;
-  const [showSub, setShowSub] = useState(false);
-
-  console.log('showSub', isMobile);
-
 
   return (
     <Menu>
@@ -40,14 +35,16 @@ const anchorMultiple = ({ props }) => {
             </div>
           </Menu.Button>
           <Menu.Items>
-            {mains.map((x) => (
-              <Menu.Item key={x.sort}>
-                {({ active }) => (
-                  <div
-                    className='relative'
-                    onMouseEnter={() => setShowSub(true)}
-                    onMouseLeave={() => setShowSub(false)}
-                  >
+            {mains.map((x) => {
+              const [showSub, setShowSub] = useState(false);
+              return (
+                <Menu.Item key={x.sort}>
+                  {({ active }) => (
+                    <div
+                      className='relative'
+                      onMouseEnter={() => setShowSub(true)}
+                      onMouseLeave={() => setShowSub(false)}
+                    >
                     <span
                       className='flex items-center text-dark-gray text-lg uppercase font-inter  py-3 border-b border-gray-700 hover:bg-gray-700 hover:text-white transition-all ease-in-out'>
                       {
@@ -56,14 +53,35 @@ const anchorMultiple = ({ props }) => {
                       <FontAwesomeIcon icon={faCaretRight} className='ml-2' />
                     </span>
 
-                    {showSub && (
+                      {showSub && (
+                        <div
+                          className='absolute -right-[250px] top-0 block min-w-[250px] z-20 shadow shadow-soft-black'>
+                          <div className='bg-soft-black p-2 shadow'>
+                            {
+                              x.subLinks.map((link) => (
+                                <a
+                                  key={link.link}
+                                  href={link.link}
+                                  className='group flex items-center w-full px-2 py-2 text-dark-gray hover:bg-gray-700 hover:text-white transition-all ease-in-out'
+                                >
+                                  {link.title}
+                                </a>
+                              ))
+                            }
+                          </div>
+                        </div>
+                      )}
+
+                      {/* show on mobile only */}
+
                       <div
-                        className={`${!isMobile ? 'absolute -right-[250px] top-0 block min-w-[250px] z-20 shadow shadow-soft-black' : ''}`}>
+                        className="sm:hidden block">
                         <div className='bg-soft-black p-2 shadow'>
                           {
                             x.subLinks.map((link) => (
                               <a
-                                key={link.href}
+                                key={link.link}
+                                href={link.link}
                                 className='group flex items-center w-full px-2 py-2 text-dark-gray hover:bg-gray-700 hover:text-white transition-all ease-in-out'
                               >
                                 {link.title}
@@ -72,13 +90,13 @@ const anchorMultiple = ({ props }) => {
                           }
                         </div>
                       </div>
-                    )}
 
 
-                  </div>
-                )}
-              </Menu.Item>
-            ))}
+                    </div>
+                  )}
+                </Menu.Item>
+              )
+            })}
           </Menu.Items>
         </>
       )}

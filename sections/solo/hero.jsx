@@ -1,12 +1,9 @@
-import articleCtx from '@/context/article-ctx';
-import { useContext } from 'react';
-
-const Hero = () => {
-  const article = useContext(articleCtx);
+const Hero = ({ data }) => {
+  const banner = process.env.BASE_URL + data?.banner;
   return (
     <section className='hero'>
       <video className='xs:w-[250px] w-[350px] m-auto' autoPlay loop muted>
-        <source src='banner/solo.mp4' type='video/mp4' />
+        <source src={banner} type='video/mp4' />
       </video>
       {/*<div className='page-container flex flex-col justify-center align-middle '>*/}
       {/*  <div className='img'>*/}
