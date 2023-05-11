@@ -82,7 +82,7 @@ const Season3 = () => {
       },
     ],
     teams: [
-      
+
     ],
     tagline: '',
     league: 'BattleForSupremacy.TV | 5v5 Multiplayer Season 3',
