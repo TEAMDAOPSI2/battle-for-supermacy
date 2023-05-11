@@ -35,8 +35,6 @@ const TabElement = ({ stages }) => {
 
 
 const Teams = ({ data }) => {
-
-
   return (
     <section className='default-section' id='teams'>
       <div className='page-container'>
