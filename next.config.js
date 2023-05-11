@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   env: {
-    BASE_URL: process.env.BASE_URL,
+    BASE_URL: 'https://battle-for-supermacy-git-dev-team-dao.vercel.app/',
   }
 }
 
