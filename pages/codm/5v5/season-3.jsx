@@ -82,11 +82,7 @@ const Season3 = () => {
       },
     ],
     teams: [
-      {
-        "country": "🇮🇹",
-        "name": "CHARLIE21 - REDMOON",
-        "group": "A"
-      },
+      
     ],
     tagline: '',
     league: 'BattleForSupremacy.TV | 5v5 Multiplayer Season 3',

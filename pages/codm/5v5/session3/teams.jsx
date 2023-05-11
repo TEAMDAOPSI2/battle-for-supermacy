@@ -35,21 +35,20 @@ const TabElement = ({ stages }) => {
 
 const Teams = ({ data }) => {
 
-  const { teams, stages_count, stages } = data;
 
   return (
     <section className='default-section' id='teams'>
       <div className='page-container'>
         <div className='page-section-title'>
           <h2 className='text-[3.3rem] font-bold font-inter text-center uppercase'>The biggest CODM League</h2>
-          <p className='text-[1.8rem] font-inter text-center text-secondary uppercase font-inter'>{teams?.length} teams
-            | {`${stages_count} Stages`} |
+          <p className='text-[1.8rem] font-inter text-center text-secondary uppercase font-inter'>{data?.teams.length} teams
+            | {`${data?.stages_count} Stages`} |
             Global Competition
           </p>
         </div>
 
         <div className='card bg-soft-black px-6 my-6'>
-          <TabElement stages={stages} />
+          <TabElement stages={data?.stages} />
         </div>
 
       </div>
