@@ -1,8 +1,5 @@
 import { Tab } from '@headlessui/react';
-import ConferencePanel from '@/sections/home/conference-panel';
-import GroupstagePanel from '@/pages/codm/5v5/session3/groupstage-panel';
 import TabTitle from '@/components/tab-title';
-import PlayoffPanel from '@/pages/codm/5v5/session3/playoff-panel';
 
 const TabElement = ({ stages }) => {
   return (
