@@ -3,10 +3,11 @@ import { useContext } from 'react';
 
 const Hero = () => {
   const article = useContext(articleCtx);
+  const banner = process.env.BASE_URL + 'banner/w-flag.mp4';
   return (
     <section className='hero'>
       <video className='xs:w-[250px] w-[350px] m-auto' autoPlay loop muted>
-        <source src='../banner/w-flag.mp4' type='video/mp4' />
+        <source src={banner} type='video/mp4' />
       </video>
       {/*<div className='page-container flex flex-col justify-center align-middle '>*/}
       {/*  <div className='img'>*/}
