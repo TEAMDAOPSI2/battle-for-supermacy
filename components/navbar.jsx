@@ -4,7 +4,7 @@ import {
   faArrowRightArrowLeft,
   faBullhorn,
   faClose,
-  faCoins, faEquals,
+  faCoins, faEquals, faH,
   faRankingStar,
   faS, faSpinner,
   faTv,
@@ -18,6 +18,8 @@ import { useContext, useState } from 'react';
 import navbarCtx from '@/context/navbar-ctx';
 import { Transition } from '@headlessui/react';
 import Link from 'next/link';
+import AnchorMultiple from '@/components/navbar/anchor-multiple';
+import * as events from 'events';
 
 const Navbar = ({ isActive, action }) => {
   const handleNavbar = () => {
@@ -61,6 +63,43 @@ const Navbar = ({ isActive, action }) => {
     ],
   };
 
+  const history = {
+    title: 'History',
+    svg: <FontAwesomeIcon icon={faH} />,
+    mains: [
+      {
+        title: 'Call of Duty:Mobile',
+        sort: 'CODM',
+        subLinks: [
+          {
+            title: 'Solo Season 1',
+            link: 'codm/solo/1',
+          },
+          {
+            title: 'Solo Season 2',
+            link: 'codm/solo/2',
+          },
+          {
+            title: 'Duo Season 1',
+            link: 'codm/duo/1',
+          },
+          {
+            title: 'Duo Season 2',
+            link: 'codm/duo/2',
+          },
+          {
+            title: 'TEAM BR Season 5',
+            link: 'codm/team-br/5',
+          },
+          {
+            title: 'TEAM BR Season 6',
+            link: 'codm/team-br/6',
+          },
+        ],
+      },
+    ],
+  };
+
   const nvContext = useContext(navbarCtx);
   const { hide } = nvContext;
 
@@ -77,11 +116,11 @@ const Navbar = ({ isActive, action }) => {
       <nav>
         <div className='top'>
           <div className={`${hide ? 'mb-4' : 'img-logo'}`}>
-           <Link href={'/'}>
-             <img
-               src={Logo.src}
-               alt='BattleForSupremacy Logo'
-             />
+            <Link href={'/'}>
+              <img
+                src={Logo.src}
+                alt='BattleForSupremacy Logo'
+              />
             </Link>
           </div>
           <div className='burger'>
@@ -92,7 +131,7 @@ const Navbar = ({ isActive, action }) => {
         </div>
         <div className='wrap-main-list pt-3'>
           <AnchorMain href='/live' text='🔴 LIVE TV' svg={<FontAwesomeIcon icon={faTv} />} />
-          <AnchorDropdown props={seasons} />
+          <AnchorMultiple props={history} />
           <AnchorMain href='/' text='LEAGUES' svg={<FontAwesomeIcon icon={faEquals} />} />
           <AnchorMain href='/rankings' text='RANKINGS' svg={<FontAwesomeIcon icon={faRankingStar} />} />
           <AnchorMain href='/' text='PRIZES' svg={<FontAwesomeIcon icon={faCoins} />} />
@@ -100,7 +139,8 @@ const Navbar = ({ isActive, action }) => {
           <AnchorMain href='/' text='GAMEMASTERS' svg={<FontAwesomeIcon icon={faUserGear} />} />
           <AnchorMain href='/' text='SHOUTCASTERS' svg={<FontAwesomeIcon icon={faUserFriends} />} />
           <AnchorMain href='/' text='FAQ' svg={<FontAwesomeIcon icon={faBullhorn} />} />
-          <AnchorMain href='https://spin.battleforsupremacy.tv/' text='Spin' svg={<FontAwesomeIcon icon={faSpinner} />} />
+          <AnchorMain href='https://spin.battleforsupremacy.tv/' text='Spin'
+                      svg={<FontAwesomeIcon icon={faSpinner} />} />
         </div>
       </nav>
     </header>
