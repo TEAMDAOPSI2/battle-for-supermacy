@@ -3,10 +3,10 @@ import db from '@/db/db.json';
 import articleCtx from '@/context/article-ctx';
 import Head from 'next/head';
 import NavbarMatch from '@/components/navbar-match';
-import Hero from '@/sections/solo/hero';
-import Headline from '@/sections/5v5/headline';
-import Teams from '@/pages/codm/5v5/session3/teams';
-import Format from '@/sections/solo/format';
+import Hero from '@/sections/codm/solo/hero';
+import Headline from '@/sections/codm/5v5/headline';
+import Teams from '@/sections/codm/5v5/session3/teams';
+import Format from '@/sections/codm/solo/format';
 import Faq from '@/sections/home/faq';
 import More from '@/sections/home/more';
 

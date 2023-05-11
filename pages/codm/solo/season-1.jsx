@@ -3,10 +3,10 @@ import db from '@/db/db.json';
 import articleCtx from '@/context/article-ctx';
 import { useEffect, useState } from 'react';
 import NavbarMatch from '@/components/navbar-match';
-import Hero from '@/sections/solo/hero';
-import Headline from '@/sections/solo/headline';
+import Hero from '@/sections/codm/solo/hero';
+import Headline from '@/sections/codm/solo/headline';
 import Teams from '@/sections/solo/teams';
-import Format from '@/sections/solo/format';
+import Format from '@/sections/codm/solo/format';
 import Faq from '@/sections/home/faq';
 import More from '@/sections/home/more';
 

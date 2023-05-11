@@ -1,10 +1,10 @@
-import Hero from '@/sections/solo/hero';
+import Hero from '@/sections/codm/solo/hero';
 import NavbarMatch from '@/components/navbar-match';
-import Headline from '@/sections/solo/headline';
+import Headline from '@/sections/codm/solo/headline';
 import Faq from '@/sections/home/faq';
 import More from '@/sections/home/more';
-import Format from '@/sections/solo/format';
-import Teams from '@/sections/solo/teams';
+import Format from '@/sections/codm/solo/format';
+import Teams from '@/sections/codm/solo/teams';
 
 const Solo = () => {
   const data = {
