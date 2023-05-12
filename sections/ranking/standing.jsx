@@ -8,7 +8,7 @@ import * as url from 'url';
 const RactangleTeamFlag = ({ name, flag = '',rank='', className = '' }) => {
   return (
     <div className="relative">
-      <img className='sm:w-[190px] w-[60px] object-cover'
+      <img className='sm:w-[190px] w-[90px] object-cover'
            src={`https://raw.githubusercontent.com/teamdao-psi3/esport-team/main/bfs-ranks-6/${name}.png`} alt='' />
       {/*<div className="absolute top-0 right-0 mr-10 mt-3 rounded-full bg-primary w-[30px] h-[30px] flex items-center justify-center">*/}
       {/*  {rank}*/}

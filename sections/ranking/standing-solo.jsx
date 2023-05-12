@@ -1,5 +1,4 @@
 import articleCtx from '@/context/article-ctx';
-import RactangleTeamFlag from '@/components/ractangle-team-flag';
 import { useContext } from 'react';
 
 const StandingSolo = () => {
