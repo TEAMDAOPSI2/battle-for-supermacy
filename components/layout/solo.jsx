@@ -140,16 +140,18 @@ const Solo = () => {
     },
   };
 
-  return (<>
-    <NavbarMatch />
-    <div className='mt-[55px]' />
-    <Hero data={data} />
-    <Headline data={data} />
-    <Teams data={data} />
-    <Format data={data} />
-    <Faq />
-    <More />
-  </>);
+  return (
+    <>
+      <NavbarMatch />
+      <div className='mt-[55px]' />
+      {/*<Hero data={data} />*/}
+      <Headline data={data} />
+      <Teams data={data} />
+      <Format data={data} />
+      <Faq />
+      <More />
+    </>
+  );
 };
 
 export default Solo;
