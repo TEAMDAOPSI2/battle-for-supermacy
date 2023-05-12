@@ -8,7 +8,7 @@ import More from '@/sections/home/more';
 
 const Lobby5 = () => {
   const data = {
-    banner: 'banner/solo.mp4',
+    banner: 'banner/solo1.mp4',
     format: [
       '3 Rounds - TPP',
       '1 Kill = 1 Point',

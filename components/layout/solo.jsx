@@ -144,7 +144,7 @@ const Solo = () => {
     <>
       <NavbarMatch />
       <div className='mt-[55px]' />
-      {/*<Hero data={data} />*/}
+      <Hero data={data} />
       <Headline data={data} />
       <Teams data={data} />
       <Format data={data} />
