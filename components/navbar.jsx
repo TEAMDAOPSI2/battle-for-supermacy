@@ -41,7 +41,7 @@ const Navbar = ({ isActive, action }) => {
           },
           {
             title: 'Solo BR Season 2',
-            link: '/codm/solo/season-1',
+            link: '/codm/solo/season-2',
           },
           {
             title: 'Duo BR Season 1',
