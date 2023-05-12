@@ -81,21 +81,21 @@ const Teams = ({ data }) => {
 
             <Tab.Group>
               <Tab.List className='flex justify-center gap-5 py-6'>
-                <TabTitle>Players</TabTitle>
+                {/*<TabTitle>Players</TabTitle>*/}
                 <TabTitle>Countries</TabTitle>
               </Tab.List>
 
 
               <Tab.Panels>
-                <Tab.Panel as='div' className='border border-dotted border-white p-2'>
-                  <div className='sm:block hidden'>
-                    <TeamList teams={teams} numItemsPerRow={6} type="player" />
-                  </div>
+                {/*<Tab.Panel as='div' className='border border-dotted border-white p-2'>*/}
+                {/*  <div className='sm:block hidden'>*/}
+                {/*    <TeamList teams={teams} numItemsPerRow={6} type="player" />*/}
+                {/*  </div>*/}
 
-                  <div className='sm:hidden block'>
-                    <TeamList teams={teams} numItemsPerRow={3} type="player" />
-                  </div>
-                </Tab.Panel>
+                {/*  <div className='sm:hidden block'>*/}
+                {/*    <TeamList teams={teams} numItemsPerRow={3} type="player" />*/}
+                {/*  </div>*/}
+                {/*</Tab.Panel>*/}
                 <Tab.Panel as='div' className='border border-dotted border-white p-2'>
                   <div className='sm:block hidden'>
                     <TeamList teams={participants} numItemsPerRow={6} type="country" />
