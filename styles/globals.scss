@@ -18,7 +18,7 @@ html {
 
 body {
   background-color: #111;
-  font-family:  'F1', 'Calps Sans', sans-serif;
+  font-family: 'F1', 'Calps Sans', sans-serif;
 }
 
 
@@ -331,14 +331,25 @@ footer {
   cursor: url('../public/images/crosshair.png') 45 45, auto !important;
 }
 
-svg{
+svg {
   cursor: url('../public/images/crosshair.png') 45 45, auto !important;
 }
 
 
-
-.card-standing{
+.card-standing {
   background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper-teams-list-hex {
+  padding-top: 40px;
+
+  div {
+    margin-top: -18px;
+    @media (max-width: 768px) {
+      margin-top: -10px;
+    }
+     
+  }
 }

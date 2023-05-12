@@ -4,7 +4,7 @@ import {
   faArrowRightArrowLeft,
   faBullhorn,
   faClose,
-  faCoins, faEquals,
+  faCoins, faEquals, faH,
   faRankingStar,
   faS, faSpinner,
   faTv,
@@ -18,45 +18,94 @@ import { useContext, useState } from 'react';
 import navbarCtx from '@/context/navbar-ctx';
 import { Transition } from '@headlessui/react';
 import Link from 'next/link';
+import AnchorMultiple from '@/components/navbar/anchor-multiple';
+import * as events from 'events';
 
 const Navbar = ({ isActive, action }) => {
   const handleNavbar = () => {
     action(!isActive);
   };
 
-  const seasons = {
-    title: 'Seasons',
-    svg: <FontAwesomeIcon icon={faS} />,
-    links: [
+
+  const history = {
+    title: 'History',
+    svg: <FontAwesomeIcon icon={faH} />,
+    mains: [
       {
-        name: 'Season 6',
-        sort: 'S 6',
-        href: '/season/5',
+        title: 'Call of Duty:Mobile',
+        sort: 'CODM',
+        subLinks: [
+          {
+            title: 'Solo BR Season 1',
+            link: '/codm/solo/season-1',
+          },
+          {
+            title: 'Solo BR Season 2',
+            link: '/codm/solo/season-1',
+          },
+          {
+            title: 'Duo BR Season 1',
+            link: '/codm/duo/1',
+          },
+          {
+            title: 'Duo BR Season 2',
+            link: '/codm/duo/2',
+          },
+          {
+            title: 'TEAM BR Season 5',
+            link: '/codm/team/5',
+          },
+          {
+            title: 'TEAM BR Season 6',
+            link: '/codm/team/6',
+          },
+          {
+            title: '5v5 Multiplayer Season 3',
+            link: '/codm/5v5/season-3',
+          },
+        ],
+      },
+    ],
+  };
+
+  const league = {
+    title: 'League',
+    svg: <FontAwesomeIcon icon={faEquals} />,
+    mains: [
+      {
+        title: 'Standard',
+        sort: 'ST',
+        subLinks: [
+          {
+            title: 'Call of Duty: Mobile',
+            link: '#',
+          },
+          {
+            title: '1v1 Multiplayer',
+            link: '#',
+          },
+          {
+            title: 'All Girls TEAM Battle Royale',
+          },
+        ],
       },
       {
-        name: 'Season 5',
-        sort: 'S 5',
-        href: '/season/5',
-      },
-      {
-        name: 'Season 4',
-        sort: 'S 4',
-        href: '/season/4',
-      },
-      {
-        name: 'Season 3',
-        sort: 'S 3',
-        href: '/season/3',
-      },
-      {
-        name: 'Season 2',
-        sort: 'S 2',
-        href: '/season/2',
-      },
-      {
-        name: 'Season 1',
-        sort: 'S 1',
-        href: '/season/1',
+        title: 'Supreme',
+        sort: 'SU',
+        subLinks: [
+          {
+            title: 'Call of Duty: Mobile',
+            link: '#',
+          },
+          {
+            title: 'Duo Battle Royale',
+            link: '#',
+          },
+          {
+            title: 'TEAM Battle Royale Season 7',
+            link: '#',
+          }
+        ]
       },
     ],
   };
@@ -77,11 +126,11 @@ const Navbar = ({ isActive, action }) => {
       <nav>
         <div className='top'>
           <div className={`${hide ? 'mb-4' : 'img-logo'}`}>
-           <Link href={'/'}>
-             <img
-               src={Logo.src}
-               alt='BattleForSupremacy Logo'
-             />
+            <Link href={'/'}>
+              <img
+                src={Logo.src}
+                alt='BattleForSupremacy Logo'
+              />
             </Link>
           </div>
           <div className='burger'>
@@ -92,15 +141,16 @@ const Navbar = ({ isActive, action }) => {
         </div>
         <div className='wrap-main-list pt-3'>
           <AnchorMain href='/live' text='🔴 LIVE TV' svg={<FontAwesomeIcon icon={faTv} />} />
-          <AnchorDropdown props={seasons} />
-          <AnchorMain href='/' text='LEAGUES' svg={<FontAwesomeIcon icon={faEquals} />} />
+          <AnchorMultiple props={history} />
+          <AnchorMultiple props={league} />
           <AnchorMain href='/rankings' text='RANKINGS' svg={<FontAwesomeIcon icon={faRankingStar} />} />
           <AnchorMain href='/' text='PRIZES' svg={<FontAwesomeIcon icon={faCoins} />} />
           <AnchorMain href='/sponsorship' text='SPONSORSHIPS' svg={<FontAwesomeIcon icon={faUserTie} />} />
           <AnchorMain href='/' text='GAMEMASTERS' svg={<FontAwesomeIcon icon={faUserGear} />} />
           <AnchorMain href='/' text='SHOUTCASTERS' svg={<FontAwesomeIcon icon={faUserFriends} />} />
           <AnchorMain href='/' text='FAQ' svg={<FontAwesomeIcon icon={faBullhorn} />} />
-          <AnchorMain href='https://spin.battleforsupremacy.tv/' text='Spin' svg={<FontAwesomeIcon icon={faSpinner} />} />
+          <AnchorMain href='https://spin.battleforsupremacy.tv/' text='Spin'
+                      svg={<FontAwesomeIcon icon={faSpinner} />} />
         </div>
       </nav>
     </header>
