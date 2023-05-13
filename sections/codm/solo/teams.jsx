@@ -1,13 +1,23 @@
 import ErrImg from '@/public/images/hex-err.png';
+import bordered from '@/public/images/bordered-desktop.png';
+import borderedMobile from '@/public/images/bordered-mobile.png';
+import { Tab } from '@headlessui/react';
+import TabTitle from '@/components/tab-title';
 
-const Team = ({ team }) => {
-  const img = `https://raw.githubusercontent.com/teamdao-psi3/esport-team/main/hex-flags/${team.code3}.png`;
+const Team = ({ team, type = '' }) => {
+  let img = '';
+  if (type === 'country') {
+    img = `https://raw.githubusercontent.com/teamdao-psi3/esport-team/main/hex-flags/${team.code3}.png`;
+  } else {
+    img = `https://raw.githubusercontent.com/teamdao-psi3/esport-team/main/BFS/codm/solo/solo-2/${team.id}.png`;
+  }
   return (
     <div className='flex items-center sm:w-2/12 w-4/12 '>
       <img
         src={img}
         alt={team.code}
         className='w-full h-full'
+        loading={'lazy'}
         onError={(e) => {
           e.target.src = ErrImg.src;
         }}
@@ -16,8 +26,10 @@ const Team = ({ team }) => {
   );
 };
 
-const TeamList = ({ teams, numItemsPerRow }) => {
-  const totalRows = Math.ceil(teams.length / numItemsPerRow);
+const TeamList = ({ teams, numItemsPerRow, type }) => {
+  // const totalRows = Math.ceil(teams.length / numItemsPerRow);
+  const totalRows = Math.ceil(teams.length / numItemsPerRow) + Math.ceil((teams.length % numItemsPerRow) / 2);
+
   let teamIndex = 0;
   let rows = [];
 
@@ -28,7 +40,7 @@ const TeamList = ({ teams, numItemsPerRow }) => {
       // even row
       for (let j = 0; j < numItemsPerRow - 1; j++) {
         if (teamIndex < teams.length) {
-          rowItems.push(<Team team={teams[teamIndex]} />);
+          rowItems.push(<Team team={teams[teamIndex]} type={type} />);
           teamIndex++;
         } else {
           // add empty data to fill row
@@ -40,11 +52,11 @@ const TeamList = ({ teams, numItemsPerRow }) => {
       const itemsInRow = Math.min(numItemsPerRow, teams.length - teamIndex + 1);
       for (let j = 0; j < itemsInRow; j++) {
         if (teamIndex < teams.length) {
-          rowItems.push(<Team team={teams[teamIndex]} />);
+          rowItems.push(<Team team={teams[teamIndex]} type={type} />);
           teamIndex++;
         } else {
           // add empty data to fill row
-          rowItems.push(<div className={`w-${12/numItemsPerRow}/12`} />);
+          rowItems.push(<div className={`w-${12 / numItemsPerRow}/12`} />);
         }
       }
     }
@@ -56,8 +68,7 @@ const TeamList = ({ teams, numItemsPerRow }) => {
 };
 
 const Teams = ({ data }) => {
-  const { participants: teams } = data;
-  console.log(teams);
+  const { participants, teams } = data;
   return (
     <section className='default-section' id='teams'>
       <div className='page-container'>
@@ -68,18 +79,44 @@ const Teams = ({ data }) => {
           </p>
         </div>
 
-        <div className='card bg-soft-black px-6 my-6 py-3'>
-          <div className='flex flex-col mb-6 border border-dotted border-white sm:px-6 px-1 py-3'>
-            <h3 className='text-2xl font-bold text-white mb-6'>Country Participants</h3>
+        {/*<div className='card bg-soft-black px-6 my-6 py-3'>*/}
+        <div>
+          <div className='flex flex-col mb-6 border-white sm:px-6 px-1 py-3 card-bfs relative'>
+            {/*<div className='bordered w-full'>*/}
+            {/*  <img src={bordered.src} alt='bordered' className='h-full w-full sm:block hidden' />*/}
+            {/*  <img src={borderedMobile.src} alt='bordered' className='h-full w-full sm:hidden block' />*/}
+            {/*</div>*/}
+            <div className='card bg-soft-black px-3 py-6'>
+              <Tab.Group>
 
-            <div className="sm:block hidden">
-              <TeamList teams={teams} numItemsPerRow={6} />
+                <Tab.List className='flex justify-center gap-5 py-6'>
+                  <TabTitle>Players  </TabTitle>
+                  <TabTitle>Countries</TabTitle>
+                </Tab.List>
+
+                <Tab.Panels>
+                  <Tab.Panel as='div' className='border border-dotted border-white p-2 pb-10'>
+                    <div className='sm:block hidden'>
+                      <TeamList teams={teams} numItemsPerRow={6} type="player" />
+                    </div>
+
+                    <div className='sm:hidden block'>
+                      <TeamList teams={teams} numItemsPerRow={3} type="player" />
+                    </div>
+                  </Tab.Panel>
+                  <Tab.Panel as='div' className='border border-dotted border-white p-2 pb-10'>
+                    <div className='sm:block hidden'>
+                      <TeamList teams={participants} numItemsPerRow={6} type="country" />
+                    </div>
+
+                    <div className='sm:hidden block'>
+                      <TeamList teams={participants} numItemsPerRow={3} type="country" />
+                    </div>
+                  </Tab.Panel>
+                </Tab.Panels>
+
+              </Tab.Group>
             </div>
-
-            <div className="sm:hidden block">
-              <TeamList teams={teams} numItemsPerRow={3} />
-            </div>
-
           </div>
         </div>
 

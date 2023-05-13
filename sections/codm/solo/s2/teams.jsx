@@ -1,5 +1,5 @@
 import ErrImg from '@/public/images/hex-err.png';
-import { Menu, Tab } from '@headlessui/react';
+import { Tab } from '@headlessui/react';
 import TabTitle from '@/components/tab-title';
 
 const Team = ({ team, type }) => {
@@ -25,7 +25,9 @@ const Team = ({ team, type }) => {
 };
 
 const TeamList = ({ teams, numItemsPerRow, type }) => {
-  const totalRows = Math.ceil(teams.length / numItemsPerRow);
+  // const totalRows = Math.ceil(teams.length / numItemsPerRow);
+  const totalRows = Math.ceil(teams.length / numItemsPerRow) + Math.ceil((teams.length % numItemsPerRow) / 2);
+
   let teamIndex = 0;
   let rows = [];
 
@@ -81,22 +83,22 @@ const Teams = ({ data }) => {
 
             <Tab.Group>
               <Tab.List className='flex justify-center gap-5 py-6'>
-                {/*<TabTitle>Players</TabTitle>*/}
+                <TabTitle>Players</TabTitle>
                 <TabTitle>Countries</TabTitle>
               </Tab.List>
 
 
               <Tab.Panels>
-                {/*<Tab.Panel as='div' className='border border-dotted border-white p-2'>*/}
-                {/*  <div className='sm:block hidden'>*/}
-                {/*    <TeamList teams={teams} numItemsPerRow={6} type="player" />*/}
-                {/*  </div>*/}
-
-                {/*  <div className='sm:hidden block'>*/}
-                {/*    <TeamList teams={teams} numItemsPerRow={3} type="player" />*/}
-                {/*  </div>*/}
-                {/*</Tab.Panel>*/}
                 <Tab.Panel as='div' className='border border-dotted border-white p-2'>
+                  <div className='sm:block hidden'>
+                    <TeamList teams={teams} numItemsPerRow={6} type="player" />
+                  </div>
+
+                  <div className='sm:hidden block'>
+                    <TeamList teams={teams} numItemsPerRow={3} type="player" />
+                  </div>
+                </Tab.Panel>
+                <Tab.Panel as='div' className='border border-dotted border-white p-2 pb-10'>
                   <div className='sm:block hidden'>
                     <TeamList teams={participants} numItemsPerRow={6} type="country" />
                   </div>
