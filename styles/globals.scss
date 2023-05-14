@@ -173,6 +173,7 @@ img {
     -webkit-background-clip: text;
     @apply sm:text-3xl text-xl mb-3;
     line-height: unset;
+    -webkit-text-stroke: 0.5px #fff;
   }
 
   p {
