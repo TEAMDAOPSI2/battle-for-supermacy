@@ -11,6 +11,8 @@ import db from '@/db/db.json';
 import articleCtx from '@/context/article-ctx';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import useProgressiveImage from '@/hooks/useProgressiveImage';
+import BG from '@/public/images/starlink-4.webp';
 
 
 // get url from router using getStaticProps
@@ -43,7 +45,9 @@ const Season = ({article}) => {
     );
   };
 
+  const bgImage = useProgressiveImage(BG.src, BG.src);
   return (
+
     <>
       <articleCtx.Provider value={article}>
         <Head>
@@ -53,15 +57,17 @@ const Season = ({article}) => {
           <>
             <NavbarMatch />
             <div className="mt-[55px]" />
-            <Hero />
-            <Headline />
-            {/*<Match />*/}
-            <Teams />
-            <Format />
-            <Slot />
-            {/*<History />*/}
-            <Faq />
-            <More />
+            <div className="card-standing relative" style={{ backgroundImage: `url(${bgImage})` }}>
+              <Hero />
+              <Headline />
+              {/*<Match />*/}
+              <Teams />
+              <Format />
+              <Slot />
+              {/*<History />*/}
+              <Faq />
+              <More />
+            </div>
           </>
         ) : (
           <Loader />
