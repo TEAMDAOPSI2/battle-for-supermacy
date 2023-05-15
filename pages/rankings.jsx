@@ -10,6 +10,7 @@ import starlink from '@/public/images/starlink_1.jpg';
 import { Tab } from '@headlessui/react';
 import TabTitle from '@/components/tab-title';
 import CodmMultiplayer from '@/sections/ranking/codm-multiplayer';
+import CodmSoloRanks from '@/sections/ranking/codm-solo';
 
 const Rankings = () => {
   const [article, setArticle] = useState(null);
@@ -65,7 +66,7 @@ const Rankings = () => {
                       {/*  <StandingSolo />*/}
                       {/*</Tab.Panel>*/}
                       <Tab.Panel>
-                        <h1>Solo</h1>
+                        <CodmSoloRanks />
                       </Tab.Panel>
                       <Tab.Panel>
                         <h1>Duo</h1>
