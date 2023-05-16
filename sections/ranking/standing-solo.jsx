@@ -45,7 +45,7 @@ const StandingSolo = () => {
                       </div>
                     </div>
                     <div className="text-white text-lg">
-                      <span className="font-bold">TOP : {rank?.rank}</span>
+                      <span className="font-bold">{rank?.rank}</span>
                       <span className="block">{rank?.name}</span>
                     </div>
                   </div>

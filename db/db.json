@@ -589,14 +589,14 @@
       "ranks": {
         "global_ranks": [
           {
-            "country": "🇮🇹",
-            "name": "LIMA24 - EURO ESPORTS OSIRIS",
-            "rank": "1"
-          },
-          {
             "country": "🇵🇭",
             "name": "ROMEO4 - T.E.A.M SAND",
             "rank": "2"
+          },
+          {
+            "country": "🇮🇹",
+            "name": "LIMA24 - EURO ESPORTS OSIRIS",
+            "rank": "1"
           },
           {
             "country": "🇵🇭",

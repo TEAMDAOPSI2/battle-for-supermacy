@@ -45,8 +45,8 @@ const Headline = ({ data }) => {
         </div>
         <div className='card bg-soft-black'>
           <div className='box-wrapper grid grid-cols-2'>
-            <BoxHeadline title='Total Prize Pool' value={'--'} />
-            <BoxHeadline title='Players' value={100} />
+            <BoxHeadline title='Total Prize Pool' value={data?.prizePool} />
+            <BoxHeadline title='Players' value={data?.totalTeams} />
           </div>
           {/*<div className='box-second-wrapper grid sm:grid-cols-3 grid-cols-1'>*/}
           {/*  {*/}
