@@ -154,6 +154,8 @@ const Season3 = () => {
           '➡️If there\'s any problem during the event, BattleForSupremacy CODM Department will have the right to decide',
         ],
       },
+      totalTeams: '100',
+      prizePool: '$288',
     };
     return (
       <>
