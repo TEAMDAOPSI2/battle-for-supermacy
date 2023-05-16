@@ -95,7 +95,7 @@ const Teams = ({ data }) => {
                 </Tab.List>
 
                 <Tab.Panels>
-                  <Tab.Panel as='div' className='border border-dotted border-white p-2 pb-10'>
+                  <Tab.Panel as='div' className='p-2 pb-10'>
                     <div className='sm:block hidden'>
                       <TeamList teams={teams} numItemsPerRow={6} type="player" />
                     </div>
@@ -104,7 +104,7 @@ const Teams = ({ data }) => {
                       <TeamList teams={teams} numItemsPerRow={3} type="player" />
                     </div>
                   </Tab.Panel>
-                  <Tab.Panel as='div' className='border border-dotted border-white p-2 pb-10'>
+                  <Tab.Panel as='div' className='p-2 pb-10'>
                     <div className='sm:block hidden'>
                       <TeamList teams={participants} numItemsPerRow={6} type="country" />
                     </div>

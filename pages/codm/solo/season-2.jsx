@@ -505,7 +505,7 @@ const Season2 = () => {
         },
       ],
       tagline: 'Dont hunt what you can\'t kill, every action has consequences - John Wick',
-      league: 'BattleForSupremacy.TV: Solo Battle Royale',
+      league: 'BattleForSupremacy.TV : CODM - Solo Battle Royale  Season-2',
       totalParticipants: '100',
       rules: {
         'all': [
@@ -548,6 +548,8 @@ const Season2 = () => {
           '➡️If there\'s any problem during the event, BattleForSupremacy CODM Department will have the right to decide',
         ],
       },
+      prizePool: '$288',
+      totalTeams: '100',
     };
 
     const bgImage = useProgressiveImage(BG.src, BG.src);

@@ -191,7 +191,7 @@ const CodmMultiplayer = () => {
   return (
     <section className='default-section'>
       <div className='page-container'>
-        <div className='page-section-title mb-5'>
+        <div className='page-section-title mb-5 bg-black/40 py-4 rounded-md'>
           <h2 className='text-[3.3rem] font-bold font-inter text-center uppercase'>Power Rankings 5v5 Multiplayer </h2>
           <p className='text-[1.8rem] font-inter text-center text-secondary uppercase font-inter'>
             As of May 12,2023

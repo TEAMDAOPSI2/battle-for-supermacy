@@ -55,7 +55,7 @@ const CodmSoloRanks = () => {
     }, { 'rank': 31, 'name': 7321 }, { 'rank': 31, 'name': 8641 }, { 'name': '' }];
 
   const Team = ({ team, type }) => {
-    const img = `https://raw.githubusercontent.com/teamdao-psi3/esport-team/main/BFS/codm/solo/${team.name}.png`;
+    const img = `https://raw.githubusercontent.com/teamdao-psi3/esport-team/main/BFS/codm/solo-ranks/${team.name}.png`;
 
     return (
       <div className='flex flex-col relative items-center sm:w-2/12 w-4/12 '>
@@ -180,7 +180,7 @@ const CodmSoloRanks = () => {
   return (
     <section className='default-section'>
       <div className='page-container'>
-        <div className='page-section-title mb-5'>
+        <div className='page-section-title mb-5 bg-black/40 py-4 rounded-md'>
           <h2 className='text-[3.3rem] font-bold font-inter text-center uppercase'>Power Rankings Solo Battle Royale
             Global: </h2>
           <p className='text-[1.8rem] font-inter text-center text-secondary uppercase font-inter'>
