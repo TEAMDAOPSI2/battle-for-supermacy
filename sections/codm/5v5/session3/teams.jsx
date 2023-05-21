@@ -1,9 +1,9 @@
 import { Tab } from '@headlessui/react';
 import TabTitle from '@/components/tab-title';
-import Qualifiers from '@/public/5v5/s3/qualifers5v5.png';
-import QuarterFinals from '@/public/5v5/s3/quarter finals MnM.png';
-import SemiFinals from '@/public/5v5/s3/semi finals MnM.png';
-import Finals from '@/public/5v5/s3/Finals.png';
+import Qualifiers from '@/public/codm-5v5/s3/qualifers5v5.png';
+import QuarterFinals from '@/public/codm-5v5/s3/quarterfinalsMnM.png';
+import SemiFinals from '@/public/codm-5v5/s3/SemiFinalsMnM.png';
+import Finals from '@/public/codm-5v5/s3/Finals.png';
 
 const TabElement = ({ stages }) => {
   return (
