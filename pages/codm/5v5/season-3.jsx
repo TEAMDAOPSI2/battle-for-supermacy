@@ -155,7 +155,7 @@ const Season3 = () => {
         ],
       },
       totalTeams: '100',
-      prizePool: '$288',
+      prizePool: '$688',
     };
     return (
       <>
