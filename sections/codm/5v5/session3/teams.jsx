@@ -1,5 +1,9 @@
 import { Tab } from '@headlessui/react';
 import TabTitle from '@/components/tab-title';
+import Qualifiers from '@/public/codm-5v5/s3/qualifers5v5.png';
+import QuarterFinals from '@/public/codm-5v5/s3/quarterfinalsMnM.png';
+import SemiFinals from '@/public/codm-5v5/s3/SemiFinalsMnM.png';
+import Finals from '@/public/codm-5v5/s3/Finals.png';
 
 const TabElement = ({ stages }) => {
   return (
@@ -16,16 +20,36 @@ const TabElement = ({ stages }) => {
       </Tab.List>
       <Tab.Panels>
         <Tab.Panel>
-          <div>TBD</div>
+          <div>
+            <img
+              src={Qualifiers.src}
+              alt='Qualifiers'
+            />
+          </div>
         </Tab.Panel>
         <Tab.Panel>
-          <div>TBD</div>
+          <div>
+            <img
+              src={QuarterFinals.src}
+              alt='Quarter Finals'
+            />
+          </div>
         </Tab.Panel>
         <Tab.Panel>
-          <div>TBD</div>
+          <div>
+            <img
+              src={SemiFinals.src}
+              alt='Semi Finals'
+            />
+          </div>
         </Tab.Panel>
         <Tab.Panel>
-          <div>TBD</div>
+          <div>
+            <img
+              src={Finals.src}
+              alt='Finals'
+            />
+          </div>
         </Tab.Panel>
 
       </Tab.Panels>
@@ -41,13 +65,12 @@ const Teams = ({ data }) => {
         <div className='page-section-title'>
           <h2 className='text-[3.3rem] font-bold font-inter text-center uppercase'>The biggest CODM League</h2>
           <p
-            className='text-[1.8rem] font-inter text-center text-secondary uppercase font-inter'>{data?.teams.length} teams
-            | {`${data?.stages_count} Stages`} |
+            className='text-[1.8rem] font-inter text-center text-secondary uppercase font-inter'> {`${data?.stages_count} Stages`} |
             Global Competition
           </p>
         </div>
 
-        <div className='card bg-soft-black px-6 my-6'>
+        <div className='card bg-soft-black px-6 pb-6 my-6'>
           <TabElement stages={data?.stages} />
         </div>
 

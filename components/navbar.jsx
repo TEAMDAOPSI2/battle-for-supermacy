@@ -37,19 +37,23 @@ const Navbar = ({ isActive, action }) => {
         subLinks: [
           {
             title: 'Solo BR Season 1',
-            link: '/codm/solo/season-1',
+            link: '#',
           },
           {
             title: 'Solo BR Season 2',
             link: '/codm/solo/season-2',
           },
+          // {
+          //   title: 'Duo BR Season 1',
+          //   link: '/codm/duo/season-1',
+          // },
+          // {
+          //   title: 'Duo BR Season 2',
+          //   link: '/codm/duo/season-2',
+          // },
           {
-            title: 'Duo BR Season 1',
-            link: '/codm/duo/1',
-          },
-          {
-            title: 'Duo BR Season 2',
-            link: '/codm/duo/2',
+            title: 'Duo BR Season 3',
+            link: '/codm/duo/season-3',
           },
           {
             title: 'TEAM BR Season 5',

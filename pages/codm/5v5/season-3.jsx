@@ -6,7 +6,7 @@ import NavbarMatch from '@/components/navbar-match';
 import Hero from '@/sections/codm/solo/hero';
 import Headline from '@/sections/codm/5v5/headline';
 import Teams from '@/sections/codm/5v5/session3/teams';
-import Format from '@/sections/codm/solo/format';
+import Format from '@/sections/codm/5v5/session3/format';
 import Faq from '@/sections/home/faq';
 import More from '@/sections/home/more';
 
@@ -36,7 +36,7 @@ const Season3 = () => {
 
   const Layout = () => {
     const data = {
-      banner: 'banner/solo1.mp4',
+      banner: 'banner/5v5-s3.mp4',
       format: [
         '3 Rounds - TPP',
         '1 Kill = 1 Point',
@@ -155,7 +155,7 @@ const Season3 = () => {
         ],
       },
       totalTeams: '100',
-      prizePool: '$288',
+      prizePool: '$688',
     };
     return (
       <>
