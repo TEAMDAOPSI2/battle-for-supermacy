@@ -11,6 +11,7 @@ import { Tab } from '@headlessui/react';
 import TabTitle from '@/components/tab-title';
 import CodmMultiplayer from '@/sections/ranking/codm-multiplayer';
 import CodmSoloRanks from '@/sections/ranking/codm-solo';
+import CodmTeamRanks from '@/sections/ranking/codm-team';
 
 const Rankings = () => {
   const [article, setArticle] = useState(null);
@@ -72,7 +73,7 @@ const Rankings = () => {
                         <h1>Duo</h1>
                       </Tab.Panel>
                       <Tab.Panel>
-                        <h1>Team</h1>
+                        <CodmTeamRanks />
                       </Tab.Panel>
                       <Tab.Panel>
                         <CodmMultiplayer />
