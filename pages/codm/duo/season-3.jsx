@@ -10,7 +10,7 @@ import Format from '@/sections/codm/solo/format';
 import Faq from '@/sections/home/faq';
 import More from '@/sections/home/more';
 import Drawer from '@/public/images/solo/s2-drawer.png';
-import BG from '@/public/images/starlink-5.webp';
+import BG from '@/public/images/starlink-99.webp';
 import useProgressiveImage from '@/hooks/useProgressiveImage';
 
 const Season3 = () => {

@@ -74,7 +74,7 @@ const Teams = ({ data }) => {
         <div className='page-section-title'>
           <h2 className='text-[3.3rem] font-bold font-inter text-center uppercase'>The biggest CODM League</h2>
           <p className='text-[1.8rem] font-inter text-center text-secondary uppercase font-inter'>
-            {data?.totalParticipants} Duo | {teams.length} Countries
+            {data?.totalParticipants} Duo | {participants.length} Countries
           </p>
         </div>
 

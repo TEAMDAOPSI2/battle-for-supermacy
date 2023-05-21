@@ -37,7 +37,7 @@ const Navbar = ({ isActive, action }) => {
         subLinks: [
           {
             title: 'Solo BR Season 1',
-            link: '/codm/solo/season-1',
+            link: '#',
           },
           {
             title: 'Solo BR Season 2',
