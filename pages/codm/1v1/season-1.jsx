@@ -241,7 +241,7 @@ const Season1 = () => {
       ],
       tagline: '',
       league: 'BattleForSupremacy.TV | BattleForSupremacyTV: 1v1 Multiplayer',
-      totalParticipants: '-',
+      totalParticipants: '14',
       rules: {
         'all': [
           {
@@ -306,7 +306,7 @@ const Season1 = () => {
           '➡️If there\'s any problem during the event, BattleForSupremacy CODM Department will have the right to decide',
         ],
       },
-      totalTeams: '-',
+      totalTeams: '39',
       prizePool: 'TBA',
     };
     return (
