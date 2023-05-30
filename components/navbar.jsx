@@ -67,6 +67,10 @@ const Navbar = ({ isActive, action }) => {
             title: '5v5 Multiplayer Season 3',
             link: '/codm/5v5/season-3',
           },
+          {
+            title: '1v1 Multiplayer',
+            link: '/codm/1v1/season-1',
+          }
         ],
       },
     ],
@@ -80,35 +84,14 @@ const Navbar = ({ isActive, action }) => {
         title: 'Standard',
         sort: 'ST',
         subLinks: [
-          {
-            title: 'Call of Duty: Mobile',
-            link: '#',
-          },
-          {
-            title: '1v1 Multiplayer',
-            link: '#',
-          },
-          {
-            title: 'All Girls TEAM Battle Royale',
-          },
+
         ],
       },
       {
         title: 'Supreme',
         sort: 'SU',
         subLinks: [
-          {
-            title: 'Call of Duty: Mobile',
-            link: '#',
-          },
-          {
-            title: 'Duo Battle Royale',
-            link: '#',
-          },
-          {
-            title: 'TEAM Battle Royale Season 7',
-            link: '#',
-          }
+
         ]
       },
     ],
