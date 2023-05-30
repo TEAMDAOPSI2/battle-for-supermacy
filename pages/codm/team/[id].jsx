@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Hero from '@/sections/seasons/hero';
 import Headline from '@/sections/home/headline';
 import Teams from '@/sections/home/teams';
+import TeamsWLogo from '@/sections/codm/team/teams';
 import Format from '@/sections/home/format';
 import Slot from '@/sections/home/slots';
 import Faq from '@/sections/home/faq';
@@ -9,8 +10,6 @@ import More from '@/sections/home/more';
 import NavbarMatch from '@/components/navbar-match';
 import db from '@/db/db.json';
 import articleCtx from '@/context/article-ctx';
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 import useProgressiveImage from '@/hooks/useProgressiveImage';
 import BG from '@/public/images/starlink-4.webp';
 
@@ -35,12 +34,12 @@ export async function getServerSideProps({ params }) {
   };
 }
 
-const Season = ({article}) => {
+const Season = ({ article }) => {
 
   const Loader = () => {
     return (
-      <div className="flex justify-center items-center h-screen">
-        <div className="loader" />
+      <div className='flex justify-center items-center h-screen'>
+        <div className='loader' />
       </div>
     );
   };
@@ -56,12 +55,14 @@ const Season = ({article}) => {
         {article ? (
           <>
             <NavbarMatch />
-            <div className="mt-[55px]" />
-            <div className="card-standing relative" style={{ backgroundImage: `url(${bgImage})` }}>
+            <div className='mt-[55px]' />
+            <div className='card-standing relative' style={{ backgroundImage: `url(${bgImage})` }}>
               <Hero />
               <Headline />
               {/*<Match />*/}
-              <Teams />
+              {
+                article?.season >= 7 ? (<TeamsWLogo />) : (<Teams />)
+              }
               <Format />
               <Slot />
               {/*<History />*/}

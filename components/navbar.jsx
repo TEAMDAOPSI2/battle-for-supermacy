@@ -64,6 +64,10 @@ const Navbar = ({ isActive, action }) => {
             link: '/codm/team/6',
           },
           {
+            title: 'TEAM BR Season 7',
+            link: '/codm/team/7',
+          },
+          {
             title: '5v5 Multiplayer Season 3',
             link: '/codm/5v5/season-3',
           },

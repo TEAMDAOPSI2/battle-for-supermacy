@@ -26,7 +26,7 @@ const BoxSecondHeadline = (props) => {
 
 const Headline = () => {
   const article = useContext(articleCtx)
-  const{ total_prize_pool, teams,league, tournament_schedule} = article
+  const{ total_prize_pool, teams,league, tournament_schedule, total_teams} = article
 
   return (
     <section className='home--headline default-section'>
@@ -40,7 +40,7 @@ const Headline = () => {
         <div className='card bg-soft-black'>
           <div className='box-wrapper grid grid-cols-2'>
             <BoxHeadline title='Total Prize Pool' value={total_prize_pool} />
-            <BoxHeadline title='Teams' value={teams?.length} />
+            <BoxHeadline title='Teams' value={total_teams} />
           </div>
           <div className='box-second-wrapper grid sm:grid-cols-3 grid-cols-1'>
             {
