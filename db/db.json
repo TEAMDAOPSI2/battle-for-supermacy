@@ -26,219 +26,179 @@
       "final_stage": [],
       "teams": [
         {
-          "country": "🇮🇹",
-          "name": "CHARLIE21 - RED MOON",
+          "name": "C21 - REDMOON",
           "group": "A"
         },
         {
-          "country": "🇵🇭",
-          "name": "CHARLIE27 - TSG NEXUS",
+          "name": "C27 - TNG NEXUS",
           "group": "A"
         },
         {
-          "country": "🇮🇳",
-          "name": "ECHO15 - CALIX ETERNITY",
+          "name": "E15 - TEAM CALIX",
           "group": "A"
         },
         {
-          "country": "🇮🇷",
-          "name": "ECHO21 - WAFFEN ESPORTS",
+          "name": "E21",
           "group": "A"
         },
         {
-          "country": "🇮🇳",
-          "name": "ECHO30 - TEAM FIR",
+          "name": "E30 - TEAM FIR",
           "group": "A"
         },
         {
-          "country": "🇹🇷",
-          "name": "FOXTROT30 - CYCLONE",
+          "name": "F30 - CYCLONE",
           "group": "A"
         },
         {
-          "country": "🇩🇰",
-          "name": "GOLF34 - TEAM NWO",
+          "name": "G34 - TEAM NWO",
           "group": "A"
         },
         {
-          "country": "🇳🇬",
-          "name": "MIKE32 - PEAKY BLINDERS",
+          "name": "J30 - XOTIC ESPORTS",
           "group": "A"
         },
         {
-          "country": "🇮🇹",
-          "name": "LIMA24 - EURO ESPORTS OSIRIS",
+          "name": "L24 - EURO ESPORTS OSIRIS",
           "group": "A"
         },
         {
-          "country": "🇮🇳",
-          "name": "JULIET30 - XOTIC ESPORTS",
+          "name": "M32 - PEAKY BLINDERS",
           "group": "A"
         },
         {
-          "country": "🇵🇭",
-          "name": "OSCAR4 - T.E.A.M $ALGO",
+          "name": "O33 - GUNTITLES",
           "group": "A"
         },
         {
-          "country": "🇳🇬",
-          "name": "OSCAR33 - GUNTITLES",
+          "name": "O34 - Legendary TEAM",
           "group": "A"
         },
         {
-          "country": "🇧🇼",
-          "name": "PAPA33 - FU",
+          "name": "O4",
           "group": "A"
         },
         {
-          "country": "🇧🇼",
-          "name": "QUEBEC33 - SYNDICATE",
+          "name": "P33 - FU",
           "group": "A"
         },
         {
-          "country": "🇵🇭",
-          "name": "ROMEO4 - T.E.A.M $SAND",
+          "name": "Q33 - SYNDICATE",
           "group": "A"
         },
         {
-          "country": "🇪🇬",
-          "name": "ROMEO27 - SAVAGE AMK",
+          "name": "R04 - TEAM SAND",
           "group": "A"
         },
         {
-          "country": "🇵🇪",
-          "name": "UNICORN27 - TEAM X",
+          "name": "R27 - SAVAGE AMK",
           "group": "A"
         },
         {
-          "country": "🇿🇲",
-          "name": "VICTOR33 - TEAM ZAMBIA",
+          "name": "S32 - GHOST TEAM",
           "group": "A"
         },
         {
-          "country": "🇮🇳",
-          "name": "YANKEE32 - BRAINSTORM BUDDIES",
+          "name": "U27 -  X TEAM",
           "group": "A"
         },
         {
-          "country": "🇵🇭",
-          "name": "YANKEE6 - SG PHANTOMS",
+          "name": "V33 - TEAM ZAMBIA",
           "group": "A"
         },
         {
-          "country": "🇺🇿",
-          "name": "SIERRA32 - Ghost TEAM",
+          "name": "Y06 - SG PHANTOM",
           "group": "A"
         },
         {
+          "name": "Y32 - BRAINSTORM BUDDIES",
           "group": "A"
         },
         {
-          "country": "🇵🇭",
-          "name": "CHARLIE4 - ESCALADE ESPORTS",
+          "name": "C04 -  ESCALADE ESPORTS",
           "group": "B"
         },
         {
-          "country": "🇵🇭",
-          "name": "ECHO4 - VAGABONDS ESPORTS",
+          "name": "E04 - VAGABONDS ESPORTS",
           "group": "B"
         },
         {
-          "country": "🇳🇬",
-          "name": "ECHO32 - TEAM NIGERIA V2",
+          "name": "E32",
           "group": "B"
         },
         {
-          "country": "🇩🇴",
-          "name": "GOLF24 - T.E.A.M LATAM",
+          "name": "G24 - T.E.A.M LATAM",
           "group": "B"
         },
         {
-          "country": "🇺🇦",
-          "name": "GOLF31 - NORD",
+          "name": "G31 -  ESCALADE ESPORTS",
           "group": "B"
         },
         {
-          "country": "🇵🇭",
-          "name": "GOLF32 - ムSG AMANDA",
+          "name": "G31",
           "group": "B"
         },
         {
-          "country": "🇮🇳",
-          "name": "INDIA30 - TEAM GHOST",
+          "name": "G32 - ムSG AMANDA",
           "group": "B"
         },
         {
-          "country": "🇳🇬",
-          "name": "JULIET32 - TEAM NIGERIA V3",
+          "name": "I30 - TEAM GHOST",
           "group": "B"
         },
         {
-          "country": "🇳🇬",
-          "name": "KILO32 - TSpikes",
+          "name": "J32 - TEAM NIGERIA V3",
           "group": "B"
         },
         {
-          "country": "🇳🇬",
-          "name": "LIMA26 - TEAM NIGERIA",
+          "name": "K32 - TSpikes",
           "group": "B"
         },
         {
-          "country": "🇧🇷",
-          "name": "NOVEMBER31 - DETONIX ESPORTS",
+          "name": "L26 - TEAM NIGERIA",
           "group": "B"
         },
         {
-          "country": "🇵🇭",
-          "name": "SIERRA6 - T.E.A.M $KLAY",
+          "name": "M31 - OP TEAM",
           "group": "B"
         },
         {
-          "country": "🇸🇦",
-          "name": "SIERRA24 - OBSERVANT FORCE",
+          "name": "N31 - DETONIX ESPORTS",
           "group": "B"
         },
         {
-          "country": "🇮🇳",
-          "name": "SIERRA30 - CALIX LEGACY",
+          "name": "S24 - OBSERVANT FORCE",
           "group": "B"
         },
         {
-          "country": "🇬🇧",
-          "name": "UNICORN33 - PHUK",
+          "name": "S30 - CALIX LEGACY",
           "group": "B"
         },
         {
-          "country": "🇲🇹",
-          "name": "VICTOR6 - EURO ESPORTS RAIJIN",
+          "name": "S6",
           "group": "B"
         },
         {
-          "country": "🇮🇷",
-          "name": "VICTOR26 - VK ESPORTS",
+          "name": "U33",
           "group": "B"
         },
         {
-          "country": "🇵🇭",
-          "name": "VICTOR31 - VA EROS",
+          "name": "V06 - EURO ESPORTS RAIJIN",
           "group": "B"
         },
         {
-          "country": "🇵🇭",
-          "name": "YANKEE31 - VA SYNDICATE",
+          "name": "V26 - VK ESPORTS",
           "group": "B"
         },
         {
-          "country": "🇮🇳",
-          "name": "ZULU34 - PRO NATION",
+          "name": "V31 - VA EROS",
           "group": "B"
         },
         {
-          "country": "🇮🇷",
-          "name": "MIKE31 - OP TEAM",
+          "name": "Y31 - VA SYNDICATE",
           "group": "B"
         },
         {
+          "name": "Z34 - PRO NATION",
           "group": "B"
         }
       ],

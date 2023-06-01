@@ -36,7 +36,7 @@ const Season1 = () => {
 
   const Layout = () => {
     const data = {
-      banner: 'banner/5v5-s3.mp4',
+      banner: 'banner/1v1-mp-s1.mp4',
       format: [
         '3 Rounds - TPP',
         '1 Kill = 1 Point',
