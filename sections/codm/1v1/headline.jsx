@@ -19,34 +19,40 @@ const BoxSecondHeadline = (props) => {
   return (
     <div className='flex flex-col items-center font-inter py-4 gap-3 bg-soft-black my-3 uppercase'>
       <h3 className='text-2xl font-bold text-secondary'>{title}</h3>
-      <span className='text-white text-lg uppercase text-lg'>{value}</span>
+      <span className='text-white text-sm uppercase text-lg'>{value}</span>
     </div>
   );
 };
 
-const Headline = () => {
-  const article = useContext(articleCtx)
-  const{ total_prize_pool, teams,league, tournament_schedule, total_teams} = article
+const Headline = ({ data }) => {
+  // const{ total_prize_pool, teams,league, tournament_schedule} = {
+  //   total_prize_pool: '333,333,333',
+  //   teams: [
+  //     {
+  //
+  //     }
+  //   ]
+  // }
 
   return (
     <section className='home--headline default-section'>
       <div className='page-container'>
         <div className='mb-5 page-section-title'>
-          <h2 className='text-[3.3rem] font-bold font-inter text-center'>{league}</h2>
+          <h2 className='text-[3.3rem] font-bold font-inter text-center'>{data?.league}</h2>
           <p className='text-[1.8rem] font-inter text-center text-secondary uppercase font-inter'>
-            A gateway to the top for all BattleForSupremacy Pro Tour Competitions
+            {data?.tagline}
           </p>
         </div>
         <div className='card bg-soft-black'>
           <div className='box-wrapper grid grid-cols-2'>
-            <BoxHeadline title='Total Prize Pool' value={total_prize_pool} />
-            <BoxHeadline title='Teams' value={total_teams} />
+            <BoxHeadline title='Total Prize Pool' value={data.prizePool} />
+            <BoxHeadline title='Players' value={data.totalTeams} />
           </div>
-          <div className='box-second-wrapper grid sm:grid-cols-3 grid-cols-1'>
+          <div className={`box-second-wrapper grid sm:grid-cols-3 grid-cols-2`}>
             {
-              tournament_schedule.map((shcedule, index) => {
+              data.tournament_schedule.map((schedule, index) => {
                 return (
-                  <BoxSecondHeadline key={index} title={shcedule?.title} value={shcedule?.date} />
+                  <BoxSecondHeadline key={index} title={schedule?.title} value={schedule?.date} />
                 )
               })
             }
@@ -54,7 +60,7 @@ const Headline = () => {
         </div>
         <div className='flex items-center py-3'>
           <Link href='/#teams' className='m-auto text-secondary text-4xl transform animate-bounce'>
-            <FontAwesomeIcon icon={faChevronDown}  />
+            <FontAwesomeIcon icon={faChevronDown} />
           </Link>
         </div>
       </div>

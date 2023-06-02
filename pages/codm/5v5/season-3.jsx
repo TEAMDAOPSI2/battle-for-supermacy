@@ -44,7 +44,7 @@ const Season3 = () => {
       stages_count: 4,
       stages: [
         {
-          'name': 'Qualifiers A',
+          'name': 'Qualifiers',
           'teams': '',
           'format': [],
         },
@@ -59,14 +59,14 @@ const Season3 = () => {
           'format': [],
         },
         {
-          'name': 'FInal',
+          'name': 'Final',
           'teams': '',
           'format': [],
         },
       ],
       tournament_schedule: [
         {
-          'title': 'Qualifiers A',
+          'title': 'Qualifiers',
           'date': 'April 28, 2023 (12PM EST)',
         },
         {
@@ -79,7 +79,7 @@ const Season3 = () => {
         },
         {
           'title': 'Finals',
-          'date': 'May 10, 2023 (12PM EST)"',
+          'date': 'May 10, 2023 (12PM EST)',
         },
       ],
       teams: [
@@ -154,7 +154,7 @@ const Season3 = () => {
           '➡️If there\'s any problem during the event, BattleForSupremacy CODM Department will have the right to decide',
         ],
       },
-      totalTeams: '100',
+      totalTeams: '80',
       prizePool: '$688',
     };
     return (

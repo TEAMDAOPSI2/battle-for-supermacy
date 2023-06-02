@@ -53,10 +53,10 @@ const anchorMultiple = ({ props }) => {
                       <FontAwesomeIcon icon={faCaretRight} className='ml-2' />
                     </span>
 
-                      {showSub && (
+                      { showSub && (
                         <div
                           className='absolute -right-[250px] top-0 block min-w-[250px] z-20 shadow shadow-soft-black'>
-                          <div className='bg-soft-black p-2 shadow'>
+                          <div className={`${x.subLinks.length > 0 && 'bg-soft-black p-2 shadow'}`}>
                             {
                               x.subLinks.map((link) => (
                                 <a
