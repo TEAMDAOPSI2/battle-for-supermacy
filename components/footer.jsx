@@ -96,7 +96,11 @@ const Footer = () => {
                 <AnchorText href='#' title='Snacks League' />
                 <AnchorText href='#' title='Gadget League' />
                 <AnchorText href='#' title='PC League' />
-
+                <AnchorText href='#' title='Console League' />
+                <AnchorText href='#' title='Air Force' />
+                <AnchorText href='#' title='Navy' />
+                <AnchorText href='#' title='Marines' />
+                <AnchorText href='#' title='Army' />
               </ul>
             </div>
 
@@ -110,11 +114,15 @@ const Footer = () => {
             <div className='flex flex-col'>
               <h3 className='text-white text-xl font-bold font-inter mb-3 uppercase'>Follow us</h3>
               <ul className='flex flex-row gap-3'>
-                <AnchorIcon href='https://www.youtube.com/@BattleForSupremacyTV' icon={<FontAwesomeIcon icon={faYoutube} />} />
-                <AnchorIcon href='https://www.twitch.tv/battleforsupremacytv' icon={<FontAwesomeIcon icon={faTwitch} />} />
+                <AnchorIcon href='https://www.youtube.com/@BattleForSupremacyTV'
+                            icon={<FontAwesomeIcon icon={faYoutube} />} />
+                <AnchorIcon href='https://www.twitch.tv/battleforsupremacytv'
+                            icon={<FontAwesomeIcon icon={faTwitch} />} />
                 <AnchorIcon href='https://discord.gg/KmmkAMAK' icon={<FontAwesomeIcon icon={faDiscord} />} />
-                <AnchorIcon href='https://www.tiktok.com/@battleforsupremacy.tv' icon={<FontAwesomeIcon icon={faTiktok} />} />
-                <AnchorIcon href='https://kick.com/battleforsupremacytv' icon={<FontAwesomeIcon icon={faKickstarter} />} />
+                <AnchorIcon href='https://www.tiktok.com/@battleforsupremacy.tv'
+                            icon={<FontAwesomeIcon icon={faTiktok} />} />
+                <AnchorIcon href='https://kick.com/battleforsupremacytv'
+                            icon={<FontAwesomeIcon icon={faKickstarter} />} />
               </ul>
             </div>
 
@@ -125,7 +133,6 @@ const Footer = () => {
     </footer>
   );
 };
-
 
 
 export default Footer;
