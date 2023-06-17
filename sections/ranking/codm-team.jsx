@@ -29,7 +29,7 @@ const CodmTeamRanks = () => {
     {
       'country': '🇮🇹',
       'name': 'EURO ESPORTS OSIRIS',
-      'rank': '1'
+      'rank': '2'
     },
     {
       'country': '🇵🇭',
@@ -38,17 +38,17 @@ const CodmTeamRanks = () => {
     },
     {
       'country': '🇵🇭',
-      'name': 'T.E.A.M KLAY',
+      'name': 'TEAM CALIX',
       'rank': '4'
     },
     {
       'country': '🇮🇳',
-      'name': 'TEAM CALIX',
+      'name': 'SG PHANTOM',
       'rank': '5'
     },
     {
       'country': '🇵🇭',
-      'name': 'SG PHANTOM',
+      'name': 'T.E.A.M KLAY',
       'rank': '6'
     },
     {
@@ -58,103 +58,148 @@ const CodmTeamRanks = () => {
     },
     {
       'country': '🇵🇪',
-      'name': 'X TEAM',
+      'name': 'EURO ESPORTS RAIJIN',
       'rank': '8'
     },
     {
       'country': '🇪🇬',
-      'name': 'SAVAGE AMK',
+      'name': 'REDMOON',
       'rank': '9'
     },
     {
       'country': '🇲🇹',
-      'name': 'EURO ESPORTS RAIJIN',
+      'name': 'SEVEN ',
       'rank': '10'
     },
     {
       'country': '🇮🇹',
-      'name': 'REDMOON',
+      'name': 'LEGENDARY TEAM',
       'rank': '11'
     },
     {
       'country': '🇮🇳',
-      'name': 'STELLAR ESPORTS',
+      'name': 'T.E.A.M $ALGO',
       'rank': '12'
     },
     {
       'country': '🇸🇦',
-      'name': 'OBSERVANT FORCE',
+      'name': 'STELLAR ESPORTS',
       'rank': '13'
     },
     {
       'country': '🇮🇳',
-      'name': 'TEAM Z',
+      'name': 'SAVAGE AMK',
       'rank': '14'
     },
     {
       'country': '🇮🇳',
-      'name': 'RNT',
+      'name': 'TSG NEXUS',
       'rank': '15'
     },
     {
       'country': '🇦🇺',
-      'name': 'PHYTHIAN KOUGRAS',
-      'rank': '15'
+      'name': 'OBSERVANT FORCE',
+      'rank': '16'
     },
     {
       'country': '🇮🇳',
-      'name': 'NS OFFICIAL',
-      'rank': '15'
+      'name': 'TEAM Z',
+      'rank': '17'
     },
     {
       'country': '🇵🇭',
-      'name': 'T.E.A.M $ALGO',
+      'name': 'RNT',
       'rank': '18'
     },
     {
       'country': '🇮🇷',
-      'name': 'TEAM BIANCO',
+      'name': 'NS OFFICIAL',
       'rank': '18'
     },
     {
       'country': '🇵🇭',
-      'name': 'TNG NEXUS',
-      'rank': '20'
+      'name': 'OP ESPORTS',
+      'rank': '21'
     },
     {
       'country': '🇨🇦',
-      'name': 'NICAEA MINOKAWA',
-      'rank': '20'
-    },
-    {
-      'country': '🇦🇪',
-      'name': 'ALLSTAR GAMING',
+      'name': 'XOTIC ESPORTS',
       'rank': '22'
     },
     {
+      'country': '🇦🇪',
+      'name': 'CALIX LEGACY',
+      'rank': '23'
+    },
+    {
       'country': '🇷🇺',
-      'name': 'CARTEL BEGGARS',
+      'name': 'RZN',
       'rank': '23'
     },
     {
       'country': '🇵🇭',
-      'name': 'PH_CLAN',
-      'rank': '24'
+      'name': 'TEAM BIANCO',
+      'rank': '23'
     },
     {
       'country': '🇵🇭',
-      'name': 'TSG RAGNAROK',
-      'rank': '25'
+      'name': 'NICAEA MINOKAWA',
+      'rank': '26'
     },
     {
       'country': '🇵🇭',
-      'name': 'TEAM ALPHA',
-      'rank': '25'
+      'name': 'ALLSTAR GAMING',
+      'rank': '27'
     },
     {
       'country': '🇨🇦',
-      'name': 'MANDURUGAS DEALS',
-      'rank': '27'
+      'name': 'CARTEL BEGGARS',
+      'rank': '28'
+    },
+    {
+      'country': '🇨🇦',
+      'name': 'TEAM UGE',
+      'rank': '28'
+    },
+    {
+      'country': '🇨🇦',
+      'name': 'VK ESPORTS',
+      'rank': '28'
+    },
+    {
+      'country': '🇨🇦',
+      'name': 'NORD',
+      'rank': '31'
+    },
+    {
+      'country': '🇨🇦',
+      'name': 'PH_CLAN',
+      'rank': '31'
+    },
+    {
+      'country': '🇨🇦',
+      'name': 'TSG RAGNAROK',
+      'rank': '33'
+    },
+    {
+      'country': '🇨🇦',
+      'name': 'TEAM ALPHA',
+      'rank': '33'
+    },
+    {
+      'country': '🇨🇦',
+      'name': 'MANDORUGAS- DEALS',
+      'rank': '35'
+    },
+    {
+      'country': '🇨🇦',
+      'name': 'WAFFEN ESPORTS',
+      'rank': '36'
+    },
+    {
+      'country': '🇨🇦',
+      'name': 'VA EROS',
+      'rank': '36'
     }
   ];
 
@@ -169,6 +214,7 @@ const CodmTeamRanks = () => {
               <img
                 src={img}
                 alt={team.name}
+                title={team.name}
                 className='w-full h-full'
                 loading={'lazy'}
                 onError={(e) => {
@@ -286,7 +332,7 @@ const CodmTeamRanks = () => {
         <div className='page-section-title mb-5 bg-black/40 py-4 rounded-md'>
           <h2 className='text-[3.3rem] font-bold font-inter text-center uppercase'>POWER RANKINGS TEAM - BATTLE ROYALE</h2>
           <p className='text-[1.8rem] font-inter text-center text-secondary uppercase font-inter'>
-            As of May 12,2023
+            As of June 13, 2023
           </p>
         </div>
         <div className='card rounded-md p-3'>
