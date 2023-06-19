@@ -68,12 +68,12 @@ const CodmTeamRanks = () => {
     },
     {
       'country': '🇲🇹',
-      'name': 'SEVEN ',
+      'name': 'SEVEN',
       'rank': '10'
     },
     {
       'country': '🇮🇹',
-      'name': 'LEGENDARY TEAM',
+      'name': 'Legendary TEAM',
       'rank': '11'
     },
     {
@@ -93,7 +93,7 @@ const CodmTeamRanks = () => {
     },
     {
       'country': '🇮🇳',
-      'name': 'TSG NEXUS',
+      'name': 'TNG NEXUS',
       'rank': '15'
     },
     {
@@ -188,7 +188,7 @@ const CodmTeamRanks = () => {
     },
     {
       'country': '🇨🇦',
-      'name': 'MANDORUGAS- DEALS',
+      'name': 'MANDURUGAS DEALS',
       'rank': '35'
     },
     {
