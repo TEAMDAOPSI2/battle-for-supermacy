@@ -97,10 +97,7 @@ const Footer = () => {
                 <AnchorText href='#' title='Gadget League' />
                 <AnchorText href='#' title='PC League' />
                 <AnchorText href='#' title='Console League' />
-                <AnchorText href='#' title='Air Force' />
-                <AnchorText href='#' title='Navy' />
-                <AnchorText href='#' title='Marines' />
-                <AnchorText href='#' title='Army' />
+                <AnchorText href='#' title='Military League' />
               </ul>
             </div>
 
