@@ -3,8 +3,6 @@ import db from '@/db/db.json';
 import articleCtx from '@/context/article-ctx';
 import Head from 'next/head';
 import NavbarMatch from '@/components/navbar-match';
-import Standing from '@/sections/ranking/standing';
-import StandingSolo from '@/sections/ranking/standing-solo';
 import useProgressiveImage from '@/hooks/useProgressiveImage';
 import starlink from '@/public/images/starlink_1.jpg';
 import { Tab } from '@headlessui/react';
@@ -12,6 +10,7 @@ import TabTitle from '@/components/tab-title';
 import CodmMultiplayer from '@/sections/ranking/codm-multiplayer';
 import CodmSoloRanks from '@/sections/ranking/codm-solo';
 import CodmTeamRanks from '@/sections/ranking/codm-team';
+import CodmDuo from '@/sections/ranking/codm-duo';
 
 const Rankings = () => {
   const [article, setArticle] = useState(null);
@@ -70,7 +69,7 @@ const Rankings = () => {
                         <CodmSoloRanks />
                       </Tab.Panel>
                       <Tab.Panel>
-                        <h1>Duo</h1>
+                        <CodmDuo />
                       </Tab.Panel>
                       <Tab.Panel>
                         <CodmTeamRanks />
