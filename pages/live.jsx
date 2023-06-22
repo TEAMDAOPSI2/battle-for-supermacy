@@ -1,10 +1,76 @@
 import Head from 'next/head';
-import { TwitchEmbed } from 'react-twitch-embed';
-import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { TwitchEmbed, TwitchPlayer } from 'react-twitch-embed';
+import axios from 'axios';
+import { useRef } from 'react';
 
-const Live = () => {
+export async function getServerSideProps() {
+  // jingggxd
+  const channelName = 'BattleForSupremacy_TV';
+  let bearerTokenRef = null;
+
+  // Fetch the OAuth token
+  const getOauthToken = async () => {
+    const response = await axios.post('https://id.twitch.tv/oauth2/token', {
+      grant_type: 'client_credentials',
+      client_id: process.env.NEXT_PUBLIC_TWITCH_CLIENT_ID,
+      client_secret: process.env.NEXT_PUBLIC_TWITCH_CLIENT_SECRET,
+    });
+    bearerTokenRef = response.data.access_token;
+  };
+
+  // Fetch the channel info
+  const getChannelInfo = async () => {
+    const response = await axios.get(`https://api.twitch.tv/helix/users?login=${channelName}`, {
+      headers: {
+        'Client-ID': process.env.NEXT_PUBLIC_TWITCH_CLIENT_ID,
+        Authorization: `Bearer ${bearerTokenRef}`,
+      },
+    });
+    return response.data.data[0];
+  };
+
+  // Fetch the channel stream
+  const getChannelStream = async () => {
+    const response = await axios.get(`https://api.twitch.tv/helix/streams?user_login=${channelName}`, {
+      headers: {
+        'Client-ID': process.env.NEXT_PUBLIC_TWITCH_CLIENT_ID,
+        Authorization: `Bearer ${bearerTokenRef}`,
+      },
+    });
+    return response.data.data.length > 0;
+  };
+
+  // Fetch the latest video
+  const getLatestVideo = async (channelID) => {
+    const response = await axios.get(
+      `https://api.twitch.tv/helix/videos?user_id=${channelID}&first=1&sort=views`,
+      {
+        headers: {
+          'Client-ID': process.env.NEXT_PUBLIC_TWITCH_CLIENT_ID,
+          Authorization: `Bearer ${bearerTokenRef}`,
+        },
+      },
+    );
+    return response.data.data[0];
+  };
+
+  await getOauthToken();
+  const channelInfo = await getChannelInfo();
+  const isLive = await getChannelStream();
+  console.log(channelInfo, isLive);
+  const latestVideo = await getLatestVideo(channelInfo?.id);
+
+  return {
+    props: {
+      channelInfo,
+      isLive,
+      latestVideo,
+    },
+  };
+};
+
+
+const Live = ({ channelInfo, isLive, latestVideo }) => {
   return (
     <>
       <Head>
@@ -14,23 +80,25 @@ const Live = () => {
         <div className='px-2'>
           <div className=''>
             <div className='flex flex-col items-center justify-center min-h-[500px]'>
-              <TwitchEmbed
-                channel='BattleForSupremacy_TV'
-                id='BattleForSupremacy_TV'
-                theme='dark'
-                muted
-                width='100%'
-                height='700px'
+              {!isLive ? (
+                <>
+                  <TwitchPlayer
+                    video={latestVideo?.id}
+                    width='100%'
+                    height='700px'
+                    autoplay={true}
+                  />
+                </>
+              ) : (
+                <TwitchEmbed
+                  channel={channelInfo?.login}
+                  id={channelInfo?.id}
+                  theme='dark'
+                  width='100%'
+                  height='700px'
                 />
+              )}
             </div>
-            {/*<div className="py-6">*/}
-            {/*  <p className='text-[1.2rem] font-inter text-left text-accent uppercase'>*/}
-            {/*    Livestream: <br/>*/}
-            {/*    <Link className="text-white hover:border-b" href={'https://www.facebook.com/TEAMDAOcom'} ><FontAwesomeIcon icon={faFacebook}/> Facebook T.E.A.M DAO</Link> <br/>*/}
-            {/*    Replay: <br/>*/}
-            {/*    <Link className="text-white hover:border-b" href={'https://www.youtube.com/@TEAMDAOlive'}><FontAwesomeIcon icon={faYoutube}/> Youtube T.E.A.M DAO</Link>*/}
-            {/*  </p>*/}
-            {/*</div>*/}
           </div>
         </div>
       </section>
