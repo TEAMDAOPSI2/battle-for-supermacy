@@ -3,7 +3,7 @@ import { useContext } from 'react';
 
 const Hero = () => {
   const article = useContext(articleCtx);
-  const banner = process.env.BASE_URL + 'banner/w-flag.mp4';
+  const banner = `${process.env.BASE_URL}banner/${article.banner}` || 'banner/w-flag.mp4';
   return (
     <section className='hero'>
       <video className='xs:w-[250px] w-[350px] m-auto' autoPlay loop muted>

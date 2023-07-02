@@ -1,0 +1,328 @@
+@import url("../public/fonts/stylesheet.css");
+@font-face {
+  font-family: "Twemoji Country Flags";
+  unicode-range: U+1F1E6-1F1FF, U+1F3F4, U+E0062-E0063, U+E0065, U+E0067, U+E006C, U+E006E, U+E0073-E0074, U+E0077, U+E007F;
+  src: url("https://cdn.jsdelivr.net/npm/country-flag-emoji-polyfill@0.1/dist/TwemojiCountryFlags.woff2") format("woff2");
+  font-display: swap;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #111;
+  font-family: "F1", "Calps Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#main-header {
+  background-color: #1e1e1e;
+  width: 250px;
+  z-index: 300;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+#main-header .burger {
+  display: none;
+}
+@media (max-width: 768px) {
+  #main-header {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  #main-header .top {
+    @apply flex flex-row items-center justify-between px-3;
+  }
+  #main-header .top .img-logo {
+    width: 50%;
+  }
+  #main-header .top .img-logo img {
+    width: unset;
+  }
+  #main-header .top .burger {
+    font-size: 27px;
+    @apply flex text-secondary;
+  }
+}
+#main-header nav {
+  padding: 10px;
+}
+#main-header nav .img-logo {
+  width: 100%;
+  height: 180px;
+}
+@media (max-width: 768px) {
+  #main-header nav .img-logo {
+    height: 50px;
+  }
+}
+#main-header nav .img-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.page-container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .page-container {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-container {
+    padding: 0 10px;
+    max-width: 100%;
+  }
+}
+
+#main-page {
+  width: calc(100% - 250px);
+  margin-left: 250px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  #main-page {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-top: 60px;
+  }
+}
+
+.sec-nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  @apply bg-soft-black;
+  margin-top: -60px;
+  display: none;
+  z-index: 299;
+}
+@media (max-width: 768px) {
+  .sec-nav {
+    display: flex;
+  }
+}
+.sec-nav img {
+  height: 70px;
+}
+.sec-nav .burger {
+  font-size: 27px;
+  @apply text-secondary;
+}
+
+.hero {
+  min-height: 400px;
+  display: flex;
+}
+.hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.default-section {
+  @apply py-[40px];
+}
+
+.page-section-title h2 {
+  background-image: url("../public/images/bg-text.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: transparent;
+  -webkit-background-clip: text;
+  @apply sm:text-3xl text-xl mb-3;
+  line-height: unset;
+}
+.page-section-title p {
+  @apply sm:text-xl text-lg font-medium;
+}
+
+.home--headline .card {
+  border-radius: 10px;
+}
+.home--headline .box-wrapper {
+  background-image: url("../public/images/bg-text.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.home--headline .box-wrapper div {
+  @apply ml-3;
+}
+.home--headline .box-wrapper div:last-child {
+  @apply mr-3;
+}
+.home--headline .box-second-wrapper h3 {
+  background-image: url("../public/images/bg-text.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.match-slider .match {
+  border-left: 1px solid #9c9c93;
+}
+.match-slider .match .team {
+  display: flex;
+  justify-content: space-around;
+}
+.match-slider .match .team-name {
+  font-size: 16px;
+}
+.match-slider .match:last-child {
+  border-right: 1px solid #9c9c93;
+}
+.match-slider .next,
+.match-slider .prev {
+  @apply flex items-center justify-center text-secondary transition-all duration-300 ease-in-out;
+  cursor: pointer;
+  width: 20px;
+}
+.match-slider .next:hover,
+.match-slider .prev:hover {
+  background-color: #9c9c93;
+}
+
+.separator {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.separator div {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 10px;
+  @apply text-secondary uppercase text-lg;
+}
+
+.separator:before {
+  display: block;
+  content: "";
+  border-bottom: 0;
+  flex-grow: 1;
+  @apply border-t border-secondary;
+}
+
+.separator:after {
+  display: block;
+  content: "";
+  border-bottom: 0;
+  flex-grow: 1;
+  @apply border-t border-secondary;
+}
+
+.home--format .format-list-wrapper {
+  @apply px-5;
+}
+.home--format .format-list-wrapper:nth-child(even) {
+  @apply sm:border-x border-x-0 border-y sm:border-y-0 py-3 sm:py-0 border-secondary;
+}
+
+footer {
+  position: relative;
+}
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  left: 250px;
+  width: calc(100% - 250px);
+}
+@media (max-width: 768px) {
+  .fixed-footer {
+    left: 0;
+    width: 100%;
+  }
+}
+
+.match-nav {
+  background: linear-gradient(270deg, #0070f3, #db2b42, #0070f3, #db2b42) 0 100% #000 no-repeat;
+  background-size: 100% 2px;
+  background-color: #000000;
+}
+.match-nav img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+@media (max-width: 768px) {
+  .match-nav {
+    margin-top: 25px;
+  }
+}
+
+.footer-sponsor {
+  height: 55px;
+  position: fixed;
+  bottom: 0;
+  background: linear-gradient(270deg, #0070f3, #db2b42, #0070f3, #db2b42) 0 0 #000 no-repeat;
+  background-size: 100% 2px;
+}
+
+* {
+  cursor: url("../public/images/crosshair.png") 45 45, auto !important;
+}
+
+svg {
+  cursor: url("../public/images/crosshair.png") 45 45, auto !important;
+}
+
+.card-standing {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper-teams-list-hex {
+  padding-top: 40px;
+}
+.wrapper-teams-list-hex div {
+  margin-top: -18px;
+}
+@media (max-width: 768px) {
+  .wrapper-teams-list-hex div {
+    margin-top: -10px;
+  }
+}
+
+.card-bfs {
+  background-repeat: no-repeat;
+}
+
+.drawer-overlay {
+  @apply fixed  top-[60px] z-20;
+  right: -67px;
+}
+
+.drawer-overlay-active {
+  @apply right-0;
+}
+
+/*# sourceMappingURL=globals.css.map */
