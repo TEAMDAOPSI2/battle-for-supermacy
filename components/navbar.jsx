@@ -138,8 +138,8 @@ const Navbar = ({ isActive, action }) => {
           <AnchorMain href='/rankings' text='RANKINGS' svg={<FontAwesomeIcon icon={faRankingStar} />} />
           <AnchorMain href='/' text='PRIZES' svg={<FontAwesomeIcon icon={faCoins} />} />
           <AnchorMain href='/sponsorship' text='SPONSORSHIPS' svg={<FontAwesomeIcon icon={faUserTie} />} />
-          <AnchorMain href='/' text='GAMEMASTERS' svg={<FontAwesomeIcon icon={faUserGear} />} />
-          <AnchorMain href='/' text='SHOUTCASTERS' svg={<FontAwesomeIcon icon={faUserFriends} />} />
+          <AnchorMain href='/gamemasters' text='GAMEMASTERS' svg={<FontAwesomeIcon icon={faUserGear} />} />
+          <AnchorMain href='/shoutcasters' text='SHOUTCASTERS' svg={<FontAwesomeIcon icon={faUserFriends} />} />
           <AnchorMain href='/' text='FAQ' svg={<FontAwesomeIcon icon={faBullhorn} />} />
           <AnchorMain href='https://spin.battleforsupremacy.tv/' text='Spin'
                       svg={<FontAwesomeIcon icon={faSpinner} />} />

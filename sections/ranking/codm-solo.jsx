@@ -21,8 +21,8 @@ const RactangleTeamFlag = ({ name, flag = '', rank = '', className = '' }) => {
 
 
 const CodmSoloRanks = () => {
-  const global_ranks =
-    [{ 'rank': 1, 'name': 2831 }, { 'rank': 2, 'name': 4953 }, { 'rank': 3, 'name': 3099 }, {
+  const global_ranks = [
+      { 'rank': 1, 'name': 2831 }, { 'rank': 2, 'name': 4953 }, { 'rank': 3, 'name': 3099 }, {
       'rank': 4,
       'name': 7420,
     }, { 'rank': 5, 'name': 3078 }, { 'rank': 6, 'name': 7734 }, { 'rank': 6, 'name': 8345 }, {
