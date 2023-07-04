@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import ErrImg from '@/public/images/NINJA.png';
+import CastersDE from '@/public/images/casters-de.svg';
+import CastersMO from '@/public/images/casters-mo.svg';
 
 const casters = [
   {
@@ -111,7 +113,20 @@ function Shoutcasters() {
           </div>
           <div className='flex flex-col min-h-[680px] max-w-[1020px] mx-auto'>
             {/*<TeamList teams={casters} numItemsPerRow={2} type='shoutcasters' />*/}
-            <GenPyramid global_ranks={casters} />
+            <div className="sm:flex hidden flex-col items-center">
+              <img
+                className='w-full'
+                src={CastersDE.src}
+                alt='Shoutcasters'
+              />
+            </div>
+            <div className="sm:hidden flex flex-col items-center">
+              <img
+                className='w-full'
+                src={CastersMO.src}
+                alt='Shoutcasters'
+              />
+            </div>
           </div>
         </div>
       </section>
