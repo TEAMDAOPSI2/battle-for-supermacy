@@ -74,7 +74,7 @@ const Navbar = ({ isActive, action }) => {
           {
             title: '1v1 Multiplayer',
             link: '/codm/1v1/season-1',
-          }
+          },
         ],
       },
     ],
@@ -87,16 +87,17 @@ const Navbar = ({ isActive, action }) => {
       {
         title: 'Standard',
         sort: 'ST',
-        subLinks: [
-
-        ],
+        subLinks: [],
       },
       {
         title: 'Supreme',
         sort: 'SU',
-        subLinks: [
-
-        ]
+        subLinks: [],
+      },
+      {
+        title: 'Super',
+        sort: 'SP',
+        subLinks: [],
       },
     ],
   };

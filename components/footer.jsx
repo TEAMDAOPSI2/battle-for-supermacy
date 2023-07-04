@@ -90,6 +90,7 @@ const Footer = () => {
               <ul className='flex flex-col gap-3'>
                 <AnchorText href='#' title='Supreme League' />
                 <AnchorText href='#' title='Super League' />
+                <AnchorText href='#' title='Standard League' />
                 <AnchorText href='#' title='Crypto League' />
                 <AnchorText href='#' title='SoftDrink League' />
                 <AnchorText href='#' title='Chocolate League' />
