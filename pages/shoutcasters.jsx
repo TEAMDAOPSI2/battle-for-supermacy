@@ -25,11 +25,14 @@ const casters = [
   {
     name: 'NINJA',
   },
+  {
+    name: 'NINJA',
+  },
 ];
 
 const GenPyramid = ({ global_ranks }) => {
   const totalItems = 8;
-  const totalRows = 3;
+  const totalRows = 6;
   const pyramid = [];
   let currentItem = 0;
   // row 1 = 1
@@ -63,7 +66,7 @@ const GenPyramid = ({ global_ranks }) => {
     }
     pyramid.push(
       <div key={row}
-           className={`flex  ${row === (5 - 1) ? 'sm:justify-between justify-evenly' : 'justify-center'} ${row > 0 && 'sm:-mt-10 -mt-3'}`}>
+           className={`flex flex-nowrap  ${row === (5 - 1) ? 'sm:justify-between justify-evenly' : 'justify-center'} ${row > 0 && 'sm:-mt-10 -mt-3'}`}>
         {items}
       </div>,
     );
@@ -75,46 +78,6 @@ const GenPyramid = ({ global_ranks }) => {
       {pyramid}
     </div>
   );
-};
-const TeamList = ({ teams, numItemsPerRow, type }) => {
-  // const totalRows = Math.ceil(teams.length / numItemsPerRow);
-  const totalRows = Math.ceil(teams.length / numItemsPerRow) + Math.ceil((teams.length % numItemsPerRow) / 2);
-
-  let teamIndex = 0;
-  let rows = [];
-
-  for (let i = 1; i <= totalRows; i++) {
-    const rowItems = [];
-
-    if (i % 2 === 0) {
-      // even row
-      for (let j = 0; j < numItemsPerRow - 1; j++) {
-        if (teamIndex < teams.length) {
-          rowItems.push(<Team team={teams[teamIndex]} type={type} />);
-          teamIndex++;
-        } else {
-          // add empty data to fill row
-          rowItems.push(<div />);
-        }
-      }
-    } else {
-      // odd row
-      const itemsInRow = Math.min(numItemsPerRow, teams.length - teamIndex + 1);
-      for (let j = 0; j < itemsInRow; j++) {
-        if (teamIndex < teams.length) {
-          rowItems.push(<Team team={teams[teamIndex]} type={type} />);
-          teamIndex++;
-        } else {
-          // add empty data to fill row
-          rowItems.push(<div className={`w-${12 / numItemsPerRow}/12`} />);
-        }
-      }
-    }
-
-    rows.push(<div className='flex flex-row flex-wrap justify-center'>{rowItems}</div>);
-  }
-
-  return <div className='wrapper-teams-list-hex mx-auto'>{rows}</div>;
 };
 const Team = ({ team, type }) => {
   const img = team?.name ? `https://raw.githubusercontent.com/teamdao-psi3/esport-team/main/BFS/gamemasters/${team?.name}.png` : ErrImg;
@@ -146,7 +109,7 @@ function Shoutcasters() {
           <div className='page-section-title'>
             <h2 className='text-[3.3rem] font-bold font-inter text-center'>Shoutcasters</h2>
           </div>
-          <div className='flex flex-col items-center justify-center min-h-[500px] max-w-[1020px] mx-auto'>
+          <div className='flex flex-col min-h-[680px] max-w-[1020px] mx-auto'>
             {/*<TeamList teams={casters} numItemsPerRow={2} type='shoutcasters' />*/}
             <GenPyramid global_ranks={casters} />
           </div>
