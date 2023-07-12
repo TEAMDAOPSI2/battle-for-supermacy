@@ -88,7 +88,7 @@ const Footer = () => {
             <div className='flex flex-col'>
               <h3 className='text-white text-xl font-bold font-inter mb-3 uppercase'>Professional Leagues</h3>
               <ul className='flex flex-col gap-3'>
-                <AnchorText href='#' className="text-green-500" title='Supreme League' />
+                <AnchorText href='#' className="!text-secondary" title='Supreme League' />
                 <AnchorText href='#' className="text-primary" title='Super League' />
                 <AnchorText href='#' title='Crypto League' />
                 <AnchorText href='#' title='SoftDrink League' />
@@ -98,7 +98,7 @@ const Footer = () => {
                 <AnchorText href='#' title='PC League' />
                 <AnchorText href='#' title='Console League' />
                 <AnchorText href='#' title='Military League' />
-                <AnchorText href='#' className="!text-secondary" title='Standard League' />
+                <AnchorText href='#' className="text-green-500" title='Standard League' />
               </ul>
             </div>
 
