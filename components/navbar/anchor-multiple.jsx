@@ -48,7 +48,7 @@ const anchorMultiple = ({ props }) => {
                     <span
                       className='flex items-center text-dark-gray text-lg uppercase font-inter  py-3 border-b border-gray-700 hover:bg-gray-700 hover:text-white transition-all ease-in-out'>
                       {
-                        hide ? x.sort : x.title
+                        hide ? x.sort : <div dangerouslySetInnerHTML={{ __html: x.title }} />
                       }
                       <FontAwesomeIcon icon={faCaretRight} className='ml-2' />
                     </span>

@@ -85,18 +85,18 @@ const Navbar = ({ isActive, action }) => {
     svg: <FontAwesomeIcon icon={faEquals} />,
     mains: [
       {
-        title: 'Standard',
-        sort: 'ST',
-        subLinks: [],
-      },
-      {
-        title: 'Supreme',
+        title: '<span class="text-green-500">🟢 Supreme</span>',
         sort: 'SU',
         subLinks: [],
       },
       {
-        title: 'Super',
+        title: '<span class="text-primary">🔵 Super</span>',
         sort: 'SP',
+        subLinks: [],
+      },
+      {
+        title: '<span class="text-secondary">🔴 Standard</span>',
+        sort: 'ST',
         subLinks: [],
       },
     ],
